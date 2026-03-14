@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternative Asset Literacy | Intelligence meets Investing</title>
+    <meta name="description" content="Research-based learning for modern investors. Comprehensive modules on alternative assets, DeFi, behavioral economics, art investing, and more. Coming soon to iOS.">
+    <meta property="og:title" content="Alternative Asset Literacy">
+    <meta property="og:description" content="Research-based learning for modern investors. 9 comprehensive modules from foundational concepts to advanced strategies.">
+    <meta property="og:image" content="https://alternativeassetliteracy.com/assets/images/hero-art-logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alternativeassetliteracy.com">
+    <meta name="theme-color" content="#3D22D3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="navbar-brand">Alternative Asset Literacy</a>
+        <ul class="navbar-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#waitlist">Waitlist</a></li>
+            <li><a href="https://untitledfinancial.com" target="_blank" rel="noopener" class="nav-sister">Untitled Financial ↗</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#features">Features</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="#about">About</a>
+        <a href="#waitlist">Waitlist</a>
+        <a href="https://untitledfinancial.com" target="_blank" rel="noopener" class="nav-sister">Untitled Financial ↗</a>
+    </div>
+
+    <main>
+
+        <!-- ========== SCROLL STAGE (Painting → Phone → Title shrink) ========== -->
+        <div class="scroll-stage" id="scroll-stage">
+            <div class="scroll-stage-sticky">
+                <!-- Layer 1: Full-bleed painting -->
+                <div class="stage-painting" id="stage-painting">
+                    <img src="assets/images/hero-art.png" alt="A Bouquet of Flowers by Clara Peeters, Flemish, ca. 1612">
+                    <p class="painting-caption"><em>A Bouquet of Flowers</em> — Clara Peeters, Flemish, ca. 1612</p>
+                </div>
+
+                <!-- Layer 2: Phone mockup (fades in) -->
+                <div class="stage-phone" id="stage-phone">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <img src="assets/images/hero-screenshot.png" alt="Alternative Assets Literacy app" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="phone-placeholder">
+                                <span>App Screenshot</span>
+                                <span class="size-hint">390 &times; 844px</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Layer 3: Floating title -->
+                <div class="stage-title" id="stage-title">Alternative Asset Literacy</div>
+
+                <!-- Tagline -->
+                <div class="stage-tagline" id="stage-tagline">Intelligence meets Investing</div>
+            </div>
+        </div>
+
+        <!-- ========== FEATURES ========== -->
+        <section class="features section-padding" id="features">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="editorial-number">01</span>
+                    <span class="line"></span>
+                    <h2>Features</h2>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <h3>Research-Backed Content</h3>
+                        <p>Every module is built on peer-reviewed research and institutional sources. Full academic footnotes, bibliography, and citation indexing throughout.</p>
+                        <a href="https://www.ncbi.nlm.nih.gov/myncbi/1Ferik7yRl8Y6d/bibliography/public/" target="_blank" rel="noopener" class="bibliography-link">View NCBI Bibliography &rarr;</a>
+                        <span class="annotation">(R)</span>
+                    </div>
+
+                    <div class="feature-card fade-in">
+                        <h3>Spaced Repetition</h3>
+                        <p>SM-2 algorithm optimizes long-term retention. Daily review sessions adapt to your performance, tracking mature items, ease factors, and recall rates.</p>
+                        <span class="annotation">(E)</span>
+                    </div>
+
+                    <div class="feature-card fade-in">
+                        <h3>Interactive Assessment</h3>
+                        <p>Topic-specific quizzes across difficulty levels, guided reflection prompts, and real-world case studies with scenario analysis in every module.</p>
+                        <span class="annotation">(C)</span>
+                    </div>
+                </div>
+
+                <!-- App Interior Showcase — what you actually do inside -->
+                <div class="app-interior fade-in">
+                    <div class="interior-item">
+                        <div class="interior-icon">🧠</div>
+                        <div>
+                            <h4>Quizzes &amp; Assessments</h4>
+                            <p>Topic-specific quizzes across difficulty levels with instant feedback to reinforce what you learn</p>
+                        </div>
+                    </div>
+                    <div class="interior-item">
+                        <div class="interior-icon">🔬</div>
+                        <div>
+                            <h4>Case Studies &amp; Scenarios</h4>
+                            <p>Real-world "What Would You Do?" decision exercises and scenario analysis built into every module</p>
+                        </div>
+                    </div>
+                    <div class="interior-item">
+                        <div class="interior-icon">✅</div>
+                        <div>
+                            <h4>Due Diligence Checklists</h4>
+                            <p>Step-by-step checklists for evaluating investments across every asset class — from real estate to DeFi</p>
+                        </div>
+                    </div>
+                    <div class="interior-item">
+                        <div class="interior-icon">🗣️</div>
+                        <div>
+                            <h4>Advisor Questions</h4>
+                            <p>Curated question sets to bring to your financial advisor — know what to ask and why it matters</p>
+                        </div>
+                    </div>
+                    <div class="interior-item">
+                        <div class="interior-icon">🏗️</div>
+                        <div>
+                            <h4>Portfolio Construction Examples</h4>
+                            <p>Real-world examples of allocation across alternative assets, risk profiles, and investment horizons</p>
+                        </div>
+                    </div>
+                    <div class="interior-item">
+                        <div class="interior-icon">📚</div>
+                        <div>
+                            <h4>Glossary &amp; Citations</h4>
+                            <p>230+ sourced terms and 43+ citations from World Bank, McKinsey, Harvard, MoMA, and more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CURRICULUM (Horizontal cards, small thumbnails) ========== -->
+        <section class="curriculum section-padding" id="curriculum">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="editorial-number">02</span>
+                    <span class="line"></span>
+                    <h2>Curriculum</h2>
+                </div>
+
+                <p class="curriculum-subtitle fade-in">
+                    Nine modules spanning foundational investment literacy through advanced DeFi strategies, each with quizzes, reflections, and full academic citations.
+                </p>
+
+                <div class="module-grid">
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_women.png" alt="Women and Investing">
+                        </div>
+                        <div class="module-card-body">
+                            <h3>Investing Primer</h3>
+                            <p>Foundational concepts for the modern investor</p>
+                        </div>
+                    </div>
+
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_alt_assets.png" alt="Alternative Investing">
+                        </div>
+                        <div class="module-card-body">
+                            <h3 class="italic">Alternative Investing</h3>
+                            <p>Real estate, private equity, art, and beyond</p>
+                        </div>
+                    </div>
+
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_behavioral.png" alt="Behavioral Economics">
+                        </div>
+                        <div class="module-card-body">
+                            <h3>Behavioral Economics</h3>
+                            <p>Cognitive biases and the psychology of decisions</p>
+                        </div>
+                    </div>
+
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_gender.png" alt="Gender and Behavioral Investing">
+                        </div>
+                        <div class="module-card-body">
+                            <h3 class="italic">Gender &amp; Behavioral Investing</h3>
+                            <p>Research on gender dynamics and confidence gaps</p>
+                        </div>
+                    </div>
+
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_defi.png" alt="Decentralized Finance">
+                        </div>
+                        <div class="module-card-body">
+                            <h3>Decentralized Finance</h3>
+                            <p>Blockchain fundamentals and smart contracts</p>
+                        </div>
+                    </div>
+
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_art.png" alt="Art as an Alternative Asset">
+                        </div>
+                        <div class="module-card-body">
+                            <h3 class="italic">Art as an Alternative Asset</h3>
+                            <p>Valuation, provenance, and the art market</p>
+                        </div>
+                    </div>
+
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_climate_energy_rwa.png" alt="Climate, Energy, and Real World Assets">
+                        </div>
+                        <div class="module-card-body">
+                            <h3>Climate, Energy &amp; RWA</h3>
+                            <p>ESG investing and tokenized real world assets</p>
+                        </div>
+                    </div>
+
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_defi_investing.png" alt="DeFi Investing">
+                        </div>
+                        <div class="module-card-body">
+                            <h3 class="italic">DeFi Investing</h3>
+                            <p>Advanced strategies and risk management</p>
+                        </div>
+                    </div>
+
+                    <div class="module-card fade-in">
+                        <div class="module-thumb">
+                            <img src="assets/images/hero_kahlo_basquiat.png" alt="Kahlo x Basquiat">
+                        </div>
+                        <div class="module-card-body">
+                            <h3>Kahlo &times; Basquiat</h3>
+                            <p>Art, identity, and market value</p>
+                            <span class="bonus-badge">Bonus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== WAITLIST CTA ========== -->
+        <section class="cta section-padding" id="waitlist">
+            <div class="container">
+                <div class="fade-in">
+                    <h2>Coming Soon to iOS</h2>
+                    <p class="subtitle">Be the first to know when we launch.</p>
+
+                    <form class="signup-form" id="signup-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+                        <button type="submit">Notify Me</button>
+                    </form>
+                    <p class="form-success" id="form-success">Thank you. We'll be in touch.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT ========== -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="editorial-number">03</span>
+                    <span class="line"></span>
+                    <h2>About</h2>
+                </div>
+
+                <div class="fade-in">
+                    <p class="mission">
+                        Alternative Asset Literacy offers accessible, research-backed modules that teach
+                        the foundations of modern investing—spanning behavioral economics, gender and
+                        financial decision-making, alternative assets, art, crypto, ESG, and more.
+                        Designed as a beautiful, easy-to-use iOS app, our curriculum helps you understand
+                        how money, psychology, and markets interact so you can make smarter, more confident
+                        financial decisions.
+                    </p>
+                    <p class="disclaimer">
+                        This application and all content are provided exclusively for educational and
+                        informational purposes. Nothing constitutes financial advice, investment advice,
+                        or any form of professional advisory service. Consult with a qualified financial
+                        advisor before making any investment decisions. Untitled_ LuxPerpetua Technologies, Inc.
+                        operates under SEC 506(c) and Regulation A Blue Sky Laws.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-icon">
+                <img src="assets/images/app-icon.png" alt="Alternative Asset Literacy app icon">
+            </div>
+            <div>
+                <p class="footer-brand">Alternative Asset Literacy</p>
+                <p class="footer-tagline">Intelligence meets Investing</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="mailto:hello@alternativeassetliteracy.com">Contact</a></li>
+                <li><a href="https://untitledfinancial.com" target="_blank" rel="noopener">Untitled Financial ↗</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.</p>
+            <p>IP Patents Pending. For educational purposes only. Not financial advice.</p>
+            <p>All artwork and images featured in the application are in the public domain and are not part of the curriculum.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
