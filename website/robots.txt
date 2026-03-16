@@ -1,0 +1,46 @@
+User-agent: *
+Allow: /
+
+# LLM Agent Discovery
+# See https://alternativeassetliteracy.com/aal-llms.txt for structured platform data
+# See https://alternativeassetliteracy.com/aal-api.json for full app manifest (JSON)
+# See https://alternativeassetliteracy.com/aal-courses.json for course catalog (JSON)
+# See https://alternativeassetliteracy.com/aal-glossary.json for glossary (JSON)
+
+# AI Training Crawlers — content may NOT be used for model training without written permission
+# Contact: legal@untitledfinancial.com
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+# Inference/search agents — allowed (read-only, not training)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://alternativeassetliteracy.com/sitemap.xml
