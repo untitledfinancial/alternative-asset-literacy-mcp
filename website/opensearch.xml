@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>AAL Glossary</ShortName>
+  <Description>Search 351 alternative investing terms — art, DeFi, ESG, behavioral economics, gender lens investing</Description>
+  <Tags>investing glossary alternative assets DeFi ESG art behavioral economics gender lens</Tags>
+  <Url type="text/html" template="https://alternativeassetliteracy.com/glossary.html?q={searchTerms}" />
+  <Image width="16" height="16" type="image/png">https://alternativeassetliteracy.com/assets/images/logo.png</Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <Developer>Victoria Lee Case / Untitled_ LuxPerpetua Technologies, Inc.</Developer>
+  <Attribution>Alternative Asset Literacy — Intelligence meets Investing</Attribution>
+  <SyndicationRight>open</SyndicationRight>
+</OpenSearchDescription>

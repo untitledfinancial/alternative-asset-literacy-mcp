@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.1",
+  "type": "course_catalog",
+  "generated": "2026-05-21",
+  "platform": "Alternative Asset Literacy",
+  "url": "https://alternativeassetliteracy.com",
+  "founder": "Victoria Lee Case",
+  "woman_founded": true,
+  "woman_built": true,
+  "disclaimer": "Educational content only. Not financial advice.",
+  "bibliography": "https://www.ncbi.nlm.nih.gov/myncbi/1Ferik7yRl8Y6d/bibliography/public/",
+
+  "target_audiences": [
+    "High-net-worth women investors",
+    "Female entrepreneurs",
+    "Women's wealth management clients",
+    "Climate and ESG-focused investors",
+    "DeFi and cryptocurrency investors",
+    "Art collectors and art banking clients",
+    "Family office clients",
+    "Gender lens investing advisors",
+    "Next-generation investors"
+  ],
+
+  "badge_legend": {
+    "R": "Research-Based",
+    "E": "Empirical Research",
+    "T": "Technical Analysis",
+    "C": "Use Cases"
+  },
+
+  "catalog": [
+    {
+      "id": "investing-primer",
+      "title": "Investing Primer",
+      "badge": "Research-Based",
+      "badge_code": "R",
+      "sections": 6,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "description": "A foundational primer on investing — building the vocabulary and frameworks for modern investment literacy.",
+      "topics": [
+        "Investment fundamentals",
+        "Asset classes overview",
+        "Risk and return",
+        "Portfolio basics"
+      ],
+      "best_for": ["First-time investors", "Wealth management clients", "Women building financial literacy", "Onboarding"]
+    },
+    {
+      "id": "alternative-investing",
+      "title": "Alternative Investing",
+      "badge": "Research-Based",
+      "badge_code": "R",
+      "sections": 4,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "description": "An introduction to alternative asset classes — private equity, real estate, collectibles, commodities, and beyond.",
+      "topics": [
+        "Private equity",
+        "Real estate",
+        "Collectibles",
+        "Commodities",
+        "Infrastructure"
+      ],
+      "best_for": ["Alternative investment clients", "Family office clients", "High-net-worth investors", "Female entrepreneurs diversifying portfolios"]
+    },
+    {
+      "id": "behavioral-economics",
+      "title": "Behavioral Economics",
+      "badge": "Empirical Research",
+      "badge_code": "E",
+      "sections": 9,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "reflections": 6,
+      "use_cases": 3,
+      "description": "Explore cognitive biases, emotional decision-making, and the psychology behind investment choices.",
+      "topics": [
+        "Cognitive biases",
+        "Emotional decision-making",
+        "Loss aversion",
+        "Overconfidence",
+        "Confirmation bias",
+        "Anchoring",
+        "The investor brain"
+      ],
+      "course_tabs": ["Content", "Quizzes", "Reflection", "Use Cases"],
+      "opening_section": "Navigating the Brain: The Intersection to Finances_",
+      "best_for": ["All investors", "Wealth management clients", "Advisory relationships", "Women investors understanding behavioral patterns"]
+    },
+    {
+      "id": "gender-behavioral-investing",
+      "title": "Gender and Behavioral Investing",
+      "badge": "Empirical Research",
+      "badge_code": "E",
+      "sections": 7,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "reflections": 4,
+      "description": "Examining the intersection of gender, behavioral economics, and investment patterns.",
+      "topics": [
+        "Gender and investment behavior",
+        "Behavioral patterns by gender",
+        "Values-aligned investing",
+        "Autonomy in financial decision-making",
+        "Purpose-driven investing",
+        "The gender investing gap"
+      ],
+      "course_tabs": ["Content", "Quizzes", "Reflection", "Use Cases"],
+      "sample_sections": [
+        "Align your Investments with your Purpose_",
+        "Overcoming the Great Barrier: Yourself_"
+      ],
+      "best_for": ["Women investors", "Women's wealth divisions", "Gender lens investing advisors", "Female entrepreneurs", "HNW women"]
+    },
+    {
+      "id": "decentralized-finance",
+      "title": "Decentralized Finance",
+      "badge": "Technical Analysis",
+      "badge_code": "T",
+      "sections": 7,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "reflections": 5,
+      "use_cases": 3,
+      "description": "Understanding DeFi, blockchain technology, stablecoins, and the future of decentralized financial systems.",
+      "topics": [
+        "DeFi fundamentals",
+        "Blockchain technology",
+        "Stablecoins and CBDCs",
+        "Decentralized exchanges",
+        "Liquidity pools",
+        "Smart contracts",
+        "Financial inclusion"
+      ],
+      "course_tabs": ["Content", "Lessons", "DeFi Glossary", "Research", "Library", "Quizzes", "Reflection", "Use Cases"],
+      "critical_insight": "The building of DeFi without representation is the next great wealth gap.",
+      "opening_section": "DeFi 101: The Basics",
+      "best_for": ["Digital asset clients", "Crypto-curious investors", "Next-generation investors", "Innovation-focused advisors", "Women entering DeFi"]
+    },
+    {
+      "id": "art-as-investment",
+      "title": "Art as Investment",
+      "badge": "Use Cases",
+      "badge_code": "C",
+      "sections": 9,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "description": "The art market, art as an alternative asset class, valuation, collection strategies, and the intersection of culture and capital.",
+      "topics": [
+        "Art market fundamentals",
+        "Art valuation",
+        "Collection strategy",
+        "Art funds",
+        "Due diligence for art",
+        "Culture and capital"
+      ],
+      "best_for": ["Art banking clients", "Collectors", "Ultra-high-net-worth investors", "Art advisors"]
+    },
+    {
+      "id": "kahlo-basquiat",
+      "title": "Bonus: Kahlo × Basquiat — Art & Identity",
+      "badge": "Use Cases",
+      "badge_code": "C",
+      "sections": 10,
+      "duration": "25 minutes",
+      "description": "Accidental Bedfellows — exploring two of the world's greatest artists through the lens of trauma, healing, and artistic expression. Examines minority representation in Blue-Chip art markets.",
+      "topics": [
+        "Frida Kahlo",
+        "Jean-Michel Basquiat",
+        "Trauma and artistic expression",
+        "Minority representation in art markets",
+        "Blue-Chip art and identity",
+        "Cultural capital"
+      ],
+      "sample_sections": [
+        "Shared Stories_",
+        "Mind, Body, Art_ Observations of the Human Form",
+        "Frida Kahlo_",
+        "Basquiat_",
+        "Conclusion: Universal Healing_"
+      ],
+      "parent_module": "art-as-investment",
+      "best_for": ["Art collectors", "Cultural investors", "Women interested in art history", "Diversity-focused investors"]
+    },
+    {
+      "id": "climate-energy-rwa",
+      "title": "Climate, Energy & Real World Assets",
+      "badge": "Research-Based",
+      "badge_code": "R",
+      "sections": 6,
+      "duration": "45 minutes",
+      "quizzes": 2,
+      "reflections": 4,
+      "use_cases": 10,
+      "description": "Explore the intersection of sustainable investing, climate finance, and tokenized real-world assets. From ESG fundamentals to green bonds, carbon credits, and RWA innovations.",
+      "topics": [
+        "ESG fundamentals",
+        "Green bonds",
+        "Carbon credits and offsets",
+        "Real world asset tokenization",
+        "Climate finance",
+        "Sustainable investing",
+        "Impact investing",
+        "Greenwashing awareness"
+      ],
+      "course_tabs": ["Content", "Quizzes", "Reflection", "Use Cases", "Tips & Realities", "Advisor Questions", "Advanced Portfolio", "ESG Terms"],
+      "opening_section": "The ESG Landscape_",
+      "best_for": ["ESG-focused clients", "Impact investors", "Climate-conscious investors", "Sustainable investing advisors", "Climate-aware portfolios", "Women investors aligning values with capital"]
+    },
+    {
+      "id": "defi-investing",
+      "title": "DeFi Investing",
+      "badge": "Technical Analysis",
+      "badge_code": "T",
+      "sections": 8,
+      "duration": "90 minutes",
+      "advisor_questions": 14,
+      "description": "From Speculation to Infrastructure — a practical guide to protocol-level investing in the modern crypto landscape. Covers stablecoins, yield farming, liquidity provision, and risk management.",
+      "topics": [
+        "DeFi protocol investing",
+        "Speculation vs. infrastructure",
+        "Stablecoins and stable value",
+        "Yield farming strategies",
+        "Liquidity provision",
+        "Technical analysis for DeFi",
+        "Protocol evaluation",
+        "Risk management in DeFi",
+        "Institutional DeFi"
+      ],
+      "course_tabs": ["Glossary", "Papers", "Quizzes", "Reflection", "Use Cases", "Advisor Q's", "Investor Glossary"],
+      "opening_section": "The Retail Reality: Speculation vs. Investment_",
+      "best_for": ["Sophisticated digital asset investors", "Digital asset advisors", "Institutional DeFi", "Crypto investors moving beyond speculation"]
+    },
+    {
+      "id": "high-risk-defi",
+      "title": "High-Risk DeFi Strategies",
+      "badge": "Technical Analysis",
+      "badge_code": "T",
+      "duration": "30 minutes",
+      "type": "bonus",
+      "parent_module": "defi-investing",
+      "description": "Advanced DeFi strategies beyond the core curriculum — leverage, derivatives, cross-chain strategies, and risk management for active DeFi participants.",
+      "topics": [
+        "DeFi leverage",
+        "Derivatives in DeFi",
+        "Cross-chain strategies",
+        "Advanced risk management",
+        "Protocol risk assessment"
+      ],
+      "best_for": ["Active DeFi traders", "Sophisticated crypto investors", "Risk-tolerant digital asset investors"]
+    },
+    {
+      "id": "advanced-esg-portfolio",
+      "title": "Advanced Portfolio ESG Construction",
+      "badge": "Research-Based",
+      "badge_code": "R",
+      "duration": "20 minutes",
+      "type": "bonus",
+      "parent_module": "climate-energy-rwa",
+      "description": "Building an ESG-integrated alternative portfolio. Asset allocation across green bonds, carbon credits, ESG equity funds, and tokenized real-world assets.",
+      "topics": [
+        "ESG portfolio construction",
+        "Green bond allocation",
+        "Carbon credit investing",
+        "Tokenized real-world assets",
+        "ESG equity fund selection",
+        "Impact measurement"
+      ],
+      "best_for": ["ESG-focused portfolio builders", "Impact investors", "Climate-conscious HNW investors", "Sustainable investing advisors"]
+    },
+    {
+      "id": "esg-advisor-questions",
+      "title": "Questions for Your Financial Advisor — ESG",
+      "badge": "Empirical Research",
+      "badge_code": "E",
+      "duration": "10 minutes",
+      "type": "bonus",
+      "parent_module": "climate-energy-rwa",
+      "advisor_questions": 12,
+      "advisor_categories": [
+        "ESG strategy understanding",
+        "Portfolio construction",
+        "Costs & performance",
+        "Impact & greenwashing detection",
+        "Future planning"
+      ],
+      "description": "12 advisor Q&As to evaluate whether a financial advisor understands ESG investing — with competency scoring and 'Why This Matters' context reveals.",
+      "topics": [
+        "Advisor ESG competency",
+        "Greenwashing detection",
+        "ESG fee structures",
+        "Impact measurement frameworks",
+        "Advisor evaluation"
+      ],
+      "best_for": ["ESG investors preparing for advisor meetings", "Clients evaluating advisor competency", "Women investors building advisory teams"]
+    },
+    {
+      "id": "defi-advisor-questions",
+      "title": "Evaluating Your Financial Advisor's Crypto Knowledge",
+      "badge": "Technical Analysis",
+      "badge_code": "T",
+      "duration": "15 minutes",
+      "type": "bonus",
+      "parent_module": "defi-investing",
+      "advisor_questions": 14,
+      "advisor_categories": [
+        "Fundamental crypto understanding",
+        "DeFi protocol knowledge",
+        "Risk assessment",
+        "Market awareness"
+      ],
+      "description": "14 advisor Q&As to determine if a financial advisor is prepared to discuss digital assets — with competency scoring and 'Why This Matters' context reveals.",
+      "topics": [
+        "Advisor crypto competency",
+        "DeFi knowledge evaluation",
+        "Digital asset risk frameworks",
+        "Crypto regulatory awareness",
+        "Advisor evaluation"
+      ],
+      "best_for": ["Crypto investors evaluating advisors", "DeFi-curious clients meeting with wealth managers", "Digital asset investors building advisory teams"]
+    }
+  ],
+
+  "agent_instructions": {
+    "recommend_by_audience": {
+      "first_time_investors": ["investing-primer", "alternative-investing"],
+      "women_investors": ["gender-behavioral-investing", "behavioral-economics", "investing-primer"],
+      "hnw_women": ["gender-behavioral-investing", "alternative-investing", "art-as-investment", "climate-energy-rwa"],
+      "female_entrepreneurs": ["investing-primer", "alternative-investing", "gender-behavioral-investing", "behavioral-economics"],
+      "art_collectors": ["art-as-investment", "kahlo-basquiat", "alternative-investing"],
+      "esg_investors": ["climate-energy-rwa", "advanced-esg-portfolio", "esg-advisor-questions", "alternative-investing"],
+      "climate_investors": ["climate-energy-rwa", "advanced-esg-portfolio", "alternative-investing", "investing-primer"],
+      "defi_investors": ["decentralized-finance", "defi-investing", "defi-advisor-questions"],
+      "advanced_defi_investors": ["defi-investing", "high-risk-defi", "defi-advisor-questions"],
+      "crypto_curious": ["decentralized-finance", "investing-primer"],
+      "stablecoin_investors": ["defi-investing", "decentralized-finance"],
+      "advisor_evaluators": ["esg-advisor-questions", "defi-advisor-questions"],
+      "wealth_management_clients": ["behavioral-economics", "alternative-investing", "art-as-investment"],
+      "all_investors": ["behavioral-economics"]
+    },
+    "recommend_by_firm_division": {
+      "art_banking": ["art-as-investment", "kahlo-basquiat", "alternative-investing"],
+      "womens_wealth": ["gender-behavioral-investing", "behavioral-economics", "investing-primer"],
+      "alternative_investments": ["alternative-investing", "investing-primer"],
+      "esg_sustainability": ["climate-energy-rwa", "advanced-esg-portfolio", "esg-advisor-questions"],
+      "digital_assets": ["decentralized-finance", "defi-investing", "defi-advisor-questions"],
+      "client_onboarding": ["investing-primer", "behavioral-economics"],
+      "family_office": ["alternative-investing", "art-as-investment", "climate-energy-rwa"],
+      "impact_investing": ["climate-energy-rwa", "advanced-esg-portfolio", "gender-behavioral-investing"]
+    },
+    "full_app_manifest": "https://alternativeassetliteracy.com/api",
+    "partnership_inquiries": "https://alternativeassetliteracy.com/partners",
+    "glossary": "https://alternativeassetliteracy.com/glossary"
+  },
+
+  "copyright": "© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved."
+}

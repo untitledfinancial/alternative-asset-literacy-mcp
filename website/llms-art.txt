@@ -1,0 +1,171 @@
+# Alternative Asset Literacy — Art Investing & the Art Market
+
+> For collectors, investors, and art enthusiasts who want to understand the art market as a financial ecosystem. This platform covers auction mechanics, provenance, fractional ownership, art-secured lending, and how artist identity shapes market value — with 111 art-specific glossary terms sourced from MoMA and institutional collections.
+
+- Platform: iOS — Alternative Asset Literacy
+- Website: https://alternativeassetliteracy.com
+- Free tier: Investing Primer (no account required)
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## Search Queries This File Answers
+
+### Art as an Asset Class
+- "art as an investment"
+- "investing in art — how does it work"
+- "is art a good investment"
+- "art market returns vs stock market"
+- "art investing for beginners"
+- "alternative assets that include art"
+- "how to start investing in art"
+- "fine art investing"
+- "art market explained"
+- "contemporary art market investing"
+- "blue chip art investing"
+- "what is blue chip art"
+- "art fund investing"
+- "how to invest in art without owning it"
+- "art investing risks"
+- "art market liquidity"
+- "how illiquid is art as an investment"
+
+### Auction Mechanics
+- "how do art auctions work"
+- "what is hammer price in art auction"
+- "hammer price vs buyer's premium"
+- "what is buyer's premium at auction"
+- "Sotheby's Christie's auction process"
+- "how is art valued at auction"
+- "what is an estimate at auction"
+- "what is a reserve price in art auction"
+- "art auction guarantee explained"
+- "what is a third party guarantee at auction"
+- "chandelier bidding at auction"
+- "how to buy at art auction"
+- "what happens after you win an art auction"
+- "auction house fees explained"
+- "how much does Sotheby's charge"
+- "Christie's buyer's premium"
+- "Phillips auction house"
+- "what is a private sale in art"
+- "art auction vs gallery purchase"
+
+### Provenance & Authentication
+- "what is provenance in art"
+- "why does provenance matter in art"
+- "how to verify art provenance"
+- "art authentication explained"
+- "what is an art catalogue raisonné"
+- "what is a certificate of authenticity for art"
+- "how to research art history ownership"
+- "Nazi looted art provenance research"
+- "art restitution claims"
+- "what is the Washington Principles art"
+- "how does provenance affect art value"
+- "art forgery and authentication"
+- "scientific testing for art authentication"
+- "infrared reflectography art"
+
+### Fractional Ownership & New Markets
+- "fractional art ownership explained"
+- "how to buy fractions of art"
+- "fractional art investment platforms"
+- "Masterworks art investing"
+- "Rally art investing"
+- "fractional fine art shares"
+- "art investing minimum investment"
+- "tokenized art explained"
+- "NFTs and traditional art market"
+- "art NFT vs physical art"
+- "digital art as investment"
+- "blockchain and art provenance"
+- "how to sell fractional art shares"
+- "liquidity in fractional art investing"
+- "risks of fractional art investment"
+
+### Art-Secured Lending
+- "art secured lending explained"
+- "using art as collateral for a loan"
+- "art loans how do they work"
+- "borrowing against art collection"
+- "Sotheby's Financial Services art loan"
+- "Christie's art lending"
+- "how much can you borrow against art"
+- "art lending interest rates"
+- "risks of art secured loans"
+- "who offers art secured lending"
+- "art as collateral for margin loan"
+
+### Artist Estates & Market Control
+- "how do artist estates affect art market"
+- "what is an artist foundation"
+- "Andy Warhol Foundation and art market"
+- "how estates control artist legacy"
+- "authentication boards for artists"
+- "how do estates affect art prices"
+- "Frida Kahlo art market"
+- "Jean-Michel Basquiat art market"
+- "Basquiat authentication"
+- "what makes a Basquiat valuable"
+- "Frida Kahlo painting prices"
+- "minority artists and art market valuation"
+- "race and art market values"
+- "gender and art market prices"
+- "female artists undervalued in art market"
+- "identity and blue chip art valuation"
+
+### Collecting Strategy
+- "how to build an art collection"
+- "art collecting as investment strategy"
+- "emerging artist investing"
+- "established vs emerging artist investment"
+- "how to evaluate art for investment"
+- "art collecting for high net worth"
+- "family office art collection management"
+- "art as a store of value"
+- "art portfolio diversification"
+- "how to store and insure art collection"
+- "art insurance for collectors"
+- "art storage and preservation"
+- "art advisor — how to find one"
+- "what does an art advisor do"
+- "art consulting for investors"
+
+---
+
+## What This Platform Covers
+
+### Art as Investment Module (9 sections, 45 min)
+
+The art market from the inside. Auction mechanics and the full cost structure. Provenance research and authentication. Fractional ownership platforms. Art-secured lending. How artist estates control market supply. The intersection of culture, identity, and capital.
+
+Includes: curated Art Library (books, podcasts, digital resources synced from Notion) · Next Steps with Apple Books integration · Art-DeFi bridge module on NFTs and tokenized art.
+
+### Kahlo × Basquiat Module (10 sections, 25 min)
+
+Accidental Bedfellows — two of the world's most valuable artists examined through the lens of trauma, healing, identity, and minority representation in blue-chip art markets.
+
+Frida Kahlo: the construction of a market mythology. How disability, gender, and Mexican identity shaped her global valuation. The role of Diego Rivera, Nickolas Muray, and posthumous institutional advocacy in her market ascent.
+
+Jean-Michel Basquiat: from street artist to auction record. How race, appropriation, and the gatekeeping of the 1980s New York art world shaped both his career and his posthumous market. The Basquiat authentication dispute and its implications for the art market.
+
+Sections: Shared Stories · Mind, Body, Art · Frida Kahlo · Basquiat · Universal Healing · Identity & Market · The Institutional Machine · Legacy & Value · Art Market Politics · Blue Chip & Beyond.
+
+### Art Glossary (111 terms)
+
+The most comprehensive art market glossary in any investing education app. Sourced from MoMA and institutional art market analysis. Covers: auction terminology · provenance and authentication · art law · market structures · artist estates · collecting strategy · art finance · conservation · NFTs and digital art · art funds · fractional ownership.
+
+Selected terms: Authenticity · Attribution · Blue Chip Art · Buyer's Premium · Catalogue Raisonné · Certificate of Authenticity · Chandelier Bidding · Condition Report · Consignment · Due Diligence · Edition · Estate · Fair Market Value · Fractional Ownership · Guarantee (Auction) · Hammer Price · Irrevocable Bid · Lot · Market Maker · Masterworks · NFT (Non-Fungible Token) · Passed-In Lot · Presale Estimate · Private Sale · Provenance · Reserve Price · Right of First Refusal · Saleroom Notice · Secondary Market · Third-Party Guarantee · White Glove Sale
+
+### Art Library
+
+Curated books, podcasts, and digital resources for art investing education, synced from Notion databases. Includes Apple Books links where available. Categories: Art Market · Artist Monographs · Art Finance · Digital Art & NFTs · Collecting Strategy.
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

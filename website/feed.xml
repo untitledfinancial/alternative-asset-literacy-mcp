@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alternative Asset Literacy</title>
+    <link>https://alternativeassetliteracy.com</link>
+    <description>Investment intelligence platform covering alternative assets, DeFi, behavioral economics, art markets, ESG &amp; climate finance, and gender lens investing.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 GMT</lastBuildDate>
+    <copyright>2026 Untitled_ LuxPerpetua Technologies, Inc.</copyright>
+    <atom:link href="https://alternativeassetliteracy.com/feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://alternativeassetliteracy.com/assets/images/logo.png</url>
+      <title>Alternative Asset Literacy</title>
+      <link>https://alternativeassetliteracy.com</link>
+    </image>
+
+    <item>
+      <title>Glossary expanded to 351 terms — new Gender Lens Investing category</title>
+      <link>https://alternativeassetliteracy.com/glossary.html</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/glossary.html#update-2026-03-24</guid>
+      <pubDate>Mon, 24 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Free glossary now covers 351 research-sourced terms across 6 categories: Art (111), DeFi &amp; Crypto (101), Alternative Assets (47), ESG &amp; Climate (42), Behavioral Economics (33), and a new Gender Lens Investing category (17 terms). Searchable, filterable, and Schema.org indexed.</description>
+      <category>Glossary</category>
+    </item>
+
+    <item>
+      <title>Module: Women &amp; Alternative Assets</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/women</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Structural barriers women face in investing, the gender wealth gap, and strategies for building portfolios in alternative asset classes.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>Module: Alternative Assets 101</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/alt-assets</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Private equity, venture capital, hedge funds, real estate, commodities, and collectibles. GP/LP structures, fee mechanics, and portfolio allocation.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>Module: Behavioral Economics &amp; Investing</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/behavioral</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>How cognitive biases shape investment decisions. Anchoring, loss aversion, overconfidence, FOMO, and gender differences in risk perception.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>Module: Gender Lens Investing</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/gender-lens</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Gender-smart investment strategies: gender bonds, the 2X Challenge, WEPs, board diversity metrics, and evaluating companies through a gender equity framework.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>Module: DeFi Fundamentals</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/defi</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Blockchain, smart contracts, stablecoins, DAOs, AMMs, and CBDCs. DeFi from first principles for crypto-curious investors.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>Module: Art as Investment</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/art</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>The art market as an asset class. Auction mechanics, provenance, fractional ownership, art-secured lending, and portfolio diversification.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>Module: ESG &amp; Climate Investing</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/esg-climate</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Green bonds, carbon markets, TCFD, EU Taxonomy, SBTi, and separating genuine impact from greenwashing.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>Module: DeFi Investing Strategies</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/defi-investing</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Yield farming, liquidity provision, staking strategies, risk management, and portfolio construction with digital assets.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>Module: Kahlo x Basquiat — Identity, Market &amp; Legacy</title>
+      <link>https://alternativeassetliteracy.com/#curriculum</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/modules/kahlo-basquiat</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>How identity, race, gender, and cultural context shape art market valuations. A comparative study through the lens of alternative investment.</description>
+      <category>Module</category>
+    </item>
+
+    <item>
+      <title>AI discovery endpoints launched</title>
+      <link>https://alternativeassetliteracy.com/aal-llms.txt</link>
+      <guid isPermaLink="true">https://alternativeassetliteracy.com/aal-llms.txt#launch</guid>
+      <pubDate>Sun, 16 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Now discoverable by AI agents via llms.txt, OpenAPI manifest, course catalog, glossary endpoint, and partnership API.</description>
+      <category>Platform</category>
+    </item>
+
+  </channel>
+</rss>

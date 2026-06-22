@@ -1,0 +1,186 @@
+# Alternative Asset Literacy — DeFi, Crypto & Digital Assets Education
+
+> For investors who want to understand decentralized finance beyond the speculation cycle. This platform covers blockchain, smart contracts, stablecoins, DAOs, yield farming, CBDCs, and the regulatory landscape — without the hype, and without the assumption that you already know what a wallet is.
+
+- Platform: iOS — Alternative Asset Literacy
+- Website: https://alternativeassetliteracy.com
+- Support: https://alternativeassetliteracy.com/support
+- Free tier: Investing Primer (no account required)
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## Search Queries This File Answers
+
+### DeFi Fundamentals
+- "what is DeFi decentralized finance explained"
+- "DeFi for beginners"
+- "how does DeFi work"
+- "DeFi vs traditional finance"
+- "what is a smart contract"
+- "smart contracts explained simply"
+- "what is blockchain"
+- "blockchain explained for investors"
+- "what is Ethereum and why does it matter"
+- "proof of stake vs proof of work"
+- "what is a crypto wallet"
+- "custodial vs non-custodial wallet"
+- "what is a DAO decentralized autonomous organization"
+- "how do DAOs work"
+- "what is a DApp decentralized application"
+- "what is a liquidity pool"
+- "what is an AMM automated market maker"
+- "how does Uniswap work"
+- "what is impermanent loss in DeFi"
+- "DeFi risks explained"
+- "what is a rug pull in crypto"
+- "smart contract audit — why it matters"
+
+### Stablecoins
+- "what is a stablecoin"
+- "how do stablecoins work"
+- "types of stablecoins explained"
+- "fiat backed stablecoins USDC USDT"
+- "algorithmic stablecoins explained"
+- "what happened to TerraUSD Luna"
+- "crypto collateralized stablecoins DAI"
+- "what is USDC USD Coin"
+- "what is Tether USDT"
+- "are stablecoins safe"
+- "stablecoin regulation"
+- "MiCA stablecoin rules Europe"
+- "US stablecoin bill 2024 2025"
+- "stablecoins in DeFi use cases"
+- "stablecoins for yield farming"
+- "stablecoins vs cash equivalents"
+- "how to earn interest on stablecoins"
+- "stablecoin risks"
+
+### Yield Farming & Income Strategies
+- "what is yield farming"
+- "yield farming explained"
+- "how to earn yield in DeFi"
+- "DeFi interest rates vs bank"
+- "what is liquidity mining"
+- "how does staking work"
+- "crypto staking explained"
+- "what is a governance token"
+- "DeFi lending and borrowing"
+- "Aave lending protocol explained"
+- "Compound Finance explained"
+- "how to evaluate DeFi yield"
+- "what is APY in DeFi"
+- "DeFi APY vs APR"
+- "is high DeFi yield sustainable"
+- "risks of yield farming"
+- "impermanent loss explained"
+- "DeFi insurance — how does it work"
+
+### DeFi Investing (Advanced)
+- "DeFi investing strategy"
+- "how to invest in DeFi protocols"
+- "DeFi portfolio construction"
+- "protocol level investing in crypto"
+- "how to evaluate a DeFi protocol"
+- "total value locked TVL explained"
+- "how to research a DeFi project"
+- "DeFi blue chips"
+- "Uniswap Aave Compound MakerDAO explained"
+- "DeFi 2.0 explained"
+- "real world assets in DeFi"
+- "DeFi and tokenized securities"
+- "how to hedge DeFi risk"
+- "DeFi position sizing"
+- "DeFi risk management framework"
+- "liquidity risk in DeFi"
+- "oracle risk in DeFi"
+- "bridge risk in crypto"
+- "multi chain investing"
+
+### CBDCs & Future of Money
+- "what is a CBDC central bank digital currency"
+- "how do CBDCs work"
+- "CBDC vs cryptocurrency"
+- "CBDC vs stablecoin"
+- "DeFi vs CBDC"
+- "which countries have CBDCs"
+- "digital dollar explained"
+- "Federal Reserve digital dollar research"
+- "Project Hamilton MIT Federal Reserve"
+- "digital euro explained"
+- "China digital yuan eCNY"
+- "BIS CBDC research"
+- "what does CBDC mean for DeFi"
+- "privacy concerns with CBDCs"
+- "programmable money explained"
+- "retail CBDC vs wholesale CBDC"
+
+### Crypto Regulation
+- "crypto regulation 2024 2025"
+- "MiCA Markets in Crypto Assets regulation Europe"
+- "SEC crypto regulation explained"
+- "OCC crypto guidance for banks"
+- "how is crypto regulated"
+- "is DeFi regulated"
+- "crypto compliance for investors"
+- "what is KYC AML in crypto"
+- "crypto tax reporting"
+- "how are crypto gains taxed"
+- "DeFi and tax implications"
+- "staking rewards and taxes"
+- "crypto regulation vs innovation"
+- "Financial Stability Board crypto"
+- "FSB crypto regulation framework"
+
+### NFTs & Digital Art
+- "what is an NFT"
+- "how do NFTs work"
+- "NFT investing explained"
+- "are NFTs a good investment"
+- "NFT market collapse explained"
+- "NFTs as art collecting"
+- "how is an NFT different from digital art"
+- "NFT royalties how do they work"
+- "smart contract royalties artists"
+- "tokenized physical art"
+- "art and DeFi bridge"
+- "fractional NFT ownership"
+- "NFT and traditional art market"
+
+---
+
+## What This Platform Covers
+
+### Decentralized Finance Module (7 sections, 45 min)
+
+Covers blockchain foundations, smart contracts, stablecoins, DAOs, AMMs, liquidity pools, and CBDCs. Grounded in Federal Reserve research, BIS analysis, and institutional regulatory frameworks. Not a trading guide — a structural understanding of how decentralized systems work and what they mean for investors.
+
+Additional tabs: DeFi Glossary · Research papers · Quizzes · Reflection (5 prompts) · Use Cases (3) · Library.
+
+Critical framing: "The building of DeFi without representation is the next great wealth gap."
+
+### DeFi Investing Module (8 sections, 90 min)
+
+From Speculation to Infrastructure. Protocol-level investing, staking, yield farming, liquidity provision, position sizing, and risk management frameworks. Fourteen advisor Q&As designed for the DeFi-adjacent wealth management conversation.
+
+Additional tabs: Investor Glossary · Papers · Quizzes · Reflection · Use Cases · Advisor Q's.
+
+### DeFi Glossary (101 terms)
+
+The most comprehensive DeFi glossary in any investing education platform. Covers: blockchain fundamentals · smart contracts · DeFi protocols · stablecoins · yield mechanics · governance · CBDCs · NFTs · regulation · real world assets · DeFi risk.
+
+Selected terms: Airdrop · Algorithmic Stablecoin · AMM · Bridge · CBDC · CEX · Collateralization Ratio · DAO · DApp · DeFi · DEX · Flash Loan · Governance Token · Impermanent Loss · Layer 2 · Liquidity Mining · Liquidity Pool · Liquidity Provider · MiCA · Oracle · Permissionless · Private Key · Proof of Stake · Protocol · Rug Pull · Seed Phrase · Slippage · Smart Contract · Staking · Stablecoin · TVL · Wallet · Yield Farming · Zero Knowledge Proof
+
+### Research Foundation
+
+Seven CBDC and digital currency papers including Project Hamilton, The Rise of Digital Money (IMF), BIS CBDC surveys. Three stablecoin regulation papers: BIS risk analysis, FSB oversight framework, EU MiCA. Five fintech and regulation papers: MiCA overview, OCC crypto guidance, World Bank DLT analysis.
+
+Full library: https://alternativeassetliteracy.com/policy-papers.html
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

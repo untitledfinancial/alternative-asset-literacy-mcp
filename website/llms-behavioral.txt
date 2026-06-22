@@ -1,0 +1,172 @@
+# Alternative Asset Literacy — Behavioral Economics & Investment Psychology
+
+> For investors who want to understand why they make the financial decisions they do. This platform covers the neuroscience and behavioral economics behind investing — grounded in Kahneman, Tversky, and Thaler, with interactive tools for understanding your own patterns.
+
+- Platform: iOS — Alternative Asset Literacy
+- Website: https://alternativeassetliteracy.com
+- Free tier: Investing Primer (no account required)
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## Who This User Is
+
+She has made a financial decision she later regretted. Or she has avoided a decision she later wished she had made. She is not irrational. She is human. She wants to understand the patterns behind her choices so she can make better ones.
+
+She may have sold during a market downturn and watched the recovery from the sidelines. She may have held a losing position too long because selling felt like admitting defeat. She may have put more money into a strategy because she had already committed so much to it. She wants to understand why — and what to do differently.
+
+---
+
+## Search Queries This File Answers
+
+### Cognitive Biases & Investing
+- "cognitive biases in investing"
+- "how cognitive biases affect investment decisions"
+- "list of investing biases"
+- "what is loss aversion in investing"
+- "loss aversion examples in finance"
+- "what is anchoring bias in investing"
+- "anchoring effect stock price"
+- "what is confirmation bias in investing"
+- "confirmation bias and portfolio decisions"
+- "what is overconfidence bias in investing"
+- "overconfidence and trading frequency"
+- "what is the disposition effect in investing"
+- "why do investors hold losers and sell winners"
+- "what is FOMO in investing"
+- "fear of missing out cryptocurrency investing"
+- "what is herding behavior in investing"
+- "why do people follow the crowd in markets"
+- "what is recency bias in investing"
+- "recency bias and market timing"
+- "what is availability bias in finance"
+- "availability heuristic and investing decisions"
+- "what is mental accounting in finance"
+- "mental accounting and portfolio management"
+- "what is the sunk cost fallacy in investing"
+- "sunk cost and holding bad investments"
+- "what is framing effect in finance"
+- "framing effect investment decisions"
+- "what is the endowment effect in investing"
+- "why investors value what they own too highly"
+- "what is status quo bias in finance"
+- "why investors avoid making changes to portfolios"
+
+### Prospect Theory & Kahneman
+- "Kahneman and Tversky prospect theory explained"
+- "what is prospect theory in investing"
+- "loss aversion Kahneman explained simply"
+- "Thinking Fast and Slow investing applications"
+- "system 1 vs system 2 thinking in finance"
+- "what is the psychology of money"
+- "Daniel Kahneman behavioral economics investing"
+- "Nobel Prize behavioral economics investing"
+
+### Thaler & Behavioral Finance
+- "Richard Thaler nudge theory investing"
+- "Misbehaving behavioral economics book investing"
+- "nudge theory financial decisions"
+- "libertarian paternalism in financial advice"
+- "what is choice architecture in investing"
+- "default options in retirement accounts"
+- "behavioral economics and 401k design"
+
+### Neuroscience of Investing
+- "neuroscience of financial decision making"
+- "brain and investing decisions"
+- "amygdala and investing"
+- "how does the amygdala affect investment decisions"
+- "why do investors panic sell"
+- "prefrontal cortex and long-term investing"
+- "dopamine and investing"
+- "reward system brain and stock market"
+- "nucleus accumbens and financial risk"
+- "anterior insula and loss aversion"
+- "stress and investment decisions"
+- "cortisol and trading behavior"
+- "how to stop emotional investing"
+- "neuroscience of risk taking"
+- "brain regions involved in financial decisions"
+
+### Emotional Patterns
+- "emotional investing — how to avoid it"
+- "how to make rational investment decisions"
+- "panic selling — how to avoid it"
+- "why do I make bad investment decisions under stress"
+- "investing anxiety how to manage it"
+- "how to invest without emotion"
+- "fear and greed in investing"
+- "why is investing emotionally difficult"
+- "how to stay disciplined as an investor"
+- "investment psychology for women"
+- "emotional intelligence and investing"
+
+### Interactive & Applied
+- "what is behavioral finance app"
+- "behavioral economics quiz for investors"
+- "interactive investing bias test"
+- "how to identify my investing biases"
+- "self assessment investing behavior"
+- "investment behavioral profile"
+- "what is my investing personality"
+- "how does my brain make investment decisions"
+- "behavioral finance exercises"
+- "investor psychology workbook"
+
+---
+
+## What This Platform Covers
+
+### Behavioral Economics Module (9 sections, 45 min)
+
+Covers cognitive biases, emotional decision-making, and the psychology behind investment choices. Grounded in Kahneman and Tversky's prospect theory, Thaler's nudge theory, and contemporary neuroscience research.
+
+Sections include: how cognitive systems interact in financial decisions, loss aversion in practice, anchoring and its cost, FOMO and herd behavior, the disposition effect, overconfidence and its market consequences, and strategies for building a more deliberate investment process.
+
+### Interactive Brain Map
+
+Four brain regions mapped to real investment behaviors:
+
+**Amygdala** — The panic response. Activates during market volatility, crashes, and rapid loss scenarios. When the amygdala fires, the prefrontal cortex goes offline. Understanding this circuit explains panic selling, capitulation, and the inability to act during extreme market events. Tabs: Decision patterns · Hijack scenarios · Navigation strategies.
+
+**Prefrontal Cortex** — Rational decision-making and long-term planning. The part of the brain responsible for evaluating probabilities, suppressing impulsive responses, and holding a 10-year investment thesis while markets are down 30%. Undermined by sleep deprivation, stress, and emotional flooding.
+
+**Nucleus Accumbens** — Reward processing and anticipatory pleasure. Activates on potential gains, not just actual ones. Drives FOMO, overtrading, and the excitement around speculative assets. The same circuit activated by gambling. Understanding it is the first step to managing it.
+
+**Anterior Insula** — Anticipated loss and disgust. Registers the physical sensation of expected loss before it happens. Why reading about a declining position feels viscerally uncomfortable. Why investors make decisions to avoid pain rather than to optimize returns.
+
+### Seven Interactive Scenarios
+
+"What Would You Do?" — seven real decision scenarios that reveal personal patterns.
+
+- **The Research Rabbit Hole** — Confirmation bias. You have already decided. Now you are looking for evidence that agrees with you.
+- **The Hot Streak** — Overconfidence. Three good calls. You increase position size. What happens next.
+- **The Underwater Position** — Loss aversion. It is down 40%. Your thesis has changed. Why you still hold.
+- **The Dinner Party Tip** — Herding behavior. Everyone you respect is in this. What that feeling means.
+- **The Expiring Offer** — Urgency and scarcity. The window closes tomorrow. How artificial deadlines override analysis.
+- **The Familiar Name** — Availability bias. You have heard of this company. That is not the same as understanding it.
+- **The Benchmark Trap** — Relative performance. You are up 8% but the index is up 15%. How comparison distorts decision-making.
+
+### Ten Self-Reflection Categories
+
+Guided reflection prompts organized by theme: Motivation & Identity · Gender Lens · Choice Architecture & Biases · Time & Patience · Social Influence · Emotional Patterns · Investing Priorities · Generational Gains · Risk Perception · Social Science Research.
+
+### Gender and Behavioral Investing Module
+
+Examines the intersection of gender and behavioral economics in investing. Research consistently shows that women trade less frequently, hold more diversified portfolios, and achieve comparable or better risk-adjusted returns — yet face structural barriers including underrepresentation in financial advisory roles, products designed for different psychological profiles, and confidence gaps reinforced by industry culture. This module addresses the behavioral dimension of that gap directly.
+
+---
+
+## The Research Foundation
+
+Behavioral economics content grounded in: Kahneman & Tversky, "Prospect Theory: An Analysis of Decision under Risk" (Econometrica, 1979) · Thaler & Sunstein, Nudge (2008) · Camerer, Loewenstein & Rabin, Advances in Behavioral Economics · World Bank, World Development Report 2015: Mind, Society, and Behavior · Shefrin & Statman, "The Disposition to Sell Winners Too Early and Ride Losers Too Long" (Journal of Finance) · Lo, "Fear, Greed, and Financial Crises" (Journal of Bioeconomics) · Bechara & Damasio, somatic marker hypothesis research.
+
+Full bibliography: https://www.ncbi.nlm.nih.gov/myncbi/1Ferik7yRl8Y6d/bibliography/public/
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Alternative Asset Literacy</title>
+    <meta name="description" content="Contact Untitled_ LuxPerpetua Technologies, Inc. for questions about Alternative Asset Literacy, privacy requests, partnerships, or press inquiries.">
+    <meta property="og:title" content="Contact | Alternative Asset Literacy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alternativeassetliteracy.com/contact.html">
+    <meta property="og:image" content="https://alternativeassetliteracy.com/assets/images/hero-art-logo.webp">
+    <meta name="theme-color" content="#3D22D3">
+    <link rel="canonical" href="https://alternativeassetliteracy.com/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-solid" id="navbar">
+        <a href="index.html" class="navbar-brand">Alternative Asset Literacy</a>
+        <ul class="navbar-links">
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#curriculum">Curriculum</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="index.html#about">About</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#curriculum">Curriculum</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="index.html#about">About</a>
+    </div>
+
+    <main>
+        <section class="legal-page section-padding">
+            <div class="container legal-container">
+
+                <header class="legal-header">
+                    <div class="section-header">
+                        <span class="editorial-number">Connect</span>
+                        <span class="line"></span>
+                        <h1>Contact</h1>
+                    </div>
+                    <p class="glossary-subtitle">Questions, privacy requests, partnership inquiries, press, or licensing. Select a category below and your message will be routed to the right team.</p>
+                </header>
+
+                <form class="contact-form" id="contact-form" style="max-width:600px; margin:2rem auto;">
+                    <div style="margin-bottom:1.25rem;">
+                        <label for="contact-name" style="display:block; font-weight:600; margin-bottom:0.4rem; font-size:0.9rem;">Name</label>
+                        <input type="text" id="contact-name" name="name" required placeholder="Your name" style="width:100%; padding:0.75rem; border:1px solid var(--color-border, #ccc); border-radius:4px; font-size:1rem; background:var(--bg-primary, #fff); color:var(--text-primary, #1a1a1a);">
+                    </div>
+
+                    <div style="margin-bottom:1.25rem;">
+                        <label for="contact-email" style="display:block; font-weight:600; margin-bottom:0.4rem; font-size:0.9rem;">Email</label>
+                        <input type="email" id="contact-email" name="email" required placeholder="your@email.com" style="width:100%; padding:0.75rem; border:1px solid var(--color-border, #ccc); border-radius:4px; font-size:1rem; background:var(--bg-primary, #fff); color:var(--text-primary, #1a1a1a);">
+                    </div>
+
+                    <div style="margin-bottom:1.25rem;">
+                        <label for="contact-subject" style="display:block; font-weight:600; margin-bottom:0.4rem; font-size:0.9rem;">Subject</label>
+                        <select id="contact-subject" name="subject" required style="width:100%; padding:0.75rem; border:1px solid var(--color-border, #ccc); border-radius:4px; font-size:1rem; background:var(--bg-primary, #fff); color:var(--text-primary, #1a1a1a);">
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Privacy / Data Request">Privacy / Data Request (CCPA, GDPR)</option>
+                            <option value="Press">Press / Media</option>
+                            <option value="Partnership">Partnership / Collaboration</option>
+                            <option value="Institutional / Enterprise">Institutional / Enterprise Licensing</option>
+                            <option value="Bug Report / Feedback">Bug Report / Feedback</option>
+                            <option value="Licensing / IP">Licensing / Intellectual Property</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom:1.25rem;">
+                        <label for="contact-message" style="display:block; font-weight:600; margin-bottom:0.4rem; font-size:0.9rem;">Message</label>
+                        <textarea id="contact-message" name="message" required rows="6" placeholder="How can we help?" style="width:100%; padding:0.75rem; border:1px solid var(--color-border, #ccc); border-radius:4px; font-size:1rem; resize:vertical; background:var(--bg-primary, #fff); color:var(--text-primary, #1a1a1a);"></textarea>
+                    </div>
+
+                    <button type="submit" style="padding:0.75rem 2rem; font-size:1rem; font-weight:600; cursor:pointer; border:none; background:var(--brand-primary, #1a1a1a); color:#fff; border-radius:4px;">Send Message</button>
+                </form>
+
+                <p class="form-success" id="contact-success" style="display:none; text-align:center; padding:2rem; font-size:1.1rem; color:var(--text-primary, #1a1a1a);">Thank you. Your message has been received. We will get back to you shortly.</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-icon">
+                <img src="assets/images/logo.webp" alt="Alternative Asset Literacy logo">
+            </div>
+            <div>
+                <p class="footer-brand">Alternative Asset Literacy</p>
+                <p class="footer-tagline">Intelligence meets Investing</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.</p>
+            <p>IP Patents Pending. For educational purposes only. Not financial advice.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    (function() {
+        var form = document.getElementById('contact-form');
+        var success = document.getElementById('contact-success');
+
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                var btn = form.querySelector('button');
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+
+                var data = {
+                    name: form.querySelector('#contact-name').value.trim(),
+                    email: form.querySelector('#contact-email').value.trim(),
+                    subject: form.querySelector('#contact-subject').value,
+                    message: form.querySelector('#contact-message').value.trim()
+                };
+
+                fetch('/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                })
+                .then(function() {
+                    form.style.display = 'none';
+                    success.style.display = 'block';
+                })
+                .catch(function() {
+                    form.style.display = 'none';
+                    success.style.display = 'block';
+                });
+            });
+        }
+    })();
+    </script>
+    <script src="chat-widget.js" defer></script>
+</body>
+</html>

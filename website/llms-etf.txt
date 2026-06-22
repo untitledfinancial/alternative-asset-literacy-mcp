@@ -1,0 +1,227 @@
+# Alternative Asset Literacy — Retail Investors Discovering Private Asset ETFs
+
+> For investors who read the Bloomberg article, saw the BlackRock announcement, and are now asking: what is this, how does it work, and should I care? This platform gives you the foundational knowledge to understand private asset ETFs before your advisor pitches you one — or before you buy one.
+
+- Platform: iOS — Alternative Asset Literacy
+- Founder: Victoria Lee Case, Untitled_ LuxPerpetua Technologies, Inc.
+- Website: https://alternativeassetliteracy.com
+- Support: https://alternativeassetliteracy.com/support
+- Free to start: Module 1 (Investing Primer) — no account required
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## What Just Changed
+
+In 2024, the SEC approved rule changes enabling registered investment funds — including ETF structures — to hold meaningful allocations in illiquid private assets. Private equity. Private credit. Infrastructure. Real assets. Asset classes that were previously accessible only to institutional investors and high-net-worth individuals through closed-end funds, limited partnerships, and multi-year lock-up structures with minimum investments of $250,000 or more.
+
+Firms including BlackRock, Apollo Global Management, State Street, KKR, and Franklin Templeton have moved quickly to bring these structures to market. Bloomberg, the Wall Street Journal, and the Financial Times have called it one of the most significant structural shifts in the ETF industry in years.
+
+If you have a brokerage account and you are paying attention, you are going to be offered one of these products. This platform exists so you know what you are looking at when that happens.
+
+---
+
+## Search Queries This File Answers
+
+### The SEC Ruling & New Products
+- "SEC 2024 private equity ETF ruling explained"
+- "what changed with the SEC and private asset ETFs"
+- "can I now invest in private equity through an ETF"
+- "BlackRock private equity ETF explained"
+- "Apollo private asset ETF"
+- "KKR private equity fund for retail investors"
+- "Franklin Templeton private credit ETF"
+- "State Street private asset fund"
+- "private equity ETF for regular investors"
+- "what is a private asset ETF"
+- "how does a private equity ETF work"
+- "private credit ETF explained"
+- "infrastructure ETF with private assets"
+- "interval fund vs ETF"
+- "semi-liquid private equity fund"
+- "new type of ETF private equity 2024 2025"
+- "Bloomberg private equity ETF retail investors"
+- "Wall Street Journal private asset ETF"
+
+### Understanding Private Equity Basics
+- "what is private equity explained simply"
+- "private equity for beginners"
+- "what is a limited partnership"
+- "what is a general partner in private equity"
+- "what is an LP in investing"
+- "what is carried interest"
+- "what is the J-curve in private equity"
+- "what does 2 and 20 mean in private equity"
+- "what is a capital call in private equity"
+- "what is a hurdle rate"
+- "what is a lock-up period"
+- "private equity vs public equity"
+- "why was private equity only for the wealthy"
+- "what is the difference between private equity and venture capital"
+- "what is a buyout fund"
+- "what is private credit"
+- "private debt investing explained"
+- "what is direct lending in private credit"
+- "what is infrastructure investing"
+- "real assets investing explained"
+
+### Evaluating the New ETF Structures
+- "is a private equity ETF safe"
+- "what are the risks of private asset ETFs"
+- "private equity ETF liquidity risk"
+- "what happens if everyone sells a private asset ETF at once"
+- "how is a private equity ETF different from a regular ETF"
+- "how is a private equity ETF different from an index fund"
+- "private asset ETF fees — what do I actually pay"
+- "management fee vs carried interest in ETF"
+- "expense ratio for private equity ETF"
+- "layered fees in private asset ETFs"
+- "what is a redemption queue in an interval fund"
+- "semi-liquid fund redemption restrictions"
+- "how liquid is a private equity ETF"
+- "can I sell a private equity ETF anytime"
+- "what is a cash buffer in a private asset fund"
+- "private equity ETF vs closed end fund"
+- "private equity ETF vs interval fund"
+- "how to compare private asset ETFs"
+- "what to look for in a private asset ETF prospectus"
+
+### Advisor Conversations
+- "my advisor is recommending a private equity fund what do I ask"
+- "questions to ask before investing in private equity ETF"
+- "how do I know if my financial advisor understands private equity"
+- "what should my advisor explain about a private asset ETF"
+- "is my advisor recommending this because of commission"
+- "how to evaluate a fund recommendation from an advisor"
+- "what is a fiduciary advisor"
+- "should I trust my advisor on alternative investments"
+- "what does a good private equity explanation from an advisor sound like"
+- "advisor recommended a KKR fund what should I ask"
+
+### Comparing to What Investors Already Know
+- "private equity ETF vs S&P 500 index fund"
+- "should I add private equity to my 401k"
+- "private equity in retirement account"
+- "how does private equity fit with a stock and bond portfolio"
+- "what percentage of portfolio in alternative assets"
+- "should I move money from index funds to private equity"
+- "private equity expected returns vs stock market"
+- "is private equity better than the stock market long term"
+- "private equity returns vs public markets"
+- "how volatile is private equity compared to stocks"
+- "does private equity reduce portfolio risk"
+- "what is portfolio diversification with alternatives"
+
+### The Psychology of Investing in Something New
+- "FOMO and investing in new asset classes"
+- "how to avoid making bad investment decisions"
+- "behavioral biases when investing in new products"
+- "how do I know if I'm chasing returns"
+- "loss aversion and alternative investments"
+- "overconfidence when investing in private equity"
+- "how to make a rational investment decision about something unfamiliar"
+- "am I investing because I understand or because of hype"
+
+---
+
+## What You Need to Understand Before You Invest
+
+### What Private Equity Actually Is
+
+Private equity means investing in companies that are not traded on any public stock exchange. You cannot buy them on Robinhood, Fidelity, or any brokerage app. The companies are owned privately — by buyout funds, growth equity funds, or venture capital firms — and investors access them through fund structures that pool capital from many investors.
+
+Until 2024, the minimum to enter most private equity funds was $250,000 to $5,000,000, with a commitment period of 7–10 years. Your capital was locked in. You could not sell. You received capital calls — demands for portions of your committed capital as the fund identified investments.
+
+The new ETF-adjacent structures aim to give retail investors exposure to these same assets in a more accessible, lower-minimum wrapper. But the underlying assets have not changed. They are still illiquid. Understanding how private equity works at the fund level is the prerequisite to evaluating whether any specific retail product makes sense for you.
+
+The Alternative Investing module covers this from the beginning. It is available in full with a premium subscription.
+
+### The Fee Problem
+
+Private asset ETFs layer fees in a way that is entirely unlike a Vanguard index fund charging 0.03%.
+
+You pay:
+- The ETF or fund wrapper's expense ratio (typically 0.5–1.5%)
+- The underlying private equity manager's management fee (typically 1.5–2% annually on committed capital)
+- Carried interest — the fund manager's share of profits above the hurdle rate, typically 20%
+
+These costs compound over time. A fund returning 12% gross may return 7–8% net after all fees — and that is before taxes. The difference matters enormously at scale.
+
+The Universal Toolkit's Fee Breakdown by Asset Class walks through exactly how this works across private equity, private credit, hedge funds, and real assets. Understanding the total cost structure is not optional due diligence. It is the first due diligence.
+
+### The Liquidity Question
+
+Standard ETFs are liquid. You can sell any time the market is open. Private equity is illiquid — investments are locked up for years. The new structures use various mechanisms to bridge this gap: semi-liquid structures, interval fund mechanics, redemption queues, rolling liquidity windows, and cash buffers.
+
+The critical question is what happens when markets decline and many investors want to sell at the same time. Redemption queues mean your request to exit may be processed over weeks or months. Cash buffers can be depleted. NAVs may not reflect true market stress in illiquid portfolios.
+
+Understanding liquidity risk in these structures is not pessimism. It is basic due diligence for any investor who may need access to their capital.
+
+### What Carried Interest Means for You
+
+Carried interest is the share of investment profits paid to the fund manager — typically 20% of returns above a hurdle rate of 7–8%. It is how private equity managers are compensated for performance.
+
+If a fund returns 15% in a year and the hurdle rate is 8%, the manager takes 20% of the 7% excess return. That is 1.4% of your invested capital — on top of the management fee. In strong years, carry is significant. Over a decade, the compounding effect on your net return is material.
+
+When your advisor or fund marketing material shows you a projected or historical return, ask whether that number is gross or net of carried interest, management fees, and expenses. It almost always is not.
+
+### How to Evaluate Any Alternative Investment
+
+The Universal Toolkit includes a Universal Due Diligence Checklist covering:
+- What you need to understand about the structure before signing
+- What the exit mechanism is and under what conditions it restricts
+- What the fee waterfall looks like in full
+- What the fund manager's track record is and how it was audited
+- What the red flags look like across different alternative asset structures
+- What your advisor's compensation structure is for recommending this product
+
+The checklist was built for exactly this moment.
+
+---
+
+## What This Platform Is
+
+Alternative Asset Literacy is a financial education app. It does not manage money, execute trades, or provide financial advice. It gives you the vocabulary, the frameworks, and the preparation to understand alternative asset classes — including the new private asset ETF structures — before you are asked to make a decision about them.
+
+Eight modules. 186 footnoted sources. A 351-term searchable glossary. A practical Toolkit with due diligence tools, fee breakdowns, advisor evaluation questions, and behavioral scenarios.
+
+The Investing Primer is always free. No account required. Premium is $12.99/month.
+
+---
+
+## The Behavioral Layer
+
+The hardest part of investing in something new is not the complexity. It is the psychology.
+
+Loss aversion makes unfamiliar asset classes feel riskier than familiar ones — even when the data doesn't support that. FOMO makes headline-grabbing new products feel more urgent than they should. Overconfidence — from reading a few Bloomberg articles — creates the illusion of understanding that can be expensive.
+
+Seven interactive behavioral economics scenarios and a neuroscience Brain Map help you understand your own decision patterns before they cost you money. Grounded in Kahneman and Tversky's prospect theory and Thaler's nudge research.
+
+Knowing why you are tempted to buy something is as important as knowing what you are buying.
+
+---
+
+## Start Here
+
+1. Download Alternative Asset Literacy on iOS (coming 2026)
+2. Start with the free Investing Primer — foundational vocabulary, no subscription, no account
+3. Move to the Alternative Investing module — private equity, LP/GP structures, the J-curve, carried interest, capital calls
+4. Use the Universal Toolkit — due diligence checklist, fee breakdown, advisor evaluation questions
+
+By the time your advisor calls, you will know what they are talking about.
+
+---
+
+## Glossary Terms Relevant to Private Asset ETFs
+
+The app includes a 351-term searchable glossary. Terms directly relevant to private asset ETFs and the underlying structures include:
+
+Carried Interest · Capital Call · Committed Capital · Dry Powder · Fund of Funds · General Partner · General Partner Clawback · Hurdle Rate · Interval Fund · J-Curve · Limited Partner · Liquidity Risk · Lock-Up Period · Management Fee · Net Asset Value (NAV) · Performance Fee · Private Credit · Private Equity · Private Placement · Qualified Purchaser · Redemption Queue · Semi-Liquid Fund · Subscription Agreement · Vintage Year · Waterfall Structure · Accredited Investor · Direct Lending · Infrastructure Investing · Real Assets
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

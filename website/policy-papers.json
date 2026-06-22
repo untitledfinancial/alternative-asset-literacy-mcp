@@ -1,0 +1,391 @@
+{
+  "papers": [
+    {
+      "title": "Phase 1 Executive Summary: Project Hamilton",
+      "organization": "Federal Reserve Bank of Boston & MIT Digital Currency Initiative",
+      "year": 2022,
+      "category": "CBDC & Digital Currency",
+      "description": "Groundbreaking research exploring CBDC architecture. Demonstrates that a high-performance, resilient, and secure CBDC system is technically feasible. A foundational reference for digital currency infrastructure.",
+      "url": "https://www.bostonfed.org/publications/one-time-pubs/project-hamilton-phase-1-executive-summary.aspx",
+      "tags": ["CBDC", "digital currency", "settlement", "MIT", "Federal Reserve"]
+    },
+    {
+      "title": "The Rise of Digital Money",
+      "organization": "International Monetary Fund",
+      "year": 2019,
+      "category": "CBDC & Digital Currency",
+      "description": "Seminal IMF paper analyzing the emergence of digital money—e-money, stablecoins, and CBDC—and their implications for monetary policy, financial stability, and banking systems.",
+      "url": "https://www.imf.org/en/Publications/fintech-notes/Issues/2019/07/12/The-Rise-of-Digital-Money-47097",
+      "tags": ["digital money", "stablecoins", "monetary policy", "IMF"]
+    },
+    {
+      "title": "Stablecoins: Risks, Potential and Regulation",
+      "organization": "Bank for International Settlements",
+      "year": 2020,
+      "category": "Stablecoin Regulation",
+      "description": "BIS Working Paper examining the risks associated with global stablecoins, their potential benefits for cross-border payments, and the regulatory implications for financial stability.",
+      "url": "https://www.bis.org/publ/work905.htm",
+      "tags": ["stablecoins", "regulation", "financial stability", "BIS", "cross-border"]
+    },
+    {
+      "title": "Regulation, Supervision and Oversight of Global Stablecoin Arrangements",
+      "organization": "Financial Stability Board",
+      "year": 2020,
+      "category": "Stablecoin Regulation",
+      "description": "FSB final report setting out high-level recommendations for the regulation and oversight of global stablecoin arrangements, covering governance, legal certainty, and risk management.",
+      "url": "https://www.fsb.org/2020/10/regulation-supervision-and-oversight-of-global-stablecoin-arrangements/",
+      "tags": ["stablecoins", "FSB", "regulation", "oversight", "governance"]
+    },
+    {
+      "title": "CBDC: Central Bank Digital Currencies — Foundational Principles and Core Features",
+      "organization": "Bank for International Settlements",
+      "year": 2020,
+      "category": "CBDC & Digital Currency",
+      "description": "Report from BIS and seven central banks establishing foundational principles and core features for any CBDC, emphasizing coexistence with existing monetary systems.",
+      "url": "https://www.bis.org/publ/othp33.htm",
+      "tags": ["CBDC", "central bank", "BIS", "monetary policy", "digital currency"]
+    },
+    {
+      "title": "Digital Money Across Borders: Macro-Financial Implications",
+      "organization": "International Monetary Fund",
+      "year": 2020,
+      "category": "Cross-Border Payments",
+      "description": "Analyzes how the proliferation of digital money could alter cross-border capital flows, affect exchange rates, and reshape monetary sovereignty—especially in emerging economies.",
+      "url": "https://www.imf.org/en/Publications/WP/Issues/2020/11/13/Digital-Money-Across-Borders-Macro-Financial-Implications-49842",
+      "tags": ["digital money", "cross-border", "capital flows", "monetary policy", "IMF"]
+    },
+    {
+      "title": "Money and Payments: The U.S. Dollar in the Digital Age",
+      "organization": "Board of Governors of the Federal Reserve System",
+      "year": 2022,
+      "category": "CBDC & Digital Currency",
+      "description": "The Federal Reserve's discussion paper exploring the potential benefits and risks of a U.S. CBDC, focusing on preserving the dollar's role in digital payments.",
+      "url": "https://www.federalreserve.gov/publications/money-and-payments-the-us-dollar-in-the-digital-age.htm",
+      "tags": ["CBDC", "Federal Reserve", "US dollar", "digital payments"]
+    },
+    {
+      "title": "Ready, Steady, Go? — Third BIS Survey on Central Bank Digital Currency",
+      "organization": "Bank for International Settlements",
+      "year": 2021,
+      "category": "CBDC & Digital Currency",
+      "description": "Survey of 65 central banks on CBDC work. Finds that over 80% are engaged in CBDC research, with retail CBDC development accelerating across both advanced and emerging economies.",
+      "url": "https://www.bis.org/publ/bppdf/bispap114.htm",
+      "tags": ["CBDC", "survey", "central bank", "BIS", "retail CBDC"]
+    },
+    {
+      "title": "Improving Cross-Border Payments: Building Blocks of a Global Roadmap",
+      "organization": "Bank for International Settlements",
+      "year": 2020,
+      "category": "Cross-Border Payments",
+      "description": "Identifies the core frictions in cross-border payments—cost, speed, access, transparency—and outlines building blocks for improvement, directly informing modern payment system design.",
+      "url": "https://www.bis.org/cpmi/publ/d193.htm",
+      "tags": ["cross-border", "payments", "SWIFT", "frictions", "BIS", "settlement"]
+    },
+    {
+      "title": "G20 Roadmap for Enhancing Cross-Border Payments",
+      "organization": "Financial Stability Board / G20",
+      "year": 2020,
+      "category": "Cross-Border Payments",
+      "description": "The G20's three-stage roadmap to reduce costs and increase speed of cross-border payments, aiming for a world where payments are faster, cheaper, more transparent, and more inclusive.",
+      "url": "https://www.fsb.org/2020/10/enhancing-cross-border-payments-stage-3-report-to-the-g20/",
+      "tags": ["G20", "cross-border", "roadmap", "FSB", "payments"]
+    },
+    {
+      "title": "Central Bank Digital Currencies for Cross-Border Payments",
+      "organization": "Bank for International Settlements / Committee on Payments and Market Infrastructures",
+      "year": 2021,
+      "category": "Cross-Border Payments",
+      "description": "Report on how CBDC could improve cross-border payments by reducing frictions in the correspondent banking system, with analysis of multi-CBDC arrangements.",
+      "url": "https://www.bis.org/publ/bppdf/bispap116.htm",
+      "tags": ["CBDC", "cross-border", "correspondent banking", "BIS", "multi-CBDC"]
+    },
+    {
+      "title": "Recommendations of the Task Force on Climate-related Financial Disclosures",
+      "organization": "Task Force on Climate-related Financial Disclosures (TCFD)",
+      "year": 2017,
+      "category": "ESG & Sustainability",
+      "description": "Foundational framework for climate-related financial risk disclosure. Establishes governance, strategy, risk management, and metrics standards adopted globally—a core reference for ESG-linked investment analysis.",
+      "url": "https://www.fsb-tcfd.org/publications/final-recommendations-report/",
+      "tags": ["ESG", "climate", "disclosure", "TCFD", "risk management", "governance"]
+    },
+    {
+      "title": "Transforming Our World: The 2030 Agenda for Sustainable Development",
+      "organization": "United Nations",
+      "year": 2015,
+      "category": "ESG & Sustainability",
+      "description": "The UN's 17 Sustainable Development Goals (SDGs) — the universal framework for ending poverty, protecting the planet, and ensuring prosperity. The philosophical foundation for ESG-linked stablecoin redistribution.",
+      "url": "https://sustainabledevelopment.un.org/post2015/transformingourworld",
+      "tags": ["SDGs", "sustainability", "UN", "ESG", "2030 agenda"]
+    },
+    {
+      "title": "A Call for Action: Climate Change as a Source of Financial Risk",
+      "organization": "Network for Greening the Financial System (NGFS)",
+      "year": 2019,
+      "category": "ESG & Sustainability",
+      "description": "NGFS foundational report calling on central banks and supervisors to incorporate climate risk into financial stability monitoring — a key catalyst for ESG-weighted financial instruments.",
+      "url": "https://www.ngfs.net/en/first-comprehensive-report-call-action",
+      "tags": ["climate risk", "NGFS", "financial stability", "central banks", "ESG"]
+    },
+    {
+      "title": "Climate Change and Financial Stability",
+      "organization": "International Monetary Fund",
+      "year": 2020,
+      "category": "ESG & Sustainability",
+      "description": "IMF analysis of how climate change poses risks to macroeconomic and financial stability, including transition risks and physical risks, and the role of financial sector policy.",
+      "url": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2020/01/16/Climate-Change-and-Financial-Stability-49075",
+      "tags": ["climate", "financial stability", "IMF", "ESG", "macroeconomics"]
+    },
+    {
+      "title": "Mobilizing Private Finance for Nature",
+      "organization": "World Bank",
+      "year": 2020,
+      "category": "ESG & Sustainability",
+      "description": "World Bank report on scaling private investment in nature-based solutions, biodiversity, and natural capital — directly relevant to scaling private investment for environmental outcomes.",
+      "url": "https://www.worldbank.org/en/topic/environment/publication/mobilizing-private-finance-for-nature",
+      "tags": ["nature", "private finance", "World Bank", "ESG", "biodiversity", "redistribution"]
+    },
+    {
+      "title": "EU Taxonomy Regulation — Establishing a Framework to Facilitate Sustainable Investment",
+      "organization": "European Union",
+      "year": 2020,
+      "category": "ESG & Sustainability",
+      "description": "The EU's science-based classification system defining which economic activities are environmentally sustainable. A key reference for ESG scoring methodology and compliance frameworks.",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0852",
+      "tags": ["EU taxonomy", "sustainable finance", "ESG", "green", "regulation"]
+    },
+    {
+      "title": "IOSCO Sustainable Finance and the Role of Securities Regulators",
+      "organization": "International Organization of Securities Commissions",
+      "year": 2020,
+      "category": "ESG & Sustainability",
+      "description": "IOSCO's analysis of how securities regulators can support sustainable finance through ESG disclosure, green bonds, and product standards — applicable to tokenized ESG instruments.",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD652.pdf",
+      "tags": ["IOSCO", "ESG", "disclosure", "securities", "sustainable finance"]
+    },
+    {
+      "title": "Principles for Responsible Investment",
+      "organization": "United Nations Principles for Responsible Investment (UN PRI)",
+      "year": 2006,
+      "category": "ESG & Sustainability",
+      "description": "Six principles adopted by institutional investors committing to incorporate ESG factors into investment decision-making — the global standard for responsible capital allocation.",
+      "url": "https://www.unpri.org/about-us/what-are-the-principles-for-responsible-investment",
+      "tags": ["ESG", "responsible investment", "UN PRI", "institutional", "principles"]
+    },
+    {
+      "title": "Financial Stability Implications from FinTech",
+      "organization": "Financial Stability Board",
+      "year": 2017,
+      "category": "Fintech & Regulation",
+      "description": "FSB's first major analysis of fintech's implications for financial stability, covering technology innovation, regulatory perimeters, and the evolution of financial intermediation.",
+      "url": "https://www.fsb.org/2017/06/financial-stability-implications-from-fintech/",
+      "tags": ["fintech", "FSB", "financial stability", "regulation", "innovation"]
+    },
+    {
+      "title": "FinTech and Financial Services: Initial Considerations",
+      "organization": "International Monetary Fund",
+      "year": 2017,
+      "category": "Fintech & Regulation",
+      "description": "IMF staff discussion note examining fintech's potential to improve financial access, efficiency, and stability — and the associated risks requiring regulatory attention.",
+      "url": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2017/06/16/Fintech-and-Financial-Services-Initial-Considerations-44985",
+      "tags": ["fintech", "IMF", "financial inclusion", "regulation", "innovation"]
+    },
+    {
+      "title": "Markets in Crypto-Assets Regulation (MiCA)",
+      "organization": "European Union",
+      "year": 2023,
+      "category": "Fintech & Regulation",
+      "description": "The EU's comprehensive regulatory framework for crypto-assets, including stablecoins (asset-referenced tokens and e-money tokens). Sets reserve, redemption, and disclosure requirements.",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1114",
+      "tags": ["MiCA", "EU", "crypto regulation", "stablecoins", "ART", "EMT"]
+    },
+    {
+      "title": "OCC Interpretive Letter #1179 — Bank Cryptocurrency Activities",
+      "organization": "Office of the Comptroller of the Currency",
+      "year": 2021,
+      "category": "Fintech & Regulation",
+      "description": "OCC letter clarifying that national banks may engage in cryptocurrency activities including cryptocurrency custody and participation in blockchain networks — a key regulatory green light for institutional DeFi.",
+      "url": "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-actions/2021/int1179.pdf",
+      "tags": ["OCC", "regulation", "banks", "crypto", "custody", "US"]
+    },
+    {
+      "title": "Distributed Ledger Technology (DLT) and Blockchain",
+      "organization": "World Bank",
+      "year": 2018,
+      "category": "Fintech & Regulation",
+      "description": "World Bank primer on DLT and blockchain for financial sector applications, including payments, settlement, identity, and land registries — a reference for policymakers evaluating blockchain deployment.",
+      "url": "https://www.worldbank.org/en/topic/financialsector/brief/blockchain-dlt",
+      "tags": ["DLT", "blockchain", "World Bank", "settlement", "infrastructure"]
+    },
+    {
+      "title": "Prospect Theory: An Analysis of Decision under Risk",
+      "organization": "Daniel Kahneman & Amos Tversky",
+      "year": 1979,
+      "category": "Behavioral Economics",
+      "description": "Nobel Prize-winning paper establishing prospect theory — the foundation of behavioral economics. Shows that people evaluate outcomes relative to reference points and are loss-averse, critical for understanding stablecoin adoption resistance.",
+      "url": "https://www.jstor.org/stable/1914185",
+      "tags": ["behavioral economics", "prospect theory", "loss aversion", "Kahneman", "Tversky"]
+    },
+    {
+      "title": "World Development Report 2015: Mind, Society, and Behavior",
+      "organization": "World Bank",
+      "year": 2015,
+      "category": "Behavioral Economics",
+      "description": "World Bank's comprehensive report applying behavioral science to development policy. Demonstrates how cognitive biases, social norms, and mental models shape economic decisions — foundational for understanding investor behavior.",
+      "url": "https://www.worldbank.org/en/publication/wdr2015",
+      "tags": ["behavioral economics", "World Bank", "cognitive bias", "development", "nudge"]
+    },
+    {
+      "title": "Behavioural Economics: Implications for Regulatory Strategy",
+      "organization": "International Monetary Fund",
+      "year": 2020,
+      "category": "Behavioral Economics",
+      "description": "IMF technical note examining how behavioral insights can improve financial regulation, supervision, and policy design — particularly relevant to ESG compliance and behavioral investment strategies.",
+      "url": "https://www.imf.org/en/Publications/TNM/Issues/2020/11/30/Behavioural-Economics-Implications-for-Regulatory-Strategy-49956",
+      "tags": ["behavioral economics", "IMF", "regulation", "nudge", "compliance"]
+    },
+    {
+      "title": "Nudge: Improving Decisions About Health, Wealth, and Happiness",
+      "organization": "Richard Thaler & Cass Sunstein",
+      "year": 2008,
+      "category": "Behavioral Economics",
+      "description": "Seminal work on libertarian paternalism and choice architecture — how default options and framing can guide better decisions without restricting freedom. Core reference for behavioral finance and incentive design.",
+      "url": "https://www.penguinrandomhouse.com/books/304612/nudge-by-richard-h-thaler-and-cass-r-sunstein/",
+      "tags": ["nudge", "behavioral economics", "choice architecture", "Thaler", "defaults"]
+    },
+    {
+      "title": "Gender-Smart Investment in MSME Finance",
+      "organization": "International Finance Corporation",
+      "year": 2017,
+      "category": "Gender Lens Investing",
+      "description": "IFC analysis of the business case for gender-smart financial product design, showing that women-owned businesses are creditworthy, underserved, and represent a $1.7 trillion financing gap.",
+      "url": "https://www.ifc.org/en/insights-reports/2017/gender-smart-investment-in-msme-finance",
+      "tags": ["gender lens", "IFC", "MSME", "women", "financial inclusion"]
+    },
+    {
+      "title": "Just Good Investing: Why Gender Lens Investing Makes Financial Sense",
+      "organization": "Calvert Impact Capital",
+      "year": 2018,
+      "category": "Gender Lens Investing",
+      "description": "Research demonstrating the financial performance case for gender lens investing — companies with gender-diverse leadership show higher returns, lower risk, and better ESG outcomes.",
+      "url": "https://calvertimpact.org/gender-lens-investing",
+      "tags": ["gender lens", "investing", "returns", "diversity", "ESG", "impact"]
+    },
+    {
+      "title": "Women's Financial Inclusion — Policy Research Working Paper",
+      "organization": "World Bank",
+      "year": 2018,
+      "category": "Gender Lens Investing",
+      "description": "World Bank research on the barriers to women's financial inclusion globally, including legal discrimination, social norms, and product design, and policy interventions to close the gap.",
+      "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/618351468001808717/womens-financial-inclusion",
+      "tags": ["gender lens", "financial inclusion", "World Bank", "women", "access to finance"]
+    },
+    {
+      "title": "Leaving No One Behind: A Call to Action for Gender Equality",
+      "organization": "UN Women",
+      "year": 2019,
+      "category": "Gender Lens Investing",
+      "description": "UN Women's policy framework for accelerating progress toward gender equality as central to achieving the 2030 SDGs, with specific focus on economic empowerment and financial systems.",
+      "url": "https://www.unwomen.org/en/news/in-focus/csw63/apply-leave-no-one-behind",
+      "tags": ["gender equality", "UN Women", "SDGs", "economic empowerment", "financial systems"]
+    },
+    {
+      "title": "Greening the Financial System: The New Frontier",
+      "organization": "Network for Greening the Financial System (NGFS)",
+      "year": 2021,
+      "category": "ESG & Sustainability",
+      "description": "NGFS progress report outlining the expansion of sustainable finance tools — including green bonds, climate stress testing, and biodiversity risk — essential context for ESG oracle design.",
+      "url": "https://www.ngfs.net/en/publications/ngfs-progress-report-2021",
+      "tags": ["green finance", "NGFS", "climate", "biodiversity", "ESG", "central bank"]
+    },
+    {
+      "title": "Fintech: Financial Inclusion or Exclusion?",
+      "organization": "International Monetary Fund",
+      "year": 2020,
+      "category": "Fintech & Regulation",
+      "description": "IMF working paper examining whether fintech broadens financial access or creates new divides, with implications for digital payment design and regulatory inclusivity principles.",
+      "url": "https://www.imf.org/en/Publications/WP/Issues/2020/07/10/Fintech-Financial-Inclusion-or-Exclusion-49559",
+      "tags": ["fintech", "financial inclusion", "IMF", "access", "digital payments"]
+    },
+    {
+      "title": "Remittance Prices Worldwide — Quarterly Data",
+      "organization": "World Bank",
+      "year": 2024,
+      "category": "Cross-Border Payments",
+      "description": "World Bank's ongoing monitoring of remittance costs globally. Average cost remains ~6.3% — far above the SDG target of 3%. Foundational data for understanding remittance market inefficiencies.",
+      "url": "https://remittanceprices.worldbank.org/en",
+      "tags": ["remittances", "cross-border", "World Bank", "cost reduction", "SDG"]
+    },
+    {
+      "title": "The Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience",
+      "organization": "World Bank",
+      "year": 2022,
+      "category": "Fintech & Regulation",
+      "description": "Comprehensive survey of financial inclusion across 123 economies. Shows digital payment adoption accelerated during COVID-19, with 1.4 billion adults still unbanked — the market opportunity for programmable money.",
+      "url": "https://www.worldbank.org/en/publication/globalfindex",
+      "tags": ["financial inclusion", "World Bank", "unbanked", "digital payments", "findex"]
+    },
+    {
+      "title": "Stablecoins and the Future of Money",
+      "organization": "Harvard Business Review",
+      "year": 2021,
+      "category": "Stablecoin Regulation",
+      "description": "Analysis of stablecoins as programmable money primitives — exploring their role in payments, DeFi, and enterprise treasury, with a framework for evaluating design trade-offs.",
+      "url": "https://hbr.org/2021/08/stablecoins-and-the-future-of-money",
+      "tags": ["stablecoins", "programmable money", "HBR", "treasury", "DeFi"]
+    },
+    {
+      "title": "Crypto-Assets: Implications for Financial Stability, Monetary Policy, and Payments and Market Infrastructures",
+      "organization": "European Central Bank",
+      "year": 2019,
+      "category": "Stablecoin Regulation",
+      "description": "ECB Occasional Paper analyzing crypto-assets across three dimensions: financial stability, monetary policy effectiveness, and market infrastructure — the EU regulatory foundation for digital asset policy.",
+      "url": "https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op223~3ce14e986c.en.pdf",
+      "tags": ["ECB", "crypto", "financial stability", "monetary policy", "regulation"]
+    },
+    {
+      "title": "Decentralized Finance (DeFi): Risks, Regulation, and the Road Ahead",
+      "organization": "Financial Stability Board",
+      "year": 2023,
+      "category": "Fintech & Regulation",
+      "description": "FSB's first comprehensive assessment of DeFi, identifying interconnections with traditional finance, structural vulnerabilities, and regulatory gaps — directly relevant to understanding DeFi's regulatory landscape.",
+      "url": "https://www.fsb.org/2023/02/decentralised-finance-dfi-risks-regulation-and-the-road-ahead/",
+      "tags": ["DeFi", "FSB", "regulation", "financial stability", "on-chain", "risks"]
+    },
+    {
+      "title": "Tokenisation in the Context of Money and Other Assets: Concepts and Implications for Central Banks",
+      "organization": "Bank for International Settlements",
+      "year": 2023,
+      "category": "CBDC & Digital Currency",
+      "description": "BIS analysis of tokenisation as a transformative technology for financial markets, covering programmable money, unified ledger concepts, and the implications for monetary policy transmission.",
+      "url": "https://www.bis.org/publ/othp73.htm",
+      "tags": ["tokenisation", "BIS", "programmable money", "unified ledger", "CBDC"]
+    },
+    {
+      "title": "Basel III: Prudential Treatment of Cryptoasset Exposures",
+      "organization": "Basel Committee on Banking Supervision",
+      "year": 2022,
+      "category": "Stablecoin Regulation",
+      "description": "Basel Committee's final standard for the prudential treatment of cryptoasset exposures at banks, including capital requirements for stablecoins — establishing the institutional risk framework.",
+      "url": "https://www.bis.org/bcbs/publ/d545.htm",
+      "tags": ["Basel III", "BCBS", "cryptoassets", "capital requirements", "banks", "regulation"]
+    },
+    {
+      "title": "Treasury Management and Cash Optimization in the Digital Age",
+      "organization": "Association for Financial Professionals",
+      "year": 2022,
+      "category": "Treasury Management",
+      "description": "AFP's research on how treasury departments are adopting digital tools — automated cash positioning, real-time payments, and blockchain settlement — to improve working capital efficiency.",
+      "url": "https://www.afponline.org/publications-data-tools/reports/survey-research-economic-data/details/2022-afp-digital-payments-survey",
+      "tags": ["treasury", "digital payments", "AFP", "cash management", "working capital"]
+    },
+    {
+      "title": "Instant Payments, Cross-Border — Opportunities and Challenges",
+      "organization": "European Central Bank",
+      "year": 2022,
+      "category": "Cross-Border Payments",
+      "description": "ECB analysis of the opportunities and challenges in extending instant payments to the cross-border context, including interoperability, FX conversion, and compliance requirements.",
+      "url": "https://www.ecb.europa.eu/pub/pubbydate/2022/html/index.en.html",
+      "tags": ["instant payments", "ECB", "cross-border", "interoperability", "FX"]
+    }
+  ]
+}

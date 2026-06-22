@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | Alternative Asset Literacy</title>
+    <meta name="description" content="Support information for the Alternative Asset Literacy app. Find answers to common questions about subscriptions, content, and your account.">
+    <meta name="author" content="Victoria Lee Case, Founder — Untitled_ LuxPerpetua Technologies, Inc.">
+    <meta name="copyright" content="© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.">
+    <meta property="og:title" content="Support | Alternative Asset Literacy">
+    <meta property="og:description" content="Support and help for the Alternative Asset Literacy iOS app.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alternativeassetliteracy.com/support">
+    <meta name="theme-color" content="#3D22D3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://alternativeassetliteracy.com/support">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Support-specific styles */
+        .support-hero {
+            padding: 120px 24px 64px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .support-hero .editorial-number {
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .support-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        .support-hero p {
+            font-size: 1.125rem;
+            opacity: 0.75;
+            max-width: 560px;
+            line-height: 1.7;
+        }
+
+        .support-contact-card {
+            background: var(--card-bg, rgba(255,255,255,0.04));
+            border: 1px solid var(--border, rgba(255,255,255,0.1));
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto 64px;
+        }
+
+        .support-contact-card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .support-contact-card p {
+            opacity: 0.75;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .support-contact-card a.cta-link {
+            display: inline-block;
+            background: var(--accent, #3D22D3);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            transition: opacity 0.2s;
+        }
+
+        .support-contact-card a.cta-link:hover {
+            opacity: 0.85;
+        }
+
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .faq-section .section-header {
+            margin-bottom: 40px;
+        }
+
+        .faq-group {
+            margin-bottom: 48px;
+        }
+
+        .faq-group-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            opacity: 0.5;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border, rgba(255,255,255,0.1));
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border, rgba(255,255,255,0.07));
+            padding: 24px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .faq-item p {
+            font-size: 0.9375rem;
+            opacity: 0.72;
+            line-height: 1.75;
+        }
+
+        .faq-item p a {
+            color: var(--accent, #3D22D3);
+            text-decoration: underline;
+        }
+
+        .support-links-row {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto 80px;
+            padding: 0 24px;
+        }
+
+        .support-link-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border: 1px solid var(--border, rgba(255,255,255,0.15));
+            border-radius: 100px;
+            font-size: 0.875rem;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.2s, border-color 0.2s;
+        }
+
+        .support-link-pill:hover {
+            opacity: 1;
+            border-color: var(--accent, #3D22D3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <a href="/" class="navbar-brand">Alternative Asset Literacy</a>
+        <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="policy-papers.html">Research</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="/">Home</a>
+        <a href="/#features">Features</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="policy-papers.html">Research</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <div class="support-hero">
+            <span class="editorial-number">Support</span>
+            <h1>How can we help?</h1>
+            <p>Find answers to common questions about the Alternative Asset Literacy app, your subscription, and your content below. For anything else, reach out directly.</p>
+        </div>
+
+        <!-- ========== CONTACT CARD ========== -->
+        <div class="support-contact-card" style="padding: 24px 40px;">
+            <h2>Contact Support</h2>
+            <p>For questions not covered here — billing issues, technical problems, or feedback — email us directly. We respond within 1–2 business days.</p>
+            <a href="mailto:support@alternativeassetliteracy.com" class="cta-link">support@alternativeassetliteracy.com</a>
+        </div>
+
+        <!-- ========== FAQ ========== -->
+        <div class="faq-section">
+
+            <div class="section-header fade-in">
+                <span class="editorial-number">02</span>
+                <span class="line"></span>
+                <h2>FAQ</h2>
+            </div>
+
+            <!-- Subscription -->
+            <div class="faq-group">
+                <p class="faq-group-title">Subscription &amp; Access</p>
+
+                <div class="faq-item">
+                    <h3>What is included in the free version?</h3>
+                    <p>Module 1 — the Investing Primer — is fully free with no subscription required. It includes all reading content, quizzes, and reflections for that module. No account creation is needed to access it.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What does Premium unlock?</h3>
+                    <p>Premium unlocks all 8 remaining modules (Alternative Investing, Behavioral Economics, Gender Lens Investing, DeFi, Art Investing, ESG &amp; Climate, DeFi Investing, and the Kahlo &amp; Basquiat module), along with the full Toolkit — advisor evaluation tools, due diligence checklists, behavioral scenario exercises, the Brain Map, and the private reflection journal.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What are the subscription options?</h3>
+                    <p>Premium is available as a monthly subscription ($12.99/month) or an annual subscription ($69.99/year). Both are managed through Apple's App Store and renew automatically until cancelled.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I cancel my subscription?</h3>
+                    <p>Subscriptions are managed entirely through Apple. To cancel, open the Settings app on your iPhone, tap your Apple ID at the top, go to Subscriptions, and select Alternative Asset Literacy. You can cancel or change your plan from there. Cancellation takes effect at the end of the current billing period.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I restore a purchase I already made?</h3>
+                    <p>Open the app, go to Settings (top right of the home screen), and tap "Restore Purchases" under the Subscription section. This syncs your purchase history with Apple and restores access.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is my subscription tied to my device?</h3>
+                    <p>Your subscription is tied to your Apple ID, not a specific device. If you sign in with the same Apple ID on another device and restore purchases, your access will be reinstated.</p>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="faq-group">
+                <p class="faq-group-title">Content &amp; Learning</p>
+
+                <div class="faq-item">
+                    <h3>How many modules are in the app?</h3>
+                    <p>The app contains 9 learning modules, each 45–90 minutes of content: Women &amp; Alternative Assets (free), Alternative Investing, Behavioral Economics, Gender Lens Investing, DeFi, Art Investing, ESG &amp; Climate Finance, DeFi Investing Strategies, and Kahlo &amp; Basquiat.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Where does the content come from?</h3>
+                    <p>All module content is grounded in 186 footnoted sources — peer-reviewed journals, IMF working papers, World Bank reports, Federal Reserve studies, and institutional analyses from the BIS and OECD. Citations are searchable within the app's Research section.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Does the app work offline?</h3>
+                    <p>Yes. Core module content, the 351-term glossary, and all footnote data are available offline using cached and bundled content. Some features — such as syncing live Notion databases — require an internet connection.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is the Toolkit?</h3>
+                    <p>The Toolkit is a set of practical preparation tools. It includes scored advisor evaluation question sets (DeFi, ESG, and alternatives), a universal due diligence checklist, risk assessment frameworks, position sizing guidance, tax considerations by asset class, fee breakdowns, 10 behavioral self-reflection categories, 7 interactive bias scenarios, a neuroscience Brain Map, and a private reflection journal. All Toolkit features require a Premium subscription.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Are the Apple Books links affiliated?</h3>
+                    <p>Yes. Select reading list and footnote links connect to Apple Books using an affiliate token through Apple's Services Performance Partners Program. If you make a qualifying purchase through one of these links, we may receive a small commission at no additional cost to you. This is disclosed in the app's Terms of Use.</p>
+                </div>
+            </div>
+
+            <!-- Data & Privacy -->
+            <div class="faq-group">
+                <p class="faq-group-title">Data &amp; Privacy</p>
+
+                <div class="faq-item">
+                    <h3>Does the app require an account?</h3>
+                    <p>No account is required. The onboarding flow asks for your name and an optional email address, both stored locally on your device only. No sign-in credentials are needed at any point.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What data does the app collect?</h3>
+                    <p>The app does not use third-party analytics SDKs, advertising networks, or social features. There is no user-generated public content. Progress, reflections, and advisor notes are stored locally on your device using encrypted storage. See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I delete my data?</h3>
+                    <p>You can reset all locally stored progress, reflections, and quiz scores from within the app. Go to Settings and tap "Reset All Progress." This action is permanent. Deleting the app from your device will also remove all locally stored data.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ========== LINKS ROW ========== -->
+        <div class="support-links-row">
+            <a href="terms.html" class="support-link-pill">Terms of Use</a>
+            <a href="privacy.html" class="support-link-pill">Privacy Policy</a>
+            <a href="contact.html" class="support-link-pill">Contact</a>
+            <a href="mailto:support@alternativeassetliteracy.com" class="support-link-pill">support@alternativeassetliteracy.com</a>
+        </div>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-icon">
+                <img src="assets/images/logo.webp" alt="Alternative Asset Literacy logo">
+            </div>
+            <div>
+                <p class="footer-brand">Alternative Asset Literacy</p>
+                <p class="footer-tagline">Intelligence meets Investing</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="policy-papers.html">Research</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://untitledfinancial.com" target="_blank" rel="noopener">Sister Site: Untitled_(sustainability) ↗</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Founded and built by Victoria Lee Case — a <a href="https://en.wikipedia.org/wiki/Matilda_effect" target="_blank" rel="noopener">woman-led</a> initiative to close the financial literacy gap and empower the next generation of investors.</p>
+            <p>&copy; 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.</p>
+            <p>IP Patents Pending. For educational purposes only. Not financial advice.</p>
+            <p>All artwork and images featured in the application are in the public domain and are not part of the curriculum.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

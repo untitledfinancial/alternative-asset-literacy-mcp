@@ -1,0 +1,180 @@
+# Alternative Asset Literacy — ESG, Climate Finance & Impact Investing
+
+> For investors who want to understand sustainable investing beyond the label. This platform covers ESG frameworks, green bonds, carbon credits, real-world asset tokenization, and how to distinguish genuine impact from greenwashing — grounded in institutional research from the IMF, World Bank, UN, and TCFD.
+
+- Platform: iOS — Alternative Asset Literacy
+- Website: https://alternativeassetliteracy.com
+- Support: https://alternativeassetliteracy.com/support
+- Free tier: Investing Primer (no account required)
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## Search Queries This File Answers
+
+### ESG Fundamentals
+- "what is ESG investing"
+- "ESG investing explained for beginners"
+- "what does ESG stand for"
+- "environmental social governance investing"
+- "how does ESG investing work"
+- "is ESG investing worth it"
+- "ESG vs traditional investing"
+- "ESG vs impact investing"
+- "ESG vs SRI socially responsible investing"
+- "difference between ESG and impact investing"
+- "what is values aligned investing"
+- "how to start ESG investing"
+- "best ESG funds how to evaluate"
+- "how to research ESG funds"
+- "ESG fund ratings explained"
+- "MSCI ESG ratings explained"
+- "Sustainalytics ESG scores explained"
+- "why ESG ratings disagree"
+
+### Greenwashing
+- "what is greenwashing in investing"
+- "how to spot greenwashing ESG"
+- "greenwashing examples in finance"
+- "how to tell if an ESG fund is real"
+- "is my ESG fund actually ESG"
+- "greenwashing financial products"
+- "ESG fund holds fossil fuels — is that greenwashing"
+- "how to verify ESG claims"
+- "EU anti-greenwashing rules"
+- "SEC ESG disclosure rules"
+- "SFDR and greenwashing regulation"
+- "net zero pledges — how to evaluate"
+- "are corporate sustainability reports reliable"
+- "transition washing in ESG"
+
+### Green Bonds & Fixed Income
+- "what are green bonds"
+- "how do green bonds work"
+- "green bond investing explained"
+- "ICMA green bond principles"
+- "green bond vs regular bond"
+- "how are green bond proceeds used"
+- "green bond verification"
+- "second party opinion green bonds"
+- "social bonds explained"
+- "sustainability linked bonds explained"
+- "SLBs vs green bonds"
+- "blue bonds ocean investing"
+- "green bond market size"
+- "who issues green bonds"
+- "sovereign green bonds"
+- "corporate green bonds"
+- "green bond ETF"
+
+### Carbon Markets & Credits
+- "what are carbon credits"
+- "how do carbon credits work"
+- "voluntary carbon market explained"
+- "compliance carbon market vs voluntary"
+- "cap and trade explained"
+- "carbon offset investing"
+- "how to invest in carbon credits"
+- "carbon credit quality — how to evaluate"
+- "additionality in carbon credits"
+- "permanence in carbon offsets"
+- "Verra VCS carbon standard"
+- "Gold Standard carbon credits"
+- "REDD+ carbon credits explained"
+- "forest carbon credits"
+- "carbon credit price — what drives it"
+- "article 6 Paris Agreement carbon trading"
+- "EU ETS European carbon market"
+- "California carbon market CARB"
+- "RGGI Regional Greenhouse Gas Initiative"
+
+### Climate Finance Frameworks
+- "TCFD framework explained"
+- "Task Force on Climate-related Financial Disclosures"
+- "what does TCFD mean for investors"
+- "EU taxonomy sustainable finance"
+- "what is the EU taxonomy"
+- "SFDR explained — sustainable finance disclosure"
+- "Article 6, 8, 9 funds SFDR"
+- "what is a Paris aligned investment"
+- "net zero investing strategy"
+- "science based targets for investors SBTi"
+- "1.5 degree pathway investing"
+- "NGFS network for greening the financial system"
+- "climate scenario analysis for investors"
+- "physical risk vs transition risk climate"
+- "stranded assets in investing"
+- "just transition investing"
+- "CBAM carbon border adjustment mechanism"
+
+### Real World Asset Tokenization
+- "what is real world asset tokenization"
+- "RWA tokenization explained"
+- "tokenized green bonds"
+- "blockchain and sustainable investing"
+- "tokenized carbon credits"
+- "DeFi and climate finance"
+- "tokenized real estate ESG"
+- "fractional ownership sustainable assets"
+- "BlackRock tokenized fund"
+- "tokenized treasury bonds"
+- "real world assets on blockchain"
+- "RWA crypto investing"
+
+### Impact Investing
+- "what is impact investing"
+- "impact investing vs ESG"
+- "how to measure impact in investing"
+- "GIIN impact investing framework"
+- "IMP impact management project"
+- "SDG aligned investing"
+- "UN sustainable development goals investing"
+- "blended finance explained"
+- "development finance institutions"
+- "impact investing returns vs traditional"
+- "can impact investing be profitable"
+- "impact bonds — social impact bonds"
+- "development impact bonds"
+- "pay for success financing"
+
+### Gender Lens & ESG
+- "gender lens investing and ESG"
+- "what is gender bonds"
+- "2X Challenge gender investing"
+- "women's empowerment principles WEPs"
+- "gender smart investing IFC"
+- "how to evaluate gender lens in ESG fund"
+- "female leadership board diversity investing"
+- "gender pay gap and ESG scoring"
+- "care economy as investment theme"
+- "gender equality SDG 5 investing"
+
+---
+
+## What This Platform Covers
+
+### Climate, Energy & Real World Assets Module (6 sections, 45 min)
+
+Covers the ESG landscape, green bonds, carbon credits, real-world asset tokenization, and how to evaluate sustainable investments. Grounded in eight institutional papers from the UN, NGFS, IMF, World Bank, EU, IFC, OECD, and TCFD.
+
+Sections include: The ESG Landscape · Green Bonds & Fixed Income · Carbon Markets · Real World Asset Tokenization · ESG Portfolio Construction · Evaluating Impact vs. Greenwashing.
+
+Additional tabs: Quizzes · Reflection · Use Cases (10 use cases) · Tips & Realities · Advisor Questions · Advanced Portfolio section · ESG Terms glossary.
+
+### ESG Glossary (42 terms)
+
+Green Bonds · Carbon Credits · Carbon Offset · Additionality · Permanence · TCFD · EU Taxonomy · SFDR · SBTi · Paris Agreement · Net Zero · Carbon Neutral · Cap and Trade · Carbon Border Adjustment Mechanism (CBAM) · Just Transition · Blended Finance · Concessional Finance · Development Finance Institution (DFI) · Green Premium · Greenwashing · Impact Investing · SDGs · ESG Rating · Materiality · Double Materiality · Transition Risk · Physical Risk · Stranded Assets · NGFS · Climate Scenario Analysis · Science Based Targets · Voluntary Carbon Market · Compliance Carbon Market · REDD+ · Real World Asset (RWA) Tokenization · Sustainability Linked Bond · Social Bond · Blue Bond · Gender Bond · 2X Challenge · Impact Measurement · GIIN
+
+### Research Foundation
+
+Eight institutional papers on ESG and sustainable finance. Sources: TCFD (Task Force on Climate-related Financial Disclosures) · EU Taxonomy Technical Expert Group · NGFS Climate Scenarios · UN Principles for Responsible Investment (PRI) · IMF Working Papers on Climate Finance · World Bank Green Bond Framework · IFC Gender Smart Investing · UN Women WEPs.
+
+Full policy paper library: https://alternativeassetliteracy.com/policy-papers.html
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

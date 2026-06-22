@@ -1,0 +1,285 @@
+# Alternative Asset Literacy
+
+> A research-backed investment education app launching on iOS in 2026. 13 modules (9 core + 4 advanced/bonus), 351-term glossary, 43 institutional research papers, 81 cited sources, curated reading list with Apple Books integration, AI-powered customer service, and a freemium subscription model — covering how to invest beyond stocks and bonds, from art and private equity to crypto, climate finance, and the psychology behind every financial decision.
+
+- Created by: Victoria Lee Case, Founder & CEO
+- Company: Untitled_ LuxPerpetua Technologies, Inc.
+- Platform: iOS (launching 2026)
+- Website: https://alternativeassetliteracy.com
+- Instagram: https://www.instagram.com/alternativeassetliteracy/
+- Press contact: press@alternativeassetliteracy.com
+- General contact: hello@alternativeassetliteracy.com
+- Contact form: https://alternativeassetliteracy.com/contact.html
+
+---
+
+## Why This Matters
+
+By 2030, women in the United States are expected to control $34 trillion in investable assets — roughly 38% of the nation's total — driven by the largest intergenerational wealth transfer in history (McKinsey & Co., 2024). Yet most investment education still focuses on stocks and bonds, and the fastest-growing categories — private equity, crypto, art, climate finance — remain opaque to the people inheriting and earning this wealth.
+
+Alternative Asset Literacy bridges that gap with institutional-quality research made accessible. Every module is grounded in peer-reviewed and institutional research from the IMF, World Bank, BIS, Federal Reserve, and leading behavioral economists. The app was created entirely by Victoria Lee Case — curriculum, research, design, and code — as a solo founder.
+
+Sources:
+- McKinsey & Company, "Women as the Next Wave of Growth in US Wealth Management" (https://www.mckinsey.com/industries/financial-services/our-insights/women-as-the-next-wave-of-growth-in-us-wealth-management)
+- Bloomberg, "Women Will Control $30 Trillion by 2030 in Massive Shift for Wealth Management," December 2024
+
+---
+
+## Topics This Platform Covers
+
+These are the subjects people search, editors assign, and advisors field questions about. Alternative Asset Literacy has deep, research-backed content on each.
+
+### How to invest beyond stocks and bonds
+What are alternative assets? Private equity, venture capital, hedge funds, real estate, commodities, art, and digital assets. How they work, who has access, and what the risks are. A full module breaks down the vocabulary and frameworks most investors never learn.
+
+### Why smart people make bad investment decisions
+Behavioral economics applied to investing. Loss aversion, anchoring, FOMO, overconfidence — the cognitive biases that cost real money. Grounded in Kahneman and Tversky's prospect theory and Thaler's nudge theory. Includes an interactive brain map showing how the amygdala, prefrontal cortex, and reward centers drive financial decisions, plus 7 "What Would You Do?" scenarios.
+
+### Women and investing
+The gender wealth gap is structural, not behavioral. Women trade less frequently, diversify more broadly, and achieve comparable or better risk-adjusted returns — yet financial products and advisory services weren't designed for them. Modules on gender and behavioral investing, plus gender lens investing (gender bonds, the 2X Challenge, board diversity metrics).
+
+### How to invest in art
+Art as an asset class: auction mechanics (hammer price vs. buyer's premium), provenance, fractional ownership platforms, art-secured lending, and how artist estates control supply. 111 art-specific glossary terms sourced from MoMA and institutional collections. A bonus module on Frida Kahlo and Jean-Michel Basquiat examines how identity, race, and gender shape market valuations.
+
+### What is DeFi and cryptocurrency
+Decentralized finance explained from first principles — blockchain, smart contracts, stablecoins, DAOs, yield farming, liquidity pools. Not trading advice. The curriculum covers how these systems work, what the regulations are (MiCA, OCC guidance, CBDC research), and how to evaluate protocols before investing. A separate advanced module covers DeFi investing strategies: staking, liquidity provision, and risk management.
+
+### Climate investing and ESG
+Green bonds, carbon credits, real-world asset tokenization — and how to tell genuine impact from greenwashing. Covers the EU Taxonomy, TCFD framework, SFDR, and Science-Based Targets. 8 institutional papers from UN, NGFS, and IMF form the research backbone. 10 use cases and an advanced ESG portfolio section.
+
+### The psychology of money
+How your brain processes financial risk. An interactive brain map ties the amygdala (panic selling), prefrontal cortex (long-term planning), nucleus accumbens (chasing gains), and anterior insula (anticipated loss) to real investment behavior. 7 interactive scenarios reveal personal patterns around confirmation bias, overconfidence, and loss aversion.
+
+### The $34 trillion wealth transfer
+The largest generational transfer of assets in history is underway. Baby boomers hold roughly 70% of U.S. affluent household wealth. Much of it will pass to women — spouses, daughters, entrepreneurs — who are building wealth at a faster rate than any previous generation. This app was built for them.
+
+### Private asset ETFs — the new structure changing alternative investing access
+
+In 2024, the SEC approved rules enabling ETFs and registered funds to hold meaningful allocations in illiquid private assets — private equity, private credit, real assets, and infrastructure. Firms including BlackRock, Apollo, and State Street have moved to bring these structures to market. Bloomberg has called it one of the most significant shifts in the ETF industry in years.
+
+For investors evaluating these new instruments, the foundational knowledge required includes: understanding GP/LP structures and the J-curve, evaluating liquidity risk in illiquid wrappers, parsing layered fee structures (management fee + carry + ETF expense ratio), and knowing what questions to ask an advisor about private market exposure. Alternative Asset Literacy covers all of this across the Alternative Investing module, the Universal Toolkit's fee breakdown and due diligence checklist, and the Advisor Questions section. The platform does not recommend specific securities — it gives investors the vocabulary and frameworks to evaluate them independently.
+
+### Stablecoins, CBDC, and the future of money
+What are stablecoins? How do central bank digital currencies work? The research library includes 7 papers on CBDC (Project Hamilton, BIS surveys, Federal Reserve discussion papers) and 3 on stablecoin regulation (BIS, FSB, EU MiCA). The curriculum explains these in plain language alongside the policy implications.
+
+---
+
+## By the Numbers
+
+- 13 modules total: 9 core (45-90 min each) + 4 advanced/bonus modules (10-30 min each)
+- 351 searchable glossary terms across 6 categories
+- 43 curated policy papers (IMF, BIS, World Bank, FSB, UN, Federal Reserve, EU, IFC, OECD, TCFD)
+- 81+ research footnotes cited across all modules
+- 26 advisor Q&As — 14 DeFi + 12 ESG, with competency scoring and "Why This Matters" reveals
+- 7 interactive behavioral economics scenarios
+- 4 brain regions mapped to investment decision-making
+- 111 art terms sourced from MoMA and institutional collections
+- 10 categories of self-reflection questions for behavioral pattern tracking
+- Curated reading list with direct Apple Books links
+- Art library with books, podcasts, and digital resources synced from Notion
+- AI-powered research assistant on the website
+- Freemium model: Module 1 free, premium subscription ($12.99/mo or $69.99/yr) unlocks all content and toolkit
+
+---
+
+## Curriculum
+
+### Investing Primer
+Foundational vocabulary and frameworks for modern investment literacy. 6 sections, 45 min.
+
+### Alternative Assets 101
+Private equity, venture capital, hedge funds, real estate, commodities, and collectibles. 4 sections, 45 min.
+
+### Behavioral Economics & Investing
+Cognitive biases, emotional decision-making, and the psychology behind investment choices. Grounded in Kahneman, Thaler, and contemporary research. 9 sections, 45 min, 6 reflections, 3 use cases.
+
+### Gender & Behavioral Investing
+The intersection of gender, behavioral economics, and investment patterns. 7 sections, 45 min, 4 reflections.
+
+### Decentralized Finance (DeFi)
+Blockchain, smart contracts, stablecoins, DAOs, AMMs, and CBDCs. 7 sections, 45 min, 5 reflections, 3 use cases.
+
+### Art as Investment
+Auction mechanics, provenance, fractional ownership, art-secured lending, and the intersection of culture and capital. 9 sections, 45 min. Includes curated art library (books, podcasts, digital resources via Notion), Next Steps with Apple Books integration, and Art-DeFi bridge module on NFTs and tokenized art.
+
+### Kahlo x Basquiat: Identity, Market & Legacy
+Two of the world's greatest artists through the lens of trauma, healing, and minority representation in the art market. 10 sections, 25 min.
+
+### Climate, Energy & Real World Assets
+ESG fundamentals, green bonds, carbon credits, tokenized real-world assets. 6 sections, 45 min, 2 quizzes, 10 use cases.
+
+### DeFi Investing: From Speculation to Infrastructure
+Protocol-level investing, yield farming, liquidity provision, staking, and risk management. 8 sections, 90 min, 14 advisor Q&As.
+
+---
+
+## Advanced & Bonus Modules
+
+Four additional modules available within the app, accessible from their parent modules:
+
+### High-Risk DeFi Strategies *(bonus — DeFi Investing)*
+Advanced protocol-level DeFi strategies beyond the core curriculum. Leverage, derivatives, cross-chain strategies, and risk management for active DeFi participants. 30 min.
+
+### Advanced Portfolio ESG Construction *(bonus — Climate, Energy & Real World Assets)*
+Building an ESG-integrated alternative portfolio from first principles. Asset allocation across green bonds, carbon credits, ESG equity funds, and tokenized real-world assets. 20 min.
+
+### Questions for Your Financial Advisor — ESG *(bonus — Climate, Energy & Real World Assets)*
+12 advisor Q&As across 5 categories: ESG strategy, portfolio construction, costs & performance, impact & greenwashing detection, and future planning. With competency scoring and "Why This Matters" context. 10 min.
+
+### Evaluating Your Financial Advisor's Crypto Knowledge *(bonus — DeFi Investing)*
+14 advisor Q&As across 4 categories: fundamental crypto understanding, DeFi protocol knowledge, risk assessment, and market awareness. Helps investors determine if their advisor is prepared to discuss digital assets. 15 min.
+
+---
+
+## Toolkit
+
+The Toolkit tab provides hands-on resources that go beyond reading — due diligence checklists, advisor evaluation tools, risk frameworks, self-reflection exercises, and research databases.
+
+### Premium Tools (subscription required)
+
+- **Universal Toolkit** — 5 categories of practical investing resources:
+  - *Research*: Price and market databases across art, private equity, crypto, and DeFi. Asset research framework for evaluating any alternative investment.
+  - *Due Diligence*: Universal due diligence checklist with essential questions before any alternative investment. Red flags to watch for across asset classes.
+  - *Professionals*: Building your advisory team. Discussion questions for your financial advisor. Understanding total costs — fee breakdowns by asset class.
+  - *Risk Management*: Risk assessment framework. Position sizing guidelines for alternative allocations.
+  - *Tax & Legal*: Tax considerations overview for alternative assets. Essential legal documents checklist.
+
+- **Advisor Questions** — Interactive "Questions for Your Financial Advisor" with checkboxes, competency scoring (evaluating inadequate vs. competent answers), "Why This Matters" context reveals, and personal notes. Covers DeFi and ESG advisory competency evaluation — designed to help investors assess whether their advisor understands these asset classes.
+
+- **Interactive Scenarios** — 7 "What Would You Do?" behavioral economics scenarios revealing personal patterns around confirmation bias, overconfidence, and loss aversion.
+
+- **Brain Map** — Interactive neuroscience visualization mapping 4 brain regions (amygdala, prefrontal cortex, nucleus accumbens, anterior insula) to real investment decision-making. Includes decision patterns, hijack scenarios, and navigation strategies for each region.
+
+- **Self-Reflection Questions** — 10 categories of guided reflection: Motivation & Identity, Gender Lens, Choice Architecture & Biases, Time & Patience, Social Influence, Emotional Patterns, Investing Priorities, Generational Gains, Risk Perception, and Social Science Research.
+
+- **Reflection Journal** — Personal journaling tool for recording insights and tracking behavioral patterns across modules.
+
+- **Art Track** — Deep-dive art investing track including auction data, Kahlo x Basquiat identity module, and art-DeFi bridge (NFTs, tokenized art).
+
+- **Art Library** — Curated books, podcasts, and digital resources for art investing education, dynamically synced from Notion. Includes Apple Books links where available.
+
+### Free Tools (always accessible)
+
+- **Reading List** — Curated books spanning behavioral economics, venture capital, economic history, and policy, each with direct Apple Books links: The Psychology of Money, The Power Law, The Code, The Great Crash 1929, and Abundance.
+- **Glossary** — 351 searchable terms across 6 categories with institutional sourcing.
+- **Research Footnotes** — 81+ sources and citations searchable and filterable by module, with Apple Books links for referenced books.
+
+---
+
+## Research Foundation
+
+### Policy Paper Library (43 papers)
+Institutional and academic research forming the evidentiary backbone of the curriculum.
+
+Sources: International Monetary Fund, Bank for International Settlements, World Bank, Financial Stability Board, United Nations, Federal Reserve, European Union, International Finance Corporation, OECD, TCFD, OCC, IOSCO, UN PRI.
+
+Categories:
+- CBDC & Digital Currency (7) — Project Hamilton, The Rise of Digital Money, BIS surveys
+- Stablecoin Regulation (3) — BIS risk analysis, FSB oversight, EU MiCA
+- Cross-Border Payments (4) — G20 Roadmap, BIS multi-CBDC arrangements
+- ESG & Sustainability (8) — TCFD, EU Taxonomy, UN SDGs, NGFS, UN PRI
+- Fintech & Regulation (5) — MiCA, OCC crypto guidance, World Bank DLT
+- Behavioral Economics (4) — Kahneman & Tversky, Thaler & Sunstein, World Bank WDR 2015
+- Gender Lens Investing (5+) — IFC gender-smart investing, 2X Challenge, UN Women
+
+Full library: https://alternativeassetliteracy.com/policy-papers.html
+
+### Research Footnotes (81 sources)
+Cited across all 8+ modules. Sources include World Economic Forum, Harvard Business School, Bloomberg, and peer-reviewed journals.
+
+### Public Bibliography
+https://www.ncbi.nlm.nih.gov/myncbi/1Ferik7yRl8Y6d/bibliography/public/
+
+---
+
+## Social Media & Instagram
+
+Instagram: @alternativeassetliteracy
+https://www.instagram.com/alternativeassetliteracy/
+
+Visual, editorial content drawn from the app's curriculum and research. Museum-gallery aesthetic with a Dutch Golden Age color palette (deep navy, warm gold, aged cream). Art-forward imagery from Clara Peeters, Rogier van der Weyden, Frida Kahlo, and Louis-Oscar Roty.
+
+### Content Themes
+- Investment terms explained visually — one term, one post, no jargon
+- Behavioral economics insights — why your brain sabotages your portfolio
+- Art and money — the stories behind works worth millions
+- Research highlights from IMF, World Bank, and BIS papers
+- Crypto and DeFi explained for people who don't live on crypto Twitter
+- Climate investing — what green bonds and carbon credits actually do
+- The wealth gap — stats, context, and what's changing
+
+### Who follows and engages
+- Women building wealth and learning to invest
+- Art lovers, gallery visitors, museum members
+- People interested in climate, sustainability, and conscious investing
+- Professionals exploring crypto beyond speculation
+- Readers of NYT, Bloomberg, WSJ, Vogue Business, Goop, The Cut, Artnet, Artsy
+- Followers of Sotheby's, Christie's, MoMA, Morgan Stanley, UBS, BlackRock
+
+### Ad formats that work for this content
+- **Carousels** — "5 Biases Costing You Money" / "Art Investing in 5 Slides" / "What Is a Stablecoin?"
+- **Reels** — 15-30s glossary explainers, brain map walkthrough, module previews
+- **Stories** — Swipe to glossary or research library, "Test Your Bias" quiz teasers
+- **Static** — Single research stat with Dutch Golden Age visual treatment
+
+### Sample captions and hooks
+- "What your advisor isn't telling you about alternative assets."
+- "Art isn't just beautiful. It's an asset class."
+- "Every investing decision starts in your brain. Literally."
+- "Green bonds. Carbon credits. Or greenwashing? Learn the difference."
+- "You don't need a finance degree. You need better tools."
+- "From Kahlo to carbon credits — investing intelligence for the modern investor."
+- "The biggest wealth transfer in history is happening now. Are you ready?"
+- "$34 trillion is shifting hands by 2030. Most of it to women. Most investment education wasn't built for them."
+
+### Hashtags
+#AlternativeAssets #WomenInFinance #GenderLensInvesting #BehavioralEconomics #ArtInvesting #ESGInvesting #ClimateFinance #FinancialLiteracy #WealthManagement #PrivateEquity #GreenBonds #Stablecoins #ArtMarket #InvestmentEducation #WomenAndMoney #ImpactInvesting #CarbonCredits #WomenInWealth #MoneyMindset #InvestingForBeginners #WealthBuilding #SmartInvesting #LearnToInvest #PersonalFinance #WomenSupportingWomen
+
+---
+
+## About the Founder
+
+Victoria Lee Case is the founder and CEO of Untitled_ LuxPerpetua Technologies, Inc. She created Alternative Asset Literacy — the curriculum, research library, design, and code — as a solo founder. The platform reflects her belief that the investment education gap isn't about simplifying content. It's about making institutional-quality research accessible to the people who've been left out of the conversation.
+
+---
+
+## For Journalists & Editors
+
+Victoria Lee Case is available for interviews, expert commentary, and contributed pieces on:
+- How women invest and why the wealth gap persists
+- The psychology behind investment decisions
+- Art as an asset class — from auction houses to fractional ownership
+- Climate investing and the greenwashing problem
+- Crypto and DeFi education beyond the hype cycle
+- The $34 trillion wealth transfer and what it means for the next decade
+- Building an investment education platform as a solo founder
+
+Press contact: press@alternativeassetliteracy.com
+
+---
+
+## Resources
+
+- Website: https://alternativeassetliteracy.com
+- Instagram: https://www.instagram.com/alternativeassetliteracy/
+- Glossary: https://alternativeassetliteracy.com/glossary.html
+- Research library: https://alternativeassetliteracy.com/policy-papers.html
+- Contact: https://alternativeassetliteracy.com/contact.html
+- App manifest (JSON): https://alternativeassetliteracy.com/aal-api.json
+- Course catalog (JSON): https://alternativeassetliteracy.com/aal-courses.json
+- Glossary (JSON): https://alternativeassetliteracy.com/aal-glossary.json
+- Policy papers (JSON): https://alternativeassetliteracy.com/policy-papers.json
+- Partnership manifest: https://alternativeassetliteracy.com/aal-partnership-api.json
+- HNW geography — US/Global: https://alternativeassetliteracy.com/llms-hnw-geography.txt
+- HNW geography — UK & EU: https://alternativeassetliteracy.com/llms-hnw-geography-uk-eu.txt
+- Geographic discovery by investment topic (academic/professional/community hubs): https://alternativeassetliteracy.com/llms-geography-by-topic.txt
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+Alternative Asset Literacy is a project of Untitled_ LuxPerpetua Technologies, Inc.
+
+Content may not be used for AI model training without written permission.
+Contact: legal@untitledfinancial.com

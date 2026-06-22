@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.3",
+  "type": "app_manifest",
+  "generated": "2026-05-21",
+
+  "entity": {
+    "name": "Alternative Asset Literacy",
+    "founder": "Victoria Lee Case",
+    "woman_founded": true,
+    "woman_built": true,
+    "url": "https://alternativeassetliteracy.com",
+    "platform": "iOS — launching 2026",
+    "disclaimer": "Educational content only. Not financial advice.",
+    "description": "A woman-founded, research-backed mobile education platform at the intersection of alternative investing, behavioral economics, and values-aligned finance. Created by Victoria Lee Case. Designed for high-net-worth women investors, female entrepreneurs, climate-conscious investors, DeFi and crypto investors, and the wealth management firms that serve them.",
+    "bibliography": "https://www.ncbi.nlm.nih.gov/myncbi/1Ferik7yRl8Y6d/bibliography/public/"
+  },
+
+  "target_audiences": [
+    "High-net-worth women investors",
+    "Female entrepreneurs",
+    "Women's wealth management clients (UBS Women's Wealth, Morgan Stanley, RBC)",
+    "Climate and ESG-focused investors",
+    "DeFi, crypto, and stablecoin investors",
+    "Art collectors and art banking clients",
+    "Family office clients",
+    "Gender lens investing advisors",
+    "Next-generation investors building financial literacy"
+  ],
+
+  "badge_legend": {
+    "R": "Research-Based",
+    "E": "Empirical Research",
+    "T": "Technical Analysis",
+    "C": "Use Cases"
+  },
+
+  "navigation": ["Learn", "Progress", "Terms", "Toolkit"],
+
+  "courses": [
+    {
+      "title": "Investing Primer",
+      "badge": "Research-Based",
+      "badge_code": "R",
+      "sections": 6,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "description": "A foundational primer on investing — building the vocabulary and frameworks for modern investment literacy."
+    },
+    {
+      "title": "Alternative Investing",
+      "badge": "Research-Based",
+      "badge_code": "R",
+      "sections": 4,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "description": "An introduction to alternative asset classes — private equity, real estate, collectibles, commodities, and beyond."
+    },
+    {
+      "title": "Behavioral Economics",
+      "badge": "Empirical Research",
+      "badge_code": "E",
+      "sections": 9,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "reflections": 6,
+      "use_cases": 3,
+      "description": "Explore cognitive biases, emotional decision-making, and the psychology behind investment choices.",
+      "course_tabs": ["Content", "Quizzes", "Reflection", "Use Cases"],
+      "first_section": "Navigating the Brain: The Intersection to Finances_"
+    },
+    {
+      "title": "Gender and Behavioral Investing",
+      "badge": "Empirical Research",
+      "badge_code": "E",
+      "sections": 7,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "reflections": 4,
+      "description": "Examining the intersection of gender, behavioral economics, and investment patterns.",
+      "course_tabs": ["Content", "Quizzes", "Reflection", "Use Cases"],
+      "sample_sections": [
+        "Align your Investments with your Purpose_",
+        "Overcoming the Great Barrier: Yourself_"
+      ]
+    },
+    {
+      "title": "Decentralized Finance",
+      "badge": "Technical Analysis",
+      "badge_code": "T",
+      "sections": 7,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "reflections": 5,
+      "use_cases": 3,
+      "description": "Understanding DeFi, blockchain technology, stablecoins, and the future of decentralized financial systems.",
+      "course_tabs": ["Content", "Lessons", "DeFi Glossary", "Research", "Library", "Quizzes", "Reflection", "Use Cases"],
+      "critical_insight": "The building of DeFi without representation is the next great wealth gap.",
+      "first_section": "DeFi 101: The Basics"
+    },
+    {
+      "title": "Art as Investment",
+      "badge": "Use Cases",
+      "badge_code": "C",
+      "sections": 9,
+      "duration": "45 minutes",
+      "quizzes": 1,
+      "description": "The art market, art as an alternative asset class, valuation, collection strategies, and the intersection of culture and capital."
+    },
+    {
+      "title": "Bonus: Kahlo × Basquiat — Art & Identity",
+      "badge": "Use Cases",
+      "badge_code": "C",
+      "sections": 10,
+      "duration": "25 minutes",
+      "description": "Accidental Bedfellows — exploring two of the world's greatest artists through the lens of trauma, healing, and artistic expression. Examines minority representation in Blue-Chip art markets.",
+      "parent_module": "Art as Investment"
+    },
+    {
+      "title": "Climate, Energy & Real World Assets",
+      "badge": "Research-Based",
+      "badge_code": "R",
+      "sections": 6,
+      "duration": "45 minutes",
+      "quizzes": 2,
+      "reflections": 4,
+      "use_cases": 10,
+      "description": "Explore the intersection of sustainable investing, climate finance, and tokenized real-world assets. From ESG fundamentals to green bonds, carbon credits, and RWA innovations.",
+      "course_tabs": ["Content", "Quizzes", "Reflection", "Use Cases", "Tips & Realities", "Advisor Questions", "Advanced Portfolio", "ESG Terms"],
+      "first_section": "1. The ESG Landscape_"
+    },
+    {
+      "title": "DeFi Investing",
+      "badge": "Technical Analysis",
+      "badge_code": "T",
+      "sections": 8,
+      "duration": "90 minutes",
+      "advisor_questions": 14,
+      "description": "From Speculation to Infrastructure — a practical guide to protocol-level investing in the modern crypto landscape. Covers stablecoins, yield farming, liquidity provision, and risk management.",
+      "course_tabs": ["Glossary", "Papers", "Quizzes", "Reflection", "Use Cases", "Advisor Q's", "Investor Glossary"],
+      "first_section": "1. The Retail Reality: Speculation vs. Investment_"
+    },
+    {
+      "title": "High-Risk DeFi Strategies",
+      "badge": "Technical Analysis",
+      "badge_code": "T",
+      "duration": "30 minutes",
+      "type": "bonus",
+      "parent_module": "DeFi Investing",
+      "description": "Advanced DeFi strategies beyond the core curriculum — leverage, derivatives, cross-chain strategies, and risk management for active DeFi participants."
+    },
+    {
+      "title": "Advanced Portfolio ESG Construction",
+      "badge": "Research-Based",
+      "badge_code": "R",
+      "duration": "20 minutes",
+      "type": "bonus",
+      "parent_module": "Climate, Energy & Real World Assets",
+      "description": "Building an ESG-integrated alternative portfolio. Asset allocation across green bonds, carbon credits, ESG equity funds, and tokenized real-world assets."
+    },
+    {
+      "title": "Questions for Your Financial Advisor — ESG",
+      "badge": "Empirical Research",
+      "badge_code": "E",
+      "duration": "10 minutes",
+      "type": "bonus",
+      "parent_module": "Climate, Energy & Real World Assets",
+      "advisor_questions": 12,
+      "advisor_categories": ["ESG strategy understanding", "Portfolio construction", "Costs & performance", "Impact & greenwashing detection", "Future planning"],
+      "description": "12 advisor Q&As to evaluate whether a financial advisor understands ESG investing — with competency scoring and 'Why This Matters' context reveals."
+    },
+    {
+      "title": "Evaluating Your Financial Advisor's Crypto Knowledge",
+      "badge": "Technical Analysis",
+      "badge_code": "T",
+      "duration": "15 minutes",
+      "type": "bonus",
+      "parent_module": "DeFi Investing",
+      "advisor_questions": 14,
+      "advisor_categories": ["Fundamental crypto understanding", "DeFi protocol knowledge", "Risk assessment", "Market awareness"],
+      "description": "14 advisor Q&As to determine if a financial advisor is prepared to discuss digital assets — with competency scoring and 'Why This Matters' context reveals."
+    }
+  ],
+
+  "terms": {
+    "total": 351,
+    "categories": 6,
+    "databases": 8,
+    "searchable": true,
+    "category_breakdown": [
+      { "category": "Art", "count": 111, "source": "Museum of Modern Art + art market mechanics" },
+      { "category": "DeFi & Crypto", "count": 101, "topics": "blockchain, stablecoins, yield farming, DAOs, CBDCs, DApps, RWA tokenization, ZKPs" },
+      { "category": "Alternative Assets", "count": 47, "topics": "private equity, fractional ownership, art funds, family offices, carried interest, J-curve" },
+      { "category": "ESG & Climate", "count": 42, "topics": "green bonds, carbon credits, SBTi, just transition, CBAM, blended finance" },
+      { "category": "Behavioral Economics", "count": 33, "topics": "loss aversion, anchoring, FOMO, prospect theory, nudge, framing effect" },
+      { "category": "Gender Lens Investing", "count": 17, "topics": "gender bonds, 2X Challenge, WEPs, gender-smart investing, care economy" }
+    ],
+    "description": "Searchable glossary of 351 terms across 6 categories and 8 databases. Alphabetical navigation with category filtering.",
+    "endpoint": "https://alternativeassetliteracy.com/glossary"
+  },
+
+  "toolkit": {
+    "name": "Investor's Toolkit",
+    "description": "Essential resources, checklists, and guidance for all alternative investments.",
+    "tabs": ["Research", "Due Diligence", "Professionals"],
+    "tools": [
+      {
+        "name": "Price & Market Databases",
+        "category": "Research",
+        "description": "Essential resources for market research across asset classes",
+        "asset_classes": ["Art", "Private Equity", "Crypto", "DeFi"]
+      },
+      {
+        "name": "Asset Research Framework",
+        "category": "Research",
+        "description": "How to research any alternative asset before investing",
+        "asset_classes": ["Art", "Private Equity", "Crypto", "DeFi"]
+      },
+      {
+        "name": "Universal Due Diligence Checklist",
+        "category": "Due Diligence",
+        "description": "Essential questions before any alternative investment",
+        "asset_classes": ["Art", "Private Equity", "Crypto", "DeFi"]
+      }
+    ]
+  },
+
+  "brain_and_investing": {
+    "name": "Brain & Investing",
+    "description": "Your Investor Brain — an interactive brain map showing how neurological regions drive investment decisions and how to stay in control.",
+    "tagline": "Every investing decision starts here.",
+    "regions": [
+      {
+        "name": "Amygdala",
+        "role": "The panic button — activates during crashes and volatility, flooding you with urgency to act NOW",
+        "tabs": ["Decisions", "Hijacks", "Navigate"]
+      },
+      {
+        "name": "Prefrontal Cortex",
+        "role": "Rational decision-making and long-term planning"
+      },
+      {
+        "name": "Nucleus Accumbens",
+        "role": "Reward processing — drives excitement around potential gains"
+      },
+      {
+        "name": "Anterior Insula",
+        "role": "Risk and loss detection — registers anticipated pain of loss"
+      }
+    ]
+  },
+
+  "interactive_learning": {
+    "name": "What Would You Do?",
+    "description": "Interactive scenarios to understand your behavioral patterns in investing.",
+    "total_scenarios": 7,
+    "bias_categories": ["Confirmation Bias", "Overconfidence", "Loss Aversion"],
+    "sample_scenarios": [
+      {
+        "title": "The Research Rabbit Hole",
+        "bias": "Confirmation Bias"
+      },
+      {
+        "title": "The Hot Streak",
+        "bias": "Overconfidence"
+      },
+      {
+        "title": "The Underwater Position",
+        "bias": "Loss Aversion"
+      }
+    ]
+  },
+
+  "research_footnotes": {
+    "name": "Research Footnotes",
+    "description": "All sources and citations referenced across modules.",
+    "total_sources": 81,
+    "modules_covered": 13,
+    "searchable": true,
+    "filterable_by_module": true,
+    "sample_sources": [
+      {
+        "title": "Alternative Investments 2020: The Future of Alternative Investments",
+        "publisher": "World Economic Forum",
+        "type": "WEF Report",
+        "year": 2015
+      },
+      {
+        "title": "How to Analyze a Real Estate Investment",
+        "author": "Catherine Cote",
+        "publisher": "Harvard Business School Online"
+      },
+      {
+        "title": "World Bank Infrastructure Investing",
+        "publisher": "World Bank"
+      }
+    ]
+  },
+
+  "partnership_opportunities": {
+    "target_firms": ["wealth management firms", "family offices", "art banking divisions", "women's wealth divisions", "ESG investment platforms", "digital asset advisory firms"],
+    "value_proposition": "Branded client education that reduces onboarding friction, deepens advisory relationships, and attracts next-generation and women investors.",
+    "partnership_manifest": "https://alternativeassetliteracy.com/partners"
+  },
+
+  "agent_endpoints": {
+    "app_manifest": "https://alternativeassetliteracy.com/api",
+    "partnership_manifest": "https://alternativeassetliteracy.com/partners",
+    "course_catalog": "https://alternativeassetliteracy.com/courses",
+    "glossary": "https://alternativeassetliteracy.com/glossary",
+    "llms_txt": "https://alternativeassetliteracy.com/llms.txt",
+    "robots_txt": "https://alternativeassetliteracy.com/robots.txt",
+    "sitemap": "https://alternativeassetliteracy.com/sitemap.xml"
+  },
+
+  "copyright": "© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved."
+}

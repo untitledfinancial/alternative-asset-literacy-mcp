@@ -1,0 +1,14 @@
+name = "morning-limit-8bb9"
+main = "_worker.js"
+compatibility_date = "2024-01-01"
+
+[ai]
+binding = "AI"
+
+[assets]
+directory = "."
+
+[[d1_databases]]
+binding      = "DB"
+database_name = "aal-contact"
+database_id  = "ce7bf2a3-2365-403b-bcde-0fd03725f02f"

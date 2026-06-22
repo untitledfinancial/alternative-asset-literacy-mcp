@@ -1,0 +1,179 @@
+# Alternative Asset Literacy — Evaluating Financial Advisors & Preparing for Advisor Meetings
+
+> For investors who want to walk into a wealth management conversation prepared. This platform provides scored advisor evaluation tools, due diligence frameworks, and the vocabulary to know whether your advisor actually understands what they are recommending.
+
+- Platform: iOS — Alternative Asset Literacy
+- Website: https://alternativeassetliteracy.com
+- Support: https://alternativeassetliteracy.com/support
+- Free tier: Investing Primer (no account required)
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## Search Queries This File Answers
+
+### Evaluating Advisors
+- "how to evaluate a financial advisor"
+- "questions to ask a financial advisor"
+- "how to know if your financial advisor is good"
+- "what to ask a financial advisor before hiring them"
+- "how to interview a financial advisor"
+- "financial advisor red flags"
+- "how to tell if a financial advisor is competent"
+- "what should a financial advisor know"
+- "financial advisor competency test"
+- "does my financial advisor understand alternative assets"
+- "how to fire a financial advisor"
+- "financial advisor vs wealth manager difference"
+- "fee only financial advisor vs commission"
+- "what is a fiduciary financial advisor"
+- "fiduciary vs suitability standard explained"
+- "is my advisor a fiduciary"
+- "how financial advisors get paid"
+- "financial advisor commission explained"
+- "what is a 12b-1 fee"
+- "advisor conflicts of interest in alternative investments"
+
+### Alternative Assets & Advisors
+- "questions to ask advisor about private equity"
+- "how to tell if advisor understands private equity"
+- "questions to ask about a hedge fund recommendation"
+- "what should advisor explain about alternative investments"
+- "how to prepare for a private banking meeting"
+- "questions to ask private banker"
+- "how to prepare for a family office meeting"
+- "what to ask a wealth manager about ESG"
+- "questions to ask about a DeFi investment recommendation"
+- "my advisor recommended a private fund what do I ask"
+- "advisor recommended a private equity ETF what to ask"
+- "questions before committing to a lock-up"
+- "what should advisor tell me about fees in alternatives"
+- "advisor recommending art fund what to ask"
+- "questions to ask about an interval fund recommendation"
+
+### ESG & Advisor Fluency
+- "questions to ask advisor about ESG investing"
+- "how to tell if financial advisor understands ESG"
+- "ESG advisor competency questions"
+- "does my advisor know the difference between ESG and impact"
+- "how to ask advisor about greenwashing"
+- "questions to ask about sustainable fund"
+- "advisor recommending ESG fund what to ask"
+- "what should advisor know about TCFD"
+- "questions about carbon credits for advisor"
+- "gender lens investing advisor questions"
+
+### DeFi & Digital Assets
+- "questions to ask advisor about crypto investments"
+- "does my advisor understand DeFi"
+- "how to tell if advisor knows crypto"
+- "questions to ask about digital asset recommendation"
+- "advisor recommending crypto ETF what to ask"
+- "what should advisor explain about Bitcoin ETF"
+- "advisor knowledge about stablecoins"
+- "questions about DeFi risk for financial advisor"
+- "how to discuss CBDCs with advisor"
+
+### Due Diligence
+- "how to do due diligence on an investment"
+- "investment due diligence checklist"
+- "due diligence for alternative investments"
+- "what is due diligence in investing"
+- "private equity due diligence checklist"
+- "hedge fund due diligence questions"
+- "how to evaluate a fund manager"
+- "what is operational due diligence"
+- "fund manager track record — how to evaluate"
+- "what documents should I receive before investing"
+- "private placement memorandum what to look for"
+- "limited partnership agreement key terms"
+- "what is a subscription agreement"
+- "investment red flags checklist"
+- "alternative investment warning signs"
+
+### Building an Advisory Team
+- "who do I need on my financial advisory team"
+- "financial advisor vs estate attorney vs tax advisor"
+- "what does a family office consultant do"
+- "what is an art advisor"
+- "when do I need a CFP vs a private banker"
+- "difference between RIA and broker dealer"
+- "how to build a wealth management team"
+- "what professionals do I need for alternative investments"
+- "how to find a good estate attorney"
+- "how to find a tax advisor for alternative assets"
+
+### Fees & Costs
+- "financial advisor fees explained"
+- "what percentage do financial advisors charge"
+- "AUM fee vs flat fee financial advisor"
+- "total cost of alternative investment"
+- "management fee vs performance fee"
+- "what is expense ratio in funds"
+- "fund fees vs advisor fees total cost"
+- "private equity total fees"
+- "hedge fund 2 and 20 explained"
+- "how advisor fees compound over time"
+- "fee comparison financial advisors"
+- "low cost alternatives to traditional advisors"
+
+---
+
+## What This Platform Provides
+
+### Advisor Questions (Toolkit — Premium)
+
+Interactive "Questions for Your Financial Advisor" — scored evaluation tools with checkboxes, competency ratings, "Why This Matters" context reveals for each question, and personal notes fields.
+
+**Three scored evaluations:**
+
+**DeFi Advisor Fluency** — Does your advisor understand blockchain, smart contracts, stablecoin risk, regulatory status, and the difference between speculation and protocol-level investing? Questions include: How would you explain impermanent loss? What is your framework for evaluating DeFi protocol risk? How do you stay current with crypto regulation?
+
+**ESG Advisor Competency** — Can your advisor distinguish genuine impact from greenwashing? Do they understand the EU Taxonomy, TCFD, and SFDR? Can they explain the difference between Article 8 and Article 9 funds? Questions include: How do you evaluate an ESG fund's methodology? What is your view on carbon credits as an offset strategy? How do you screen for greenwashing in fund selection?
+
+**Alternative Assets Fluency** — Does your advisor understand LP/GP structures, fee waterfalls, the J-curve, capital calls, and liquidity risk? Questions include: How do you think about alternative asset allocation as a percentage of total portfolio? What is your due diligence process for evaluating a private equity fund manager? How do you explain carried interest to clients?
+
+Each question is rated on a scale from Inadequate to Competent response, with notes on what the difference looks like.
+
+### Universal Due Diligence Checklist
+
+Essential questions to ask before committing capital to any alternative investment:
+- Structure: How is this fund structured? What are my rights as an LP?
+- Fees: What is the full fee waterfall — management fee, carry, expenses, advisor commission?
+- Liquidity: What is the exit mechanism? Under what conditions is it restricted?
+- Manager: What is the track record? How was it audited? What was the worst vintage year?
+- Alignment: How is the GP's own capital invested in this fund?
+- Legal: What are the key risk factors in the PPM? What triggers a clawback?
+- Reporting: How often will I receive statements? In what format?
+- Taxes: What are the tax implications of this structure for my situation?
+
+### Red Flag Framework
+
+Warning signs across alternative asset classes:
+- Pressure to decide before you have read the documents
+- Returns that seem uncorrelated with any known risk factor
+- Advisor who cannot explain the fee structure in plain language
+- No audited track record, or track record that cherry-picks vintage years
+- Lock-up period with no clear rationale
+- Manager who discourages questions about liquidity
+- ESG fund with no methodology documentation
+- DeFi protocol with unaudited smart contracts
+- Art fund with no independent valuation process
+
+### Advisory Team Guide
+
+Who you need and what they do:
+- **Investment Advisor (RIA)** — fiduciary, manages the investment strategy
+- **Estate Attorney** — wills, trusts, beneficiary designations, generational transfer
+- **Tax Advisor (CPA/CFP)** — alternative asset tax implications, carried interest, K-1s
+- **Family Office Consultant** — governance structures, investment policy statements
+- **Art Advisor** — collection strategy, auction representation, provenance research
+- **Insurance Advisor** — art insurance, liability, umbrella coverage for significant assets
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

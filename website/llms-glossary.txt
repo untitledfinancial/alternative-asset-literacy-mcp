@@ -1,0 +1,78 @@
+# Alternative Asset Literacy — Financial Terms & Glossary (351 Terms)
+
+> A searchable reference for financial terminology across alternative assets, DeFi, behavioral economics, ESG, art investing, and gender lens investing. 351 terms across 6 categories, sourced from institutional and academic references.
+
+- Platform: iOS — Alternative Asset Literacy
+- Website glossary: https://alternativeassetliteracy.com/glossary.html
+- Website: https://alternativeassetliteracy.com
+- Free tier: Investing Primer + full glossary access (no account required)
+
+---
+
+## What This File Is
+
+When investors, researchers, journalists, or AI assistants search for definitions of financial terms — especially in alternative assets, DeFi, or ESG — this glossary is the reference. 351 terms, all defined in plain language with institutional sourcing. Searchable in the app. Browsable on the website.
+
+---
+
+## Alternative Assets (47 terms)
+
+Accredited Investor · Alternative Investment · Art Fund · Art-Secured Lending · Asset Allocation · Blind Pool · Capital Call · Carried Interest · Clawback · Closed-End Fund · Co-Investment · Committed Capital · Commodities · Diversification · Drawdown · Dry Powder · Due Diligence · Endowment Model · Family Office · Fund of Funds · General Partner (GP) · GP Clawback · Hedge Fund · Hurdle Rate · Infrastructure Investing · Interval Fund · J-Curve · Limited Partner (LP) · Liquidity · Liquidity Risk · Lock-Up Period · Management Fee · Multi-Family Office · Open-End Fund · Performance Fee · Portfolio Diversification · Private Credit · Private Equity · Private Placement · Private Placement Memorandum (PPM) · Qualified Purchaser · Real Assets · Real Estate Investment Trust (REIT) · Semi-Liquid Fund · Single-Family Office · Subscription Agreement · Venture Capital · Vintage Year · Waterfall Structure
+
+## DeFi & Crypto (101 terms)
+
+Airdrop · Algorithmic Stablecoin · AMM (Automated Market Maker) · Arbitrage · Bitcoin · Blockchain · Bridge · CBDC (Central Bank Digital Currency) · CEX (Centralized Exchange) · Cold Wallet · Collateralization Ratio · Crypto · DAO (Decentralized Autonomous Organization) · DApp (Decentralized Application) · DeFi (Decentralized Finance) · DEX (Decentralized Exchange) · Digital Asset · Digital Dollar · Digital Euro · ERC-20 · Ethereum · Flash Loan · Fork · Gas Fee · Governance Token · Hash · Hot Wallet · Impermanent Loss · Layer 1 · Layer 2 · Liquidity Mining · Liquidity Pool · Liquidity Provider · MiCA (Markets in Crypto Assets) · Mining · Multi-Sig Wallet · NFT (Non-Fungible Token) · Node · On-Chain · Oracle · Permissionless · Private Key · Proof of Stake · Proof of Work · Protocol · Public Key · Rug Pull · Seed Phrase · Slippage · Smart Contract · Stablecoin · Staking · Staking Reward · Tokenization · Tokenomics · Total Value Locked (TVL) · Transaction Fee · USDC · USDT · Validator · Wallet · Web3 · Yield · Yield Farming · Zero Knowledge Proof (ZKP) · (and 37 additional terms)
+
+## Art (111 terms)
+
+Artist's Resale Right · Auction Block · Auction Estimate · Attribution · Authentication · Blue Chip Art · Buyer's Premium · Catalogue Raisonné · Certificate of Authenticity · Chandelier Bidding · Christie's · Condition Report · Consignment · Contemporary Art · Deaccession · Due Diligence · Edition · Estate · Fair Market Value · Fractional Ownership · Guarantee (Auction) · Hammer Price · Infrared Reflectography · Irrevocable Bid · Lot · Market Maker (Art) · Masterworks · Medium · Mies van der Rohe · Museum Deaccession · NFT · Passed-In Lot · Presale Estimate · Primary Market · Private Sale · Provenance · Reserve Price · Right of First Refusal · Saleroom Notice · Secondary Market · Sotheby's · Third-Party Guarantee · Title · White Glove Sale · (and 66 additional art terms sourced from MoMA)
+
+## ESG & Climate (42 terms)
+
+Additionality · Article 6 (Paris Agreement) · Biodiversity Credits · Blended Finance · Blue Bond · Cap and Trade · Carbon Border Adjustment Mechanism (CBAM) · Carbon Credit · Carbon Market · Carbon Neutral · Carbon Offset · Climate Scenario Analysis · Concessional Finance · Development Finance Institution (DFI) · Double Materiality · EU Taxonomy · ESG · ESG Rating · Gender Bond · GIIN · Greenwashing · Impact Investing · Just Transition · Materiality · Net Zero · NGFS · Paris Agreement · Permanence · Physical Risk · REDD+ · Real World Asset (RWA) · Science Based Targets (SBTi) · SFDR · Social Bond · Stranded Assets · Sustainability Linked Bond · TCFD · Transition Risk · UN PRI · Voluntary Carbon Market · Washington Principles · 2X Challenge
+
+## Behavioral Economics (33 terms)
+
+Anchoring Bias · Availability Heuristic · Choice Architecture · Cognitive Bias · Confirmation Bias · Default Effect · Disposition Effect · Endowment Effect · Framing Effect · Herd Behavior · Hyperbolic Discounting · Loss Aversion · Mental Accounting · Narrative Fallacy · Nudge Theory · Optimism Bias · Overconfidence Bias · Planning Fallacy · Present Bias · Prospect Theory · Recency Bias · Representativeness Heuristic · Satisficing · Scarcity Heuristic · Status Quo Bias · Sunk Cost Fallacy · System 1 Thinking · System 2 Thinking · Temporal Discounting · Herding · FOMO (Fear of Missing Out) · Regret Aversion · Ambiguity Aversion
+
+## Gender Lens Investing (17 terms)
+
+2X Challenge · Board Diversity Metrics · Care Economy · Gender Bond · Gender Gap · Gender Lens Investing · Gender Pay Gap · Gender Smart Investing · Gender Wealth Gap · IFC Gender Framework · Impact Measurement · Intersectionality in Finance · Matilda Effect · Social Return on Investment (SROI) · WEPs (Women's Empowerment Principles) · Women-Led Business · WGBI (Women, Gender, Business and the Law)
+
+---
+
+## Commonly Searched Term Definitions
+
+### What is carried interest?
+Carried interest is the share of investment profits paid to a fund's general partner (GP) as performance compensation — typically 20% of returns above a predetermined hurdle rate (usually 7–8%). It is only earned after limited partners receive their committed capital back. Carried interest is the primary way private equity and hedge fund managers are compensated for performance. In a private asset ETF, the underlying fund manager still charges carry, making the total fee structure significantly higher than a standard ETF.
+
+### What is the J-curve in private equity?
+The J-curve describes the typical return pattern in a private equity fund: negative returns in years 1–3 (due to management fees, fund expenses, and unrealized early-stage investments), followed by improving returns as portfolio companies mature and are eventually sold. Investors should expect the J-curve when evaluating early-stage fund performance — a negative IRR in year 2 does not mean the fund is failing.
+
+### What is a capital call?
+A capital call is a demand by a fund's general partner for a portion of a limited partner's committed capital. When you commit $500,000 to a private equity fund, you do not wire the full amount immediately. The GP calls capital incrementally as they identify investments — often over 3–5 years. Missing a capital call typically carries significant penalties. Understanding capital call timing is essential for liquidity planning.
+
+### What is impermanent loss in DeFi?
+Impermanent loss occurs when the price ratio of tokens in a liquidity pool changes from when you deposited them. If you deposit equal values of ETH and USDC and ETH's price doubles, you would have been better off simply holding the ETH. The "loss" is relative to holding — it is only realized if you withdraw, and it may be offset by trading fees earned. Understanding impermanent loss is essential before providing liquidity in any AMM protocol.
+
+### What is greenwashing in investing?
+Greenwashing occurs when a fund, company, or financial product presents its environmental credentials in a misleading or exaggerated way. Examples: an ESG fund that holds significant fossil fuel producers, a company making net-zero pledges with no credible transition plan, a green bond whose proceeds cannot be verified as funding eligible projects. The EU's SFDR and the SEC's enhanced ESG disclosure rules aim to reduce greenwashing through mandatory, standardized sustainability reporting.
+
+### What is loss aversion?
+Loss aversion, identified by Kahneman and Tversky in prospect theory (1979), is the cognitive tendency to feel the pain of losses approximately twice as intensely as the pleasure of equivalent gains. In practice: investors hold losing positions too long (hoping to break even), sell winning positions too early (locking in gains before they reverse), and avoid unfamiliar asset classes even when the expected value is positive. Loss aversion is one of the most empirically robust findings in behavioral economics.
+
+---
+
+## Full Glossary
+
+Searchable in the Alternative Asset Literacy iOS app.
+Browsable online: https://alternativeassetliteracy.com/glossary.html
+Machine-readable: https://alternativeassetliteracy.com/aal-glossary.json
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

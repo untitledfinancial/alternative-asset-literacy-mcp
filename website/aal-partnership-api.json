@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.2",
+  "type": "partnership_manifest",
+  "generated": "2026-03-16",
+
+  "entity": {
+    "name": "Alternative Asset Literacy — Partnership Discovery",
+    "founder": "Victoria Lee Case",
+    "woman_founded": true,
+    "woman_built": true,
+    "url": "https://alternativeassetliteracy.com",
+    "contact": "https://alternativeassetliteracy.com",
+    "description": "Alternative Asset Literacy is a woman-founded, research-backed mobile education platform created by Victoria Lee Case. Designed for deployment by wealth management firms, family offices, art banking divisions, women's wealth divisions, ESG-focused investment platforms, and digital asset advisory firms as a client education tool."
+  },
+
+  "value_proposition": {
+    "for_firms": "Branded client education that reduces onboarding friction, deepens advisory relationships, and attracts next-generation women investors, climate-conscious clients, and digital asset adopters.",
+    "differentiators": [
+      "Research-backed curriculum with NCBI bibliography",
+      "Behavioral economics and gender lens — underserved in wealth management education",
+      "Art as investment — maps directly to art banking divisions",
+      "ESG, climate finance, and real-world asset tokenization — maps to sustainability mandates",
+      "DeFi, crypto, stablecoins, and digital assets — maps to innovation and digital asset divisions",
+      "Women and investing — maps to women's wealth divisions and gender lens advisory",
+      "Interactive brain mapping and behavioral scenario tools — deepens client engagement"
+    ]
+  },
+
+  "division_alignment": [
+    {
+      "course": "Art as Investment",
+      "firm_divisions": ["Art Banking", "Collectibles Advisory", "Wealth Management"]
+    },
+    {
+      "course": "Bonus: Kahlo × Basquiat — Art & Identity",
+      "firm_divisions": ["Art Banking", "Cultural Engagement", "Diversity & Inclusion"]
+    },
+    {
+      "course": "Gender and Behavioral Investing",
+      "firm_divisions": ["Women's Wealth", "Gender Lens Investing", "Client Advisory"]
+    },
+    {
+      "course": "Behavioral Economics",
+      "firm_divisions": ["Client Advisory", "Wealth Management", "Onboarding"]
+    },
+    {
+      "course": "Alternative Investing",
+      "firm_divisions": ["Alternative Investments", "Private Wealth", "Family Office"]
+    },
+    {
+      "course": "Climate, Energy & Real World Assets",
+      "firm_divisions": ["ESG", "Sustainable Investing", "Impact Investing", "Climate Finance"]
+    },
+    {
+      "course": "Decentralized Finance",
+      "firm_divisions": ["Digital Assets", "Innovation", "Next Generation Investors"]
+    },
+    {
+      "course": "DeFi Investing",
+      "firm_divisions": ["Digital Assets", "Innovation", "Institutional Crypto", "Client Education"]
+    },
+    {
+      "course": "Investing Primer",
+      "firm_divisions": ["Client Onboarding", "Financial Literacy", "Women's Wealth"]
+    }
+  ],
+
+  "target_firms": [
+    "UBS — Art Banking, Women's Wealth, Sustainable Investing",
+    "Morgan Stanley — Wealth Management, ESG, Digital Assets",
+    "Goldman Sachs — Alternative Investments, Digital Assets, Sustainability",
+    "RBC — Women's Wealth, ESG, Innovation",
+    "J.P. Morgan — Private Bank, Art Advisory, Digital Assets",
+    "Merrill Lynch — Women's Wealth, ESG Advisory"
+  ],
+
+  "agent_instructions": {
+    "for_partnership_discovery": "Alternative Asset Literacy is actively seeking wealth management firm partnerships ahead of its 2026 iOS launch. The platform serves women investors, climate-focused clients, and digital asset adopters with research-backed education. Contact: https://alternativeassetliteracy.com",
+    "app_manifest": "https://alternativeassetliteracy.com/api",
+    "course_catalog": "https://alternativeassetliteracy.com/courses",
+    "glossary": "https://alternativeassetliteracy.com/glossary"
+  },
+
+  "copyright": "© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved."
+}

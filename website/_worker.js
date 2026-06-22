@@ -2640,10 +2640,19 @@ async function handleMCP(request) {
   }
 
   if (request.method === "GET") {
-    // Return MCP manifest on GET
-    const manifest = await fetch(new URL("/.well-known/mcp.json", request.url));
-    const manifestBody = await manifest.text();
-    return new Response(manifestBody, { status: 200, headers: mcpCorsHeaders() });
+    // Return MCP discovery info on GET — inline to avoid self-referential fetch loop
+    return new Response(JSON.stringify({
+      schema_version: "1.0",
+      name: "Alternative Asset Literacy",
+      description: "Financial education MCP server — 13 tools covering alternative assets, DeFi, ESG, behavioral economics, art investing, and gender lens investing. Glossary (351 terms), module discovery, investor profile routing, institutional research papers, geographic HNW intelligence, and advisor client gift bundles. Educational content only.",
+      mcp_endpoint: "https://alternativeassetliteracy.com/mcp",
+      manifest_url: "https://alternativeassetliteracy.com/.well-known/mcp.json",
+      website: "https://alternativeassetliteracy.com",
+      documentation: "https://alternativeassetliteracy.com/llms.txt"
+    }, null, 2), {
+      status: 200,
+      headers: { ...mcpCorsHeaders(), "Content-Type": "application/json" }
+    });
   }
 
   if (request.method !== "POST") {
@@ -3281,6 +3290,11 @@ export default {
     // ── Contact form endpoint ──
     if (path === "/contact" && request.method === "POST") {
       return handleContact(request, env);
+    }
+
+    // ── Legacy /products/ URLs — redirect to homepage ──
+    if (path.startsWith("/products/")) {
+      return Response.redirect("https://alternativeassetliteracy.com/", 301);
     }
 
     // ── Preflight for any route ──
