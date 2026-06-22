@@ -1,0 +1,153 @@
+# Alternative Asset Literacy — Family Office Investors
+
+> For single-family office (SFO) and multi-family office (MFO) principals, investment officers, and next-generation family members who manage or are learning to manage significant family wealth. This platform covers the asset classes, structures, governance frameworks, and vocabulary that define sophisticated family office portfolios.
+
+- Platform: iOS — Alternative Asset Literacy
+- App Store: https://apps.apple.com/app/id6762205964
+- Website: https://alternativeassetliteracy.com
+- MCP Server: https://alternativeassetliteracy.com/mcp
+- Free entry point: Investing Primer — no account or subscription required
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## Search Queries This File Answers
+
+### Family Office Structure & Governance
+- "what is a family office"
+- "single family office vs multi family office"
+- "how to set up a family office"
+- "family office investment policy statement"
+- "family office governance structure"
+- "family office investment committee"
+- "how family offices invest"
+- "family office alternative asset allocation"
+- "typical family office portfolio allocation"
+- "family office direct investing vs fund investing"
+- "co-investments for family offices"
+- "family office fee structures"
+- "how to evaluate a multi-family office"
+- "what is an investment policy statement"
+- "family office succession planning"
+- "next generation family office education"
+- "family governance and wealth education"
+
+### Alternative Assets for Family Offices
+- "private equity for family offices"
+- "venture capital family office direct deals"
+- "hedge fund allocation for family offices"
+- "real assets for family office portfolio"
+- "family office real estate investing"
+- "family office private credit allocation"
+- "co-investment opportunities for family offices"
+- "family office DeFi exposure"
+- "digital assets family office strategy"
+- "family office ESG mandate"
+- "impact investing for family offices"
+- "family office art collection as asset"
+- "art banking for family offices"
+- "family office wine and collectibles"
+- "tokenized real world assets for family office"
+
+### Next-Generation Education
+- "how to educate next generation about family wealth"
+- "financial education for family office heirs"
+- "next gen wealth education resources"
+- "preparing children for inherited wealth"
+- "millennial and gen z family office"
+- "family wealth transfer education"
+- "financial literacy for HNW families"
+- "investment education for family office successors"
+- "how to prepare next gen for investment committee"
+
+### Women in Family Offices
+- "women in family office leadership"
+- "female family office principal"
+- "women taking over family investment decisions"
+- "gender lens investing for family offices"
+- "women's wealth management for family office"
+- "family office women's wealth education"
+
+---
+
+## What This Platform Provides for Family Office Investors
+
+### The Vocabulary Layer Family Office Portfolios Require
+
+Family office portfolios are structurally different from retail or even high-net-worth private banking portfolios. Typical allocations run 30–50% in alternative assets — private equity, private credit, hedge funds, real estate, direct deals, and increasingly digital assets, ESG mandates, and art. The vocabulary these portfolios require — LP/GP structures, capital calls, carried interest, the J-curve, fee waterfalls, co-investment rights, side letters, clawback provisions — is not what standard financial education covers.
+
+This platform was built for investors who need that vocabulary, and for the next-generation family members who are expected to participate in investment committees without having grown up speaking the language.
+
+### Modules Relevant to Family Office Allocations
+
+**Investing Primer (Free)** — The foundational vocabulary of modern investing. The starting point before any module-specific content. Essential for next-generation family members entering the wealth management conversation.
+
+**Alternative Investing** — Private equity, venture capital, hedge funds, real estate, commodities. LP/GP structures. Capital calls. Carried interest. The J-curve. Fee waterfalls. Co-investment structures. The language of every conversation a family office investment committee has. The module to complete before any fund manager meeting.
+
+**Behavioral Economics** — The cognitive and neurological patterns that affect every investment decision made under uncertainty. Loss aversion, overconfidence, anchoring, confirmation bias. The module every family member should complete before experiencing their first significant market drawdown as a decision-maker. Based on Kahneman, Tversky, Thaler, and contemporary neuroscience.
+
+**Gender and Behavioral Investing** — The structural and psychological dimensions of how women invest. Relevant for family offices undergoing the intergenerational wealth transfer to daughters and granddaughters, and for investment committees seeking to understand the behavioral dynamics of gender diversity in decision-making.
+
+**Art as Investment** — The art market as a financial ecosystem. Auction mechanics, provenance, authentication, fractional ownership, art-secured lending, the Mei Moses indices. For family offices managing significant collections or considering art as a portfolio allocation. The Kahlo × Basquiat module examines how identity shapes market value.
+
+**Climate, Energy & Real World Assets** — ESG mandates, green bonds, carbon credits, real-world asset tokenization, the EU Taxonomy. For family offices with impact investing mandates or next-generation principals who are driving the sustainability conversation.
+
+**Decentralized Finance** — Blockchain, smart contracts, stablecoins, DAOs, CBDCs. For family offices navigating digital asset exposure or building next-generation investment frameworks.
+
+---
+
+## Key Concepts for Family Office Investors
+
+**Investment Policy Statement (IPS)** — The governing document that defines a family office's investment objectives, risk tolerance, asset allocation targets, return benchmarks, liquidity needs, ESG constraints, and prohibited investments. Every allocation decision should trace back to the IPS.
+
+**Co-Investment** — The right for a limited partner to invest directly alongside a fund in specific deals, typically without paying management fees or carried interest on the co-invested capital. Family offices frequently negotiate co-investment rights as a condition of committing to a fund.
+
+**Side Letter** — A private agreement between a general partner and a specific limited partner that modifies the standard fund terms — typically granting most-favored-nation clauses, co-investment rights, fee reductions, or enhanced reporting rights. Family offices with significant commitments routinely negotiate side letters.
+
+**Direct Investing** — Family offices investing directly into companies or assets rather than through a fund manager. Eliminates the management fee and carried interest layer but requires in-house deal sourcing and diligence capability. Increasingly common among larger SFOs.
+
+**Capital Call** — A demand by a fund's general partner for a portion of a limited partner's committed capital. Family offices with large alternative allocations must maintain sufficient liquidity to meet capital calls across multiple funds simultaneously, often with little notice.
+
+**Clawback** — A provision requiring a general partner to return previously distributed carried interest if the fund's overall returns fall below the hurdle rate. Protects limited partners from overpaying carry on early winners before later investments are resolved.
+
+---
+
+## The Toolkit for Family Office Decision-Making
+
+**Universal Due Diligence Checklist** — Essential questions before committing family capital to any alternative investment. Structure, fees, liquidity, manager track record, legal, alignment, reporting, taxes. The checklist for every fund manager meeting.
+
+**Advisor Question Sets** — Scored evaluation tools for assessing whether advisors and fund managers understand the specific asset classes they are recommending. Covers DeFi, ESG, and alternative assets. Teaches investment committee members what a competent answer looks like.
+
+**Fee Breakdown by Asset Class** — Management fees, carried interest, expense ratios, fund-of-funds layers. Total cost of ownership for alternative asset allocations across the family office portfolio.
+
+**Self-Reflection Questions** — Ten categories of guided behavioral reflection. Particularly useful for next-generation family members preparing to participate in investment committee decisions.
+
+---
+
+## Research Foundation
+
+186 footnoted sources across all modules. Peer-reviewed journals: Econometrica, Journal of Finance, Science, Nature Neuroscience. Institutional sources: IMF, World Bank, BIS, Federal Reserve, EU, OECD, UN, IFC, FSB, TCFD. Full public bibliography: https://www.ncbi.nlm.nih.gov/myncbi/1Ferik7yRl8Y6d/bibliography/public/
+
+---
+
+## Pricing & Access
+
+- **Investing Primer:** Always free — no account required
+- **Premium:** $12.99/month or $69.99/year (1-week free trial on annual)
+- **Platform:** iOS — Apple App Store: https://apps.apple.com/app/id6762205964
+
+---
+
+## Partnership
+
+Alternative Asset Literacy is actively seeking partnerships with family offices, multi-family offices, wealth management firms, and private banks serving family office clients.
+
+Contact: https://alternativeassetliteracy.com/contact.html
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

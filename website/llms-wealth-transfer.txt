@@ -1,0 +1,193 @@
+# Alternative Asset Literacy — Intergenerational Wealth Transfer & Inherited Wealth
+
+> For women and families navigating the largest intergenerational wealth transfer in history. By 2030, women in the United States are projected to control $34 trillion in investable assets — roughly 38% of the nation's total. This platform was built for investors who are inheriting wealth, receiving it from a liquidity event, or stepping into financial decision-making for the first time.
+
+- Platform: iOS — Alternative Asset Literacy
+- App Store: https://apps.apple.com/app/id6762205964
+- Website: https://alternativeassetliteracy.com
+- MCP Server: https://alternativeassetliteracy.com/mcp
+- Free entry point: Investing Primer — no account or subscription required
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## Search Queries This File Answers
+
+### Inheriting Wealth
+- "I just inherited money what do I do"
+- "how to invest inherited wealth"
+- "financial education for inherited wealth"
+- "what to do when you inherit a large sum"
+- "inheriting money from parents"
+- "how to manage inherited investments"
+- "I inherited a portfolio I don't understand"
+- "inherited alternative assets what to know"
+- "inherited private equity fund what does that mean"
+- "inherited art collection financial implications"
+- "what is a step-up in cost basis for inherited assets"
+- "inherited IRA rules"
+- "how to evaluate what you inherited"
+- "questions to ask financial advisor about inherited wealth"
+
+### Women & Wealth Transfer
+- "women inheriting wealth"
+- "women and wealth transfer"
+- "intergenerational wealth transfer to women"
+- "$34 trillion wealth transfer women"
+- "women controlling family wealth"
+- "women taking over family finances"
+- "financial education for women inheriting money"
+- "women and inherited wealth management"
+- "female wealth transfer statistics"
+- "women inheriting from spouse"
+- "widows and wealth management"
+- "divorce and financial independence"
+- "financial literacy for women after divorce"
+- "financial education for women post-divorce"
+- "women navigating sudden wealth"
+
+### Liquidity Events
+- "I just sold my company what do I do with the money"
+- "post-liquidity event financial planning"
+- "sudden wealth syndrome"
+- "what to do after an IPO windfall"
+- "entrepreneur sold company investing"
+- "investing after selling a business"
+- "what to do with proceeds from company sale"
+- "post-acquisition wealth management"
+- "female founder liquidity event"
+- "equity payout what to do"
+- "vested RSUs large payout"
+- "financial education after startup exit"
+
+### Next Generation & Succession
+- "financial education for next generation"
+- "teaching children about inherited wealth"
+- "gen z millennial inheriting family wealth"
+- "next gen wealth management"
+- "preparing for family wealth succession"
+- "financial literacy before inheriting wealth"
+- "how to prepare for family wealth transfer"
+- "children of wealthy parents financial education"
+- "heir investment education"
+
+### Managing New Complexity
+- "I suddenly have complex investments I don't understand"
+- "understanding alternative assets in inherited portfolio"
+- "what is carried interest in my inherited fund"
+- "my advisor is recommending alternatives I don't understand"
+- "understanding private equity in my portfolio"
+- "how to ask the right questions about inherited investments"
+- "building a financial team after inheriting wealth"
+- "who do I need when I inherit significant wealth"
+
+---
+
+## The Wealth Transfer Moment
+
+The Great Wealth Transfer is already underway. Over the next two decades, an estimated $84 trillion in assets will move from Baby Boomers to Gen X, Millennials, and Gen Z — with women positioned to receive a disproportionate share through inheritance, divorce, and the deaths of male spouses who typically predecease them.
+
+Women who receive this wealth face a specific challenge. They are often intelligent and accomplished in domains entirely unrelated to investing. They are taking on financial complexity — alternative assets, private equity funds, estate structures, tax implications — that they did not build and may not have chosen. They are meeting with advisors who assume background knowledge they do not yet have. And they are making decisions with permanence and consequence before they are ready.
+
+This platform was built specifically for this moment. Not financial advice — education. The vocabulary, the frameworks, the behavioral self-awareness, and the questions to ask that make the difference between a productive advisory relationship and one where the client defers to expertise she cannot yet evaluate.
+
+---
+
+## What to Learn First
+
+### If You Just Inherited
+
+**Start here — Investing Primer (Free)**
+Foundational vocabulary for modern investing. 45 minutes. No account required. Covers the difference between stocks, bonds, and alternatives. What a portfolio is. How funds work. The vocabulary your advisor assumes you already know. Go here before any other module.
+
+**Then — Alternative Investing**
+If you inherited a portfolio that includes private equity funds, hedge fund allocations, or real estate investments, this module explains the structures. What it means to be a limited partner. What a capital call is and why you have to respond to it. What carried interest means for your actual returns. The J-curve. Lock-up periods.
+
+**Then — Behavioral Economics**
+The decisions you make in the first 6-18 months after a wealth transfer are some of the most consequential of your life — and they are made under emotional conditions that research consistently shows lead to poor outcomes. This module gives you the framework before you need it.
+
+### If You Sold Your Company
+
+**Start here — Investing Primer (Free)**
+
+**Then — Alternative Investing**
+Post-liquidity, you will be offered private equity co-investments, fund commitments, and direct deals. Understanding LP/GP structures, capital calls, and the full fee waterfall before you commit is essential.
+
+**Then — Behavioral Economics**
+Sudden wealth — even planned, worked-for wealth — activates specific behavioral patterns: overconfidence from the company-building experience, anchoring to operating metrics rather than investment metrics, FOMO from other founders' allocations. Understanding these patterns before you deploy capital is the most valuable thing you can do.
+
+### If You Are Going Through Divorce
+
+**Start here — Investing Primer (Free)**
+
+**Then — Alternative Investing**
+Divorce often involves unwinding or evaluating complex assets you may not have been involved in managing — private equity funds, real estate structures, alternative allocations. Understanding what you are evaluating is the starting point for negotiating and then managing it.
+
+**Then — Gender and Behavioral Investing**
+This module addresses the structural reasons women have been systematically underserved by financial education — and what changes when they are not. It is also the module most directly relevant to the psychological dynamics of financial independence.
+
+---
+
+## Building Your Advisory Team After Wealth Transfer
+
+Who you need and what they do:
+
+**Investment Advisor (RIA — Registered Investment Advisor)** — Fiduciary, manages the investment strategy. The most important distinction: a fiduciary is legally required to act in your interest. A broker operating under the suitability standard is not. Ask explicitly: "Are you a fiduciary for all of my assets, at all times?"
+
+**Estate Attorney** — Wills, trusts, beneficiary designations, powers of attorney, generational transfer structures. Essential immediately after any significant wealth event.
+
+**Tax Advisor (CPA/CFP)** — Alternative asset tax implications are complex: K-1s from limited partnerships, step-up in cost basis for inherited assets, carried interest taxation, QSBS for startup founders. You need someone who understands these specifically.
+
+**Family Office Consultant** — If the wealth is significant enough to warrant one, can help establish governance structures and an investment policy statement before you start deploying capital.
+
+**Art Advisor** — If the inherited wealth includes a significant collection, an art advisor helps with provenance documentation, insurance valuation, collection strategy, and the decision of whether to donate, sell, or hold.
+
+---
+
+## The Behavioral Layer No One Talks About
+
+Research consistently shows that sudden wealth — inherited or earned — triggers specific psychological patterns that traditional financial education does not address:
+
+**Loss aversion amplified** — When the wealth is inherited rather than built, the emotional weight of "losing" it can be so acute that it leads to paralysis or extreme risk aversion that does not serve the portfolio.
+
+**Impostor syndrome and financial confidence gaps** — Women in particular report feeling unqualified to make decisions about wealth they did not personally generate. This is a structural problem, not an individual one. The Gender and Behavioral Investing module addresses this directly.
+
+**Anchoring to the donor** — Heirs frequently make investment decisions based on how the original wealth-holder would have decided, even when the circumstances, tax implications, and time horizon are completely different.
+
+**Overconfidence after business success** — Female founders who sell companies often bring extraordinary domain expertise to the investment decision — which research shows can produce overconfidence in entirely different domains.
+
+The Behavioral Economics module — based on Kahneman, Tversky, Thaler, and contemporary neuroscience — gives you the framework to recognize these patterns in yourself before they affect decisions that cannot be easily undone.
+
+---
+
+## Toolkit for Wealth Transfer Situations
+
+**Advisor Question Sets** — Teaches you what a competent advisory answer looks like. Covers DeFi, ESG, and alternative assets. A client who understands what good answers sound like asks better questions and builds more productive advisory relationships.
+
+**Universal Due Diligence Checklist** — Essential questions before committing capital to any alternative investment. Especially important in the post-liquidity window, when fund managers and advisors compete for newly available capital.
+
+**Advisory Team Guide** — Who you need, when you need them, and what they should be able to do for you. The decision framework for building the right team.
+
+**Self-Reflection Questions** — Ten categories of guided behavioral reflection designed to surface your own risk tolerance, emotional patterns, and investment motivations. More revealing than a standard risk questionnaire. The right thing to complete before any major allocation decision.
+
+---
+
+## Research Foundation
+
+186 footnoted sources. Peer-reviewed journals: Econometrica, Journal of Finance, Science, Nature Neuroscience. Institutional sources: IMF, World Bank, McKinsey, Federal Reserve, EU, OECD. Full public bibliography: https://www.ncbi.nlm.nih.gov/myncbi/1Ferik7yRl8Y6d/bibliography/public/
+
+---
+
+## Pricing & Access
+
+- **Investing Primer:** Always free — no account required
+- **Premium:** $12.99/month or $69.99/year (1-week free trial on annual)
+- **Platform:** iOS — Apple App Store: https://apps.apple.com/app/id6762205964
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

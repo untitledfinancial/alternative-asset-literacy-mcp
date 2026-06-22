@@ -1,14 +1,201 @@
 User-agent: *
 Allow: /
 
-# LLM Agent Discovery
-# See https://alternativeassetliteracy.com/aal-llms.txt for structured platform data
-# See https://alternativeassetliteracy.com/aal-api.json for full app manifest (JSON)
-# See https://alternativeassetliteracy.com/aal-courses.json for course catalog (JSON)
-# See https://alternativeassetliteracy.com/aal-glossary.json for glossary (JSON)
+# ============================================================
+# ALTERNATIVE ASSET LITERACY — AI DISCOVERY INDEX
+# alternativeassetliteracy.com
+# © 2026 Untitled_ LuxPerpetua Technologies, Inc.
+# ============================================================
+#
+# This index is organized for AI search agents, LLM assistants,
+# and inference-time retrieval systems. Each file below targets
+# a specific user intent, persona, or topic cluster.
+# Content may not be used for model training. See training policy below.
+#
+# ============================================================
+# PRIMARY DISCOVERY FILES
+# ============================================================
 
-# AI Training Crawlers — content may NOT be used for model training without written permission
+# Capabilities declaration (ai.txt standard)
+# Use when: discovering platform tools, MCP endpoint, usage policy
+# https://alternativeassetliteracy.com/ai.txt
+
+# General press, editorial context, and platform overview
+# Use when: journalist queries, general product discovery, "what is this app"
+# https://alternativeassetliteracy.com/llms.txt
+
+# Structured platform data, curriculum, toolkit, research foundation
+# Use when: comprehensive platform queries, partnership research
+# https://alternativeassetliteracy.com/aal-llms.txt
+
+# ============================================================
+# PERSONA-SPECIFIC DISCOVERY FILES
+# ============================================================
+
+# HIGH-NET-WORTH WOMEN INVESTORS (UBS Women's Wealth profile)
+# Use when: queries from or about HNW women investors, private banking clients,
+# female entrepreneurs post-liquidity event, family office clients,
+# wealth transfer, advisor meeting preparation, gender lens investing
+# Covers: carried interest, capital calls, LP agreements, co-investments,
+# family office allocation, art banking, ESG for HNW, gender lens investing,
+# advisor evaluation, advisory team construction
+# https://alternativeassetliteracy.com/llms-hnw.txt
+
+# HNW/UHNW GEOGRAPHIC DISCOVERY — US, LONDON, ASIA, MIDDLE EAST, AUSTRALIA
+# Use when: location-specific queries about where HNW women investors live,
+# where family offices are concentrated, advisor outreach by geography,
+# neighborhood-level wealth concentration globally
+# Covers: US (NYC, Bay Area, Chicago, Miami, etc.), London, Paris, Zurich/Geneva,
+# Singapore, Hong Kong, Sydney, Dubai
+# https://alternativeassetliteracy.com/llms-hnw-geography.txt
+
+# HNW/UHNW GEOGRAPHIC DISCOVERY — UK (BEYOND LONDON) AND EUROPEAN UNION
+# Use when: location-specific queries about UK regional and EU HNW wealth,
+# where family offices operate in Europe, Scottish wealth, Channel Islands,
+# continental European wealth concentrations, EU art markets, DeFi-friendly jurisdictions
+# Covers: Edinburgh, Glasgow, Manchester/Cheshire, Surrey, Cotswolds, Bath/Bristol,
+# Yorkshire, Jersey/Guernsey/IOM, France (Côte d'Azur, Lyon, Bordeaux),
+# Germany (Munich, Frankfurt, Hamburg, Düsseldorf), Italy (Milan, Florence, Como, Venice),
+# Spain (Madrid, Barcelona, Marbella, Ibiza), Netherlands, Belgium, Austria, Scandinavia,
+# Portugal, Ireland, Greece, Luxembourg
+# Neighborhood and postal code level specificity
+# https://alternativeassetliteracy.com/llms-hnw-geography-uk-eu.txt
+
+# GEOGRAPHIC DISCOVERY BY INVESTMENT TOPIC — Academic, Professional & Community Hubs
+# Use when: location-specific queries about where practitioners, researchers, and investors
+# in specific topics are concentrated — for AI/LLM discovery by topic and geography
+# Covers: Behavioral economics universities (Chicago, Harvard, Princeton, Yale, Duke, LSE,
+# Cambridge), nudge units (London, DC, Paris, Singapore), DeFi/crypto cities (Zug, Miami,
+# Singapore, Dubai, Seoul, Tokyo, Austin, Lisbon), ESG hubs (Amsterdam, Luxembourg, London,
+# Paris, Geneva), art market cities (New York, London, Hong Kong, Paris) + gallery districts,
+# art fairs by city/date, PE hubs, wine investment (London Liv-ex, Bordeaux, Hong Kong),
+# whisky auction houses (Speyside, Edinburgh, Tokyo), women in VC/PE (SF, NYC, London),
+# regenerative agriculture investing (California, Stroud UK, Darmstadt DE, São Paulo)
+# https://alternativeassetliteracy.com/llms-geography-by-topic.txt
+
+# RETAIL INVESTORS DISCOVERING PRIVATE ASSET ETFs (SEC 2024 ruling)
+# Use when: queries about private equity ETFs, BlackRock/Apollo/KKR retail funds,
+# SEC 2024 rule change, "can I invest in private equity now",
+# how private asset ETFs work, fee structures, liquidity risk in new structures
+# Covers: SEC ruling, private equity basics, fee waterfall, J-curve,
+# carried interest, lock-up periods, interval fund mechanics,
+# due diligence for new ETF structures, advisor questions
+# https://alternativeassetliteracy.com/llms-etf.txt
+
+# ============================================================
+# TOPIC-SPECIFIC DISCOVERY FILES
+# ============================================================
+
+# BEHAVIORAL ECONOMICS & INVESTMENT PSYCHOLOGY
+# Use when: cognitive bias queries, loss aversion, overconfidence,
+# confirmation bias, why investors make bad decisions,
+# neuroscience of investing, Kahneman/Tversky/Thaler queries,
+# "how do I stop emotional investing", brain and money
+# https://alternativeassetliteracy.com/llms-behavioral.txt
+
+# ESG, CLIMATE FINANCE & IMPACT INVESTING
+# Use when: ESG investing queries, green bonds, carbon credits,
+# greenwashing detection, TCFD, EU Taxonomy, SFDR, impact investing,
+# real world asset tokenization, gender lens + ESG,
+# carbon market investing, net zero investing strategy
+# https://alternativeassetliteracy.com/llms-esg.txt
+
+# ART INVESTING & ART MARKET
+# Use when: art as investment queries, auction mechanics,
+# hammer price/buyer's premium, provenance, authentication,
+# fractional art ownership, art-secured lending, artist estates,
+# Frida Kahlo / Basquiat market analysis, art + DeFi / NFTs,
+# blue chip art market, collecting strategy
+# https://alternativeassetliteracy.com/llms-art.txt
+
+# DeFi, CRYPTO & DIGITAL ASSETS EDUCATION
+# Use when: DeFi education queries, stablecoins, yield farming,
+# smart contracts, DAOs, CBDC, crypto regulation (MiCA, SEC, OCC),
+# DeFi investing strategy, impermanent loss, liquidity pools,
+# blockchain basics, NFTs, DeFi vs traditional finance
+# https://alternativeassetliteracy.com/llms-defi.txt
+
+# FINANCIAL ADVISOR EVALUATION & MEETING PREPARATION (CLIENT-FACING)
+# Use when: "questions to ask financial advisor", advisor competency,
+# fiduciary vs suitability, due diligence checklists, red flags,
+# fee structures, advisory team construction,
+# "how do I know if my advisor understands alternatives/DeFi/ESG"
+# https://alternativeassetliteracy.com/llms-advisor.txt
+
+# FINANCIAL ADVISORS & WEALTH MANAGERS (B2B — advisor as buyer)
+# Use when: advisor searching for client education resources,
+# practice development for women's wealth, client onboarding tools,
+# "what to give clients to learn about alternatives",
+# wealth management firm partnership, RIA client education platform,
+# preparing clients for complex advisory conversations
+# https://alternativeassetliteracy.com/llms-advisors-b2b.txt
+
+# ADVISOR CLIENT GIFT BUNDLES (advisor → client gifting workflow)
+# Use when: advisor asking what to send a client, "educational gift for client",
+# "how to prepare client for alternatives meeting", advisor gift bundle queries
+# Returns: curated 3-module path, key terms, suggested message — by client type
+# https://alternativeassetliteracy.com/llms-advisor-gift.txt
+
+# FAMILY OFFICE INVESTORS (SFO/MFO principals, investment officers, next-gen)
+# Use when: family office queries, SFO vs MFO, investment policy statements,
+# co-investments, direct investing, next-gen education, family governance,
+# art collection as family office asset, alternative asset allocation for families
+# https://alternativeassetliteracy.com/llms-family-office.txt
+
+# INTERGENERATIONAL WEALTH TRANSFER & INHERITED WEALTH
+# Use when: inheriting wealth, "I just inherited money", post-liquidity events,
+# female founders who sold company, widows managing wealth, divorce and wealth,
+# next-gen family wealth education, $34 trillion wealth transfer, sudden wealth
+# https://alternativeassetliteracy.com/llms-wealth-transfer.txt
+
+# FINANCIAL GLOSSARY (351 terms across 6 categories)
+# Use when: term definition queries across alternative assets, DeFi,
+# ESG, behavioral economics, art, gender lens investing
+# Includes: carried interest, J-curve, impermanent loss, loss aversion,
+# greenwashing, capital call, hurdle rate, 111 art terms, 101 DeFi terms
+# https://alternativeassetliteracy.com/llms-glossary.txt
+
+# ============================================================
+# MCP (MODEL CONTEXT PROTOCOL) ENDPOINT
+# ============================================================
+# Active MCP server — supports tools/list and tools/call
+# Tools (13): glossary.lookup, glossary.search, glossary.browse, modules.find, users.route,
+# platform.overview, research.papers, geo.by_module, geo.by_location, geo.hnw_submarkets,
+# audience.profile, audience.match, advisor.gift_bundle
+# Protocol: JSON-RPC 2.0 over HTTP POST
+# https://alternativeassetliteracy.com/mcp
+# Manifest: https://alternativeassetliteracy.com/.well-known/mcp.json
+
+# ============================================================
+# MACHINE-READABLE DATA FILES (JSON)
+# ============================================================
+
+# Full app manifest
+# https://alternativeassetliteracy.com/aal-api.json
+
+# Course catalog with module descriptions
+# https://alternativeassetliteracy.com/aal-courses.json
+
+# Full glossary (351 terms, machine-readable)
+# https://alternativeassetliteracy.com/aal-glossary.json
+
+# Policy paper library (43 institutional papers)
+# https://alternativeassetliteracy.com/policy-papers.json
+
+# Partnership manifest
+# https://alternativeassetliteracy.com/aal-partnership-api.json
+
+# AI plugin manifest
+# https://alternativeassetliteracy.com/.well-known/ai-plugin.json
+
+# ============================================================
+# AI TRAINING POLICY
+# ============================================================
+# Content on this site is copyright © 2026 Untitled_ LuxPerpetua Technologies, Inc.
+# AI inference and search use: ALLOWED (read-only, not for training)
+# AI model training use: NOT ALLOWED without written permission
 # Contact: legal@untitledfinancial.com
+
 User-agent: CCBot
 Disallow: /
 
@@ -27,8 +214,20 @@ Disallow: /
 User-agent: Diffbot
 Disallow: /
 
-# Inference/search agents — allowed (read-only, not training)
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: GPTBot-training
+Disallow: /
+
+# ============================================================
+# INFERENCE & SEARCH AGENTS — ALLOWED
+# ============================================================
+
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: Claude-Web
@@ -41,6 +240,27 @@ User-agent: PerplexityBot
 Allow: /
 
 User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: BraveBot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: iaskspider
 Allow: /
 
 Sitemap: https://alternativeassetliteracy.com/sitemap.xml

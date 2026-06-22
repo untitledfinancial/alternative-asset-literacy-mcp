@@ -1,0 +1,354 @@
+name: alternative-asset-literacy
+displayName: Alternative Asset Literacy
+description: >
+  Research-backed financial education platform covering alternative assets, DeFi,
+  behavioral economics, art investing, ESG & climate finance, and gender lens
+  investing. 13 tools: full-text glossary search, browse 351 terms by category,
+  term lookup, module discovery, user profile routing, platform overview,
+  institutional research papers (43 papers from IMF, BIS, World Bank, Federal
+  Reserve), geographic intelligence by investment topic, HNW submarket data by
+  city and neighborhood, location-to-module routing, investor audience profiling,
+  free-text audience matching, and advisor client gift bundle generation. Built
+  for high-net-worth women investors, female entrepreneurs, ESG investors, DeFi
+  investors, and the wealth management firms that serve them. Educational content
+  only — not financial advice.
+
+version: "1.0.0"
+license: proprietary
+homepage: https://alternativeassetliteracy.com
+contact: https://alternativeassetliteracy.com/contact.html
+author:
+  name: Victoria Lee Case
+  organization: Untitled_ LuxPerpetua Technologies, Inc.
+
+categories:
+  - finance
+  - education
+  - research
+
+tags:
+  - alternative-assets
+  - defi
+  - esg
+  - behavioral-economics
+  - art-investing
+  - gender-lens-investing
+  - glossary
+  - financial-literacy
+  - wealth-management
+  - investment-education
+  - geographic-intelligence
+  - hnw-investors
+  - family-office
+  - audience-routing
+
+startCommand:
+  type: http
+  url: https://alternativeassetliteracy.com/mcp
+  configSchema:
+    type: object
+    properties: {}
+    required: []
+
+tools:
+  - name: lookup_term
+    description: Look up any of 351 financial terms across alternative assets, DeFi, ESG, behavioral economics, art, and gender lens investing.
+    inputSchema:
+      type: object
+      properties:
+        term:
+          type: string
+          description: The financial term to look up (e.g. "carried interest", "impermanent loss", "greenwashing")
+      required:
+        - term
+    examples:
+      - input:
+          term: carried interest
+        description: Look up what carried interest means in private equity
+      - input:
+          term: impermanent loss
+        description: Understand impermanent loss in DeFi liquidity pools
+      - input:
+          term: greenwashing
+        description: Define greenwashing in ESG investing context
+
+  - name: search_glossary
+    description: Full-text search across all 351 financial terms and definitions — finds terms by keyword even when you don't know the exact term name.
+    inputSchema:
+      type: object
+      properties:
+        query:
+          type: string
+          description: Keyword or phrase to search across term names and definitions
+        limit:
+          type: number
+          description: Max results to return (default 10, max 50)
+      required:
+        - query
+    examples:
+      - input:
+          query: yield farming risk
+        description: Find all glossary terms related to yield farming risks
+      - input:
+          query: carbon market
+        description: Search for terms related to carbon markets and credits
+      - input:
+          query: cognitive bias investing
+        description: Find behavioral economics terms related to cognitive biases
+
+  - name: browse_glossary
+    description: Browse all 351 glossary terms by category. Returns terms with definitions. Categories — Alternative Assets, Art, DeFi & Crypto, ESG & Climate, Behavioral Economics, Gender Lens Investing.
+    inputSchema:
+      type: object
+      properties:
+        category:
+          type: string
+          description: "Category to browse. Options: 'Alternative Assets', 'Art', 'DeFi & Crypto', 'ESG & Climate', 'Behavioral Economics', 'Gender Lens Investing'. Omit for all."
+        limit:
+          type: number
+          description: Max terms to return (default 25, max 100)
+      required: []
+    examples:
+      - input:
+          category: Art
+        description: Browse all 111 art investing glossary terms
+      - input:
+          category: DeFi & Crypto
+        description: Browse DeFi and cryptocurrency terms
+      - input:
+          category: Behavioral Economics
+        description: Browse behavioral economics and investment psychology terms
+
+  - name: find_module
+    description: Find the most relevant Alternative Asset Literacy learning module for a given topic or investment concept.
+    inputSchema:
+      type: object
+      properties:
+        topic:
+          type: string
+          description: The topic or concept the user wants to learn about
+      required:
+        - topic
+    examples:
+      - input:
+          topic: private equity ETFs and SEC ruling
+        description: Find the right module for learning about private asset ETFs
+      - input:
+          topic: loss aversion and overconfidence bias
+        description: Find the behavioral economics module
+      - input:
+          topic: green bonds and carbon credits
+        description: Find the ESG and climate investing module
+
+  - name: route_user_profile
+    description: Given a description of the user's background or intent, returns the most relevant learning profile and recommended starting module.
+    inputSchema:
+      type: object
+      properties:
+        user_description:
+          type: string
+          description: A description of the user's profile — e.g. 'HNW woman investor', 'ESG-focused advisor', 'crypto-curious investor new to DeFi'
+      required:
+        - user_description
+    examples:
+      - input:
+          user_description: High-net-worth woman who just sold her company and is meeting with UBS
+        description: Route a post-liquidity HNW woman to the right starting content
+      - input:
+          user_description: ESG investor curious about greenwashing and carbon credits
+        description: Route an ESG investor to climate and sustainability content
+      - input:
+          user_description: Financial advisor looking for educational content to share with DeFi-curious clients
+        description: Route a B2B advisor to the advisor-specific discovery file
+
+  - name: get_platform_overview
+    description: Returns a structured overview of the Alternative Asset Literacy platform — modules, tools, pricing, and target audiences.
+    inputSchema:
+      type: object
+      properties: {}
+      required: []
+    examples:
+      - input: {}
+        description: Get a full overview of the platform, modules, and pricing
+
+  - name: get_research_papers
+    description: Returns institutional research papers by category. 43 papers from IMF, BIS, World Bank, FSB, UN, Federal Reserve, EU, IFC, OECD, TCFD.
+    inputSchema:
+      type: object
+      properties:
+        category:
+          type: string
+          description: "Category to filter by. Options: CBDC, Stablecoin, ESG, Behavioral Economics, Gender Lens, Fintech, Cross-Border Payments. Omit for all."
+      required: []
+    examples:
+      - input:
+          category: ESG
+        description: Get all ESG and sustainability research papers
+      - input:
+          category: CBDC
+        description: Get central bank digital currency research papers
+      - input: {}
+        description: Get all 43 institutional research papers across all categories
+
+  - name: geo_by_module
+    description: Returns geographic communities, institutions, conferences, and women's networks for a given investment topic. Covers behavioral economics, gender lens investing, DeFi, ESG, art investing, alternative assets, wine, whisky, and future modules.
+    inputSchema:
+      type: object
+      properties:
+        topic:
+          type: string
+          description: Investment topic or module name (e.g. "DeFi", "art investing", "ESG", "behavioral economics", "gender lens investing", "wine", "whisky")
+      required:
+        - topic
+    examples:
+      - input:
+          topic: DeFi
+        description: Get primary hubs, conferences, and women's networks for DeFi investing (Zug, Singapore, Miami, Dubai...)
+      - input:
+          topic: ESG
+        description: Find where ESG and climate finance communities are concentrated globally
+      - input:
+          topic: art investing
+        description: Get geographic hubs for art as an asset class — auction houses, fair locations, gallery districts
+
+  - name: geo_by_location
+    description: Given a city or region, returns which Alternative Asset Literacy modules are most relevant there and why, with local institutional context.
+    inputSchema:
+      type: object
+      properties:
+        location:
+          type: string
+          description: City, neighborhood, or region (e.g. "Zurich", "London Mayfair", "Singapore", "Nantucket", "Edinburgh")
+      required:
+        - location
+    examples:
+      - input:
+          location: Zurich
+        description: Find which modules are most relevant for investors based in Zurich
+      - input:
+          location: Singapore
+        description: Get module recommendations for Singapore-based investors
+      - input:
+          location: Chicago
+        description: Find relevant modules for Chicago — behavioral economics hub, PE capital, Morningstar
+
+  - name: geo_hnw_submarkets
+    description: Returns neighborhood-level HNW intelligence for a city or region — specific postcodes, residential quarters, family offices, private banks, women's networks, and art market anchors. Covers 30+ markets across US, UK, EU, and Asia/Middle East.
+    inputSchema:
+      type: object
+      properties:
+        location:
+          type: string
+          description: City, neighborhood, or region (e.g. "Edinburgh", "Amsterdam Oud-Zuid", "Greenwich CT", "Grünwald Munich", "Singapore Nassim Road")
+        focus:
+          type: string
+          description: Optional focus area to filter results (e.g. "art", "ESG", "family office", "women")
+      required:
+        - location
+    examples:
+      - input:
+          location: Edinburgh
+        description: Get Edinburgh HNW submarkets — EH10 Morningside, EH12 Murrayfield, EH3 New Town, women's networks, family offices
+      - input:
+          location: London
+          focus: art
+        description: Filter London HNW submarkets to art-relevant neighborhoods and institutions
+      - input:
+          location: Greenwich CT
+        description: Get HNW submarket data for Greenwich Connecticut — hedge fund capital of the US
+
+  - name: audience_profile
+    description: Returns the full discovery profile for a specific investor audience — who they are, what they search for, which modules to recommend, toolkit priorities, and the relevant llms.txt discovery file URL.
+    inputSchema:
+      type: object
+      properties:
+        audience:
+          type: string
+          description: "Audience type. Options: hnw-women, art, behavioral, defi, esg, etf, advisor-client, advisor-b2b"
+      required:
+        - audience
+    examples:
+      - input:
+          audience: hnw-women
+        description: Get the full profile for high-net-worth women investors — signals, pain points, recommended modules, geographic hubs
+      - input:
+          audience: advisor-b2b
+        description: Get the profile for financial advisors seeking client education resources
+      - input:
+          audience: esg
+        description: Get the ESG investor profile — signals, greenwashing concerns, relevant institutions
+
+  - name: audience_match
+    description: Given a free-text description of a user or investor, identifies the best-matching audience profile and returns their complete discovery data including recommended modules and toolkit priorities.
+    inputSchema:
+      type: object
+      properties:
+        description:
+          type: string
+          description: Free-text description of the user (e.g. "HNW woman who just sold her company", "ESG investor worried about greenwashing", "financial advisor looking for client education")
+      required:
+        - description
+    examples:
+      - input:
+          description: HNW woman who just sold her company and is meeting with her private banker
+        description: Match a post-liquidity HNW woman to the right audience profile
+      - input:
+          description: ESG investor curious about greenwashing and whether their fund is actually sustainable
+        description: Match an ESG-focused investor to the ESG audience profile
+      - input:
+          description: Financial advisor who wants educational materials to share with DeFi-curious clients
+        description: Match a B2B advisor to the advisor-b2b profile
+
+  - name: advisor_gift_bundle
+    description: For financial advisors — given a description of a client, returns a curated education bundle to share. Includes a 3-module learning path with rationale, 3 key terms the client should know before their meeting, toolkit highlights, and a copy-paste suggested message the advisor can send directly to the client. Covers HNW women, DeFi-curious, ESG-focused, art collector, and general alternative asset clients.
+    inputSchema:
+      type: object
+      properties:
+        client_description:
+          type: string
+          description: Description of the client — background, wealth level, meeting context, knowledge gaps (e.g. "HNW woman who just sold her biotech company, meeting with UBS next month")
+        topic:
+          type: string
+          description: Optional topic focus — overrides profile matching if provided (e.g. "DeFi", "ESG", "art investing", "alternative assets")
+      required:
+        - client_description
+    examples:
+      - input:
+          client_description: HNW woman who just sold her biotech company, meeting with UBS next month
+        description: Build a gift bundle for a post-liquidity HNW woman meeting with her private banker
+      - input:
+          client_description: DeFi-curious client asking about yield farming and what staking actually means
+        description: Build a DeFi education bundle for a crypto-curious client
+      - input:
+          client_description: ESG-focused client worried about greenwashing in her sustainable fund
+          topic: ESG
+        description: Build an ESG education bundle with greenwashing detection focus
+      - input:
+          client_description: Art collector client considering an art fund investment
+          topic: art investing
+        description: Build an art investing education bundle for a collector client
+
+prompts:
+  - name: explain_alternative_asset
+    description: Explain an alternative asset class in plain language
+    template: "Use the lookup_term and find_module tools to explain {{asset_class}} as an investment — what it is, how it works, who has access, and what the risks are."
+
+  - name: recommend_learning_path
+    description: Recommend a learning path based on the user's background
+    template: "Use route_user_profile to determine the best starting point for someone who is {{user_description}}, then use find_module to identify the top 2-3 modules they should complete in order."
+
+  - name: research_esg_topic
+    description: Research an ESG or climate investing topic
+    template: "Use search_glossary to find relevant terms for '{{topic}}', then use get_research_papers with category ESG to find supporting institutional research."
+
+  - name: route_by_location
+    description: Recommend modules and HNW context for an investor in a specific city
+    template: "Use geo_by_location to find relevant modules for an investor in {{location}}, then use geo_hnw_submarkets to provide neighborhood-level context relevant to their wealth management situation."
+
+  - name: match_and_route_investor
+    description: Match an investor to their profile and recommend a full learning path
+    template: "Use audience_match with the description '{{investor_description}}' to identify their profile, then use find_module to recommend the top 2 modules for their specific situation."
+
+  - name: advisor_gift_client
+    description: Build a ready-to-send education bundle for a financial advisor to share with a specific client
+    template: "Use advisor_gift_bundle with the client description '{{client_description}}' to generate a curated learning path, key terms, toolkit highlights, and a suggested message the advisor can send directly to the client."

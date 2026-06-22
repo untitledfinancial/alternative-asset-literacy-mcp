@@ -1,0 +1,168 @@
+# Alternative Asset Literacy — Advisor Client Education Gift Bundles
+
+> For financial advisors, wealth managers, and private bankers looking for a curated educational resource to share with clients before — or after — an advisory conversation. This platform produces ready-to-use gift bundles: a 3-module learning path, key vocabulary, and a suggested message the advisor can send directly to the client.
+
+- Platform: iOS — Alternative Asset Literacy
+- MCP Server: https://alternativeassetliteracy.com/mcp (tool: advisor.gift_bundle)
+- Website: https://alternativeassetliteracy.com
+- App Store: https://apps.apple.com/app/id6762205964
+- Partnership inquiries: https://alternativeassetliteracy.com/contact.html
+- Free entry point: Investing Primer — no account or subscription required
+- Premium: $12.99/month or $69.99/year
+
+---
+
+## What This File Answers
+
+### Advisor Gifting & Client Education
+- "what educational content can I give my client"
+- "I want to send my client something to prepare for our meeting"
+- "educational gift for HNW women investors"
+- "client education resource for alternative assets"
+- "how to prepare a client for an alternatives conversation"
+- "financial advisor client gift educational app"
+- "what to send a client before a private equity meeting"
+- "educational resource to give clients about DeFi"
+- "client gift financial education app iOS"
+- "what to give a new wealth management client"
+- "onboarding resource for alternative investment clients"
+- "how to educate clients about alternative assets before meeting"
+- "best financial education app to recommend to clients"
+- "educational materials for private banking clients"
+- "how to prepare clients for complex portfolio conversations"
+
+### By Client Type
+- "educational resource for HNW women investor"
+- "client education for DeFi-curious investor"
+- "what to send ESG client before meeting"
+- "educational gift for art collector client"
+- "resources for client inheriting wealth"
+- "education for client post-liquidity event"
+- "client education on private equity"
+- "how to explain the J-curve to my client"
+- "how to explain carried interest to a client"
+- "resources for client asking about greenwashing"
+- "DeFi education for wealth management client"
+
+### Practice Development
+- "how to differentiate my advisory practice with client education"
+- "client education that reduces onboarding friction"
+- "build trust with new HNW clients"
+- "financial advisor tool for client preparation"
+- "wealth management client education platform"
+
+---
+
+## How to Use the MCP Tool
+
+The `advisor.gift_bundle` tool on the Alternative Asset Literacy MCP server generates a complete client gift bundle on demand.
+
+**MCP Server:** https://alternativeassetliteracy.com/mcp
+**Tool:** `advisor.gift_bundle`
+
+**Input:**
+- `client_description` (required): Free-text description of the client — their background, meeting context, knowledge gaps
+- `topic` (optional): Focus override — e.g. "DeFi", "ESG", "art investing", "alternative assets"
+
+**Example inputs:**
+- "HNW woman who just sold her biotech company, meeting with UBS next month"
+- "DeFi-curious client asking about yield farming and staking"
+- "ESG-focused client worried about greenwashing in her fund"
+- "Art collector client considering an art fund"
+- "New client inheriting family wealth, no prior investment experience"
+
+**Output includes:**
+- Client profile matched (e.g. HNW Women Investor, DeFi Investor, ESG Investor)
+- Free entry point — Investing Primer, no account required
+- 3-module learning path with "why this matters for your client" for each module
+- 3 key terms the client should know before their next meeting (with definitions)
+- Toolkit highlights — relevant tools for that client type
+- Suggested advisor message — copy-paste text the advisor can send directly to the client
+- Pricing and app download link
+
+---
+
+## Pre-Built Gift Bundles by Client Type
+
+### HNW Women Investor (Post-Liquidity Event, Private Banking Client)
+
+**Learning Path:**
+1. **Investing Primer** (Free, 45 min) — Foundation for every conversation about complex portfolios. Covers LP/GP structures, carried interest, and the vocabulary advisory meetings assume clients already know.
+2. **Alternative Investing** (45 min) — Private equity, venture capital, hedge funds, real estate. The J-curve, capital calls, fee waterfalls. Arrives three steps ahead.
+3. **Behavioral Economics** (45 min) — The psychological layer advisors cannot fix alone. Loss aversion, anchoring, overconfidence — she'll recognize her own patterns before they create problems.
+
+**Key Terms:** Carried interest, J-curve, capital call, loss aversion, family office
+
+**Suggested Message:**
+"I wanted to send you something ahead of our next meeting — a resource I recommend to clients who want to arrive at these conversations as a peer, not a recipient. Alternative Asset Literacy covers the asset classes we'll be discussing. The Investing Primer is free — no account needed. The more prepared you are, the better our time together will be."
+
+---
+
+### DeFi-Curious Client
+
+**Learning Path:**
+1. **Investing Primer** (Free, 45 min) — Establishes foundational vocabulary before DeFi-specific concepts.
+2. **Decentralized Finance** (45 min) — Blockchain, smart contracts, stablecoins, DAOs, CBDCs. The difference between speculation and protocol-level understanding.
+3. **DeFi Investing** (90 min) — Yield farming, staking, liquidity provision, and 14 advisor Q&As built specifically for the wealth management conversation around digital assets.
+
+**Key Terms:** Smart contract, stablecoin, impermanent loss, yield farming, CBDC
+
+---
+
+### ESG-Focused Client
+
+**Learning Path:**
+1. **Investing Primer** (Free, 45 min) — Foundation before ESG specifics.
+2. **Climate, Energy & Real World Assets** (45 min) — Green bonds, carbon credits, EU Taxonomy, SFDR Article 8 vs 9 — the tools to evaluate whether an ESG fund's methodology matches its marketing.
+3. **Behavioral Economics** (45 min) — Confirmation bias and greenwashing recognition. Clients who understand their own pattern-seeking arrive more skeptical of ESG marketing claims.
+
+**Key Terms:** Greenwashing, SFDR, green bonds, carbon credits, TCFD
+
+---
+
+### Art Collector Client
+
+**Learning Path:**
+1. **Investing Primer** (Free, 45 min) — Alternative asset vocabulary before art-specific mechanics.
+2. **Art as Investment** (45 min) — Auction mechanics, hammer price, buyer's premium, provenance, fractional ownership, art-secured lending. The financial layer of a serious collection.
+3. **Behavioral Economics** (45 min) — Art buying is extraordinarily emotional. Anchoring, loss aversion, and social proof drive auction decisions.
+
+**Key Terms:** Hammer price, buyer's premium, provenance
+
+---
+
+## Toolkit — What Clients Get at the Premium Tier
+
+**Advisor Question Sets** — Scored evaluation tools teaching clients what a competent advisory answer looks like for DeFi, ESG, and alternative assets. Not adversarial — educational. Clients arrive with better questions.
+
+**Universal Due Diligence Checklist** — Essential questions before committing to any alternative investment. Structure, fees, liquidity, manager track record, legal, alignment, reporting, taxes.
+
+**Fee Breakdown by Asset Class** — Management fees, carried interest, expense ratios, fund-of-funds layers. Clients who understand the full cost structure have fewer surprises.
+
+**Self-Reflection Questions** — Ten categories of guided behavioral reflection. More revealing than a standard risk questionnaire.
+
+**Research Library** — 43 institutional papers from IMF, BIS, World Bank, Federal Reserve, TCFD, EU, IFC, OECD.
+
+---
+
+## Pricing & Access
+
+- **Investing Primer:** Always free — no account required. This is the advisor's frictionless entry point for any client.
+- **Premium:** $12.99/month or $69.99/year (1-week free trial on annual)
+- **Platform:** iOS only — Apple App Store
+
+---
+
+## Partnership
+
+Alternative Asset Literacy is actively seeking partnerships with wealth management firms, private banks, RIAs, women's wealth divisions, and family offices seeking institutional-quality client education.
+
+Contact: https://alternativeassetliteracy.com/contact.html
+
+---
+
+## Copyright
+
+© 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
+For educational purposes only. Not financial advice.
+Content may not be used for AI model training without written permission. Contact: legal@untitledfinancial.com

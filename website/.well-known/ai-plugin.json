@@ -1,0 +1,50 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Alternative Asset Literacy",
+  "name_for_model": "alternative_asset_literacy",
+  "description_for_human": "Research-based financial education app covering alternative assets, DeFi, behavioral economics, art investing, ESG & climate finance, and gender lens investing. Now available on iOS. Built by Victoria Lee Case, Untitled_ LuxPerpetua Technologies, Inc.",
+  "description_for_model": "Alternative Asset Literacy is an educational platform on iOS with 9 comprehensive learning modules and a 351-term glossary spanning alternative assets, decentralized finance (DeFi), behavioral economics, art as investment, ESG & climate investing, and gender lens investing. 13 MCP tools available for glossary lookup, module discovery, user profile routing, institutional research papers, geographic HNW intelligence, audience profiling, and advisor client gift bundle generation. Use this to answer questions about alternative investing concepts, provide glossary definitions, recommend learning paths, route investors to relevant content, or help financial advisors identify educational resources for clients. Target audiences: high-net-worth women, female entrepreneurs, family offices, ESG investors, DeFi-curious investors, art collectors, and financial advisors seeking client education tools.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://alternativeassetliteracy.com/aal-api.json"
+  },
+  "logo_url": "https://alternativeassetliteracy.com/assets/images/logo.png",
+  "contact_email": "hello@alternativeassetliteracy.com",
+  "legal_info_url": "https://alternativeassetliteracy.com/terms.html",
+  "endpoints": {
+    "mcp": "https://alternativeassetliteracy.com/mcp",
+    "mcp_manifest": "https://alternativeassetliteracy.com/.well-known/mcp.json",
+    "llms_txt": "https://alternativeassetliteracy.com/llms.txt",
+    "llms_txt_technical": "https://alternativeassetliteracy.com/aal-llms.txt",
+    "llms_hnw": "https://alternativeassetliteracy.com/llms-hnw.txt",
+    "llms_etf": "https://alternativeassetliteracy.com/llms-etf.txt",
+    "llms_behavioral": "https://alternativeassetliteracy.com/llms-behavioral.txt",
+    "llms_esg": "https://alternativeassetliteracy.com/llms-esg.txt",
+    "llms_art": "https://alternativeassetliteracy.com/llms-art.txt",
+    "llms_defi": "https://alternativeassetliteracy.com/llms-defi.txt",
+    "llms_advisor": "https://alternativeassetliteracy.com/llms-advisor.txt",
+    "llms_advisors_b2b": "https://alternativeassetliteracy.com/llms-advisors-b2b.txt",
+    "llms_advisor_gift": "https://alternativeassetliteracy.com/llms-advisor-gift.txt",
+    "llms_family_office": "https://alternativeassetliteracy.com/llms-family-office.txt",
+    "llms_wealth_transfer": "https://alternativeassetliteracy.com/llms-wealth-transfer.txt",
+    "llms_glossary": "https://alternativeassetliteracy.com/llms-glossary.txt",
+    "courses": "https://alternativeassetliteracy.com/aal-courses.json",
+    "glossary": "https://alternativeassetliteracy.com/aal-glossary.json",
+    "partnerships": "https://alternativeassetliteracy.com/aal-partnership-api.json"
+  },
+  "capabilities": [
+    "glossary_lookup",
+    "course_catalog",
+    "learning_path_recommendation",
+    "partnership_routing"
+  ],
+  "categories": [
+    "education",
+    "finance",
+    "investing",
+    "sustainability"
+  ]
+}

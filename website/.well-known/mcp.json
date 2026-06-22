@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "name": "Alternative Asset Literacy",
+  "description": "Financial education platform covering alternative assets, DeFi, behavioral economics, ESG & climate finance, art investing, and gender lens investing. 13 tools: glossary lookup, full-text search, category browse, module discovery, user profile routing, platform overview, institutional research papers, geographic intelligence by topic, HNW submarket data by city, location-to-module routing, investor audience profiling, free-text audience matching, and advisor client gift bundle generation. Educational content only — not financial advice.",
+  "url": "https://alternativeassetliteracy.com/mcp",
+  "contact": "hello@alternativeassetliteracy.com",
+  "legal": "https://alternativeassetliteracy.com/terms.html",
+  "auth": { "type": "none" },
+  "tools": [
+    {
+      "name": "glossary.lookup",
+      "description": "Look up a financial term from the 351-term glossary spanning alternative assets, DeFi, ESG, behavioral economics, art, and gender lens investing.",
+      "parameters": {
+        "term": { "type": "string", "description": "The financial term to look up (e.g. 'carried interest', 'impermanent loss', 'TCFD', 'green bonds')" }
+      }
+    },
+    {
+      "name": "glossary.search",
+      "description": "Full-text search across all 351 financial terms and definitions — alternative assets, DeFi, behavioral economics, art, ESG, and gender lens investing.",
+      "parameters": {
+        "query": { "type": "string", "description": "Keyword or phrase to search across term names and definitions" },
+        "limit": { "type": "number", "description": "Max results to return (default 10, max 50)" }
+      }
+    },
+    {
+      "name": "glossary.browse",
+      "description": "Browse all 351 glossary terms by category. Categories: Alternative Assets, Art, DeFi & Crypto, ESG & Climate, Behavioral Economics, Gender Lens Investing. Omit category to browse all terms.",
+      "parameters": {
+        "category": { "type": "string", "description": "Category to browse. Omit for all categories." },
+        "limit": { "type": "number", "description": "Max terms to return (default 25, max 100)" }
+      }
+    },
+    {
+      "name": "modules.find",
+      "description": "Find the most relevant learning module for a given topic or investment concept.",
+      "parameters": {
+        "topic": { "type": "string", "description": "The topic or concept the user wants to learn about" }
+      }
+    },
+    {
+      "name": "users.route",
+      "description": "Given a description of the user — their wealth level, investing experience, or specific interest — returns the most relevant discovery profile and recommended starting module.",
+      "parameters": {
+        "userDescription": { "type": "string", "description": "A description of the user's profile, background, or intent" }
+      }
+    },
+    {
+      "name": "platform.overview",
+      "description": "Returns a structured overview of the Alternative Asset Literacy platform: modules, tools, pricing, and target audiences.",
+      "parameters": {}
+    },
+    {
+      "name": "research.papers",
+      "description": "Returns institutional research papers by category. 43 papers from IMF, BIS, World Bank, FSB, UN, Federal Reserve, EU, IFC, OECD, TCFD.",
+      "parameters": {
+        "category": { "type": "string", "description": "Category: CBDC, Stablecoin, ESG, Behavioral Economics, Gender Lens, Fintech, Cross-Border Payments. Omit for all." }
+      }
+    },
+    {
+      "name": "geo.by_module",
+      "description": "Returns geographic communities, institutions, conferences, and women's networks for a given investment topic.",
+      "parameters": {
+        "topic": { "type": "string", "description": "Investment topic (e.g. 'DeFi', 'art investing', 'ESG', 'behavioral economics')" }
+      }
+    },
+    {
+      "name": "geo.by_location",
+      "description": "Given a city or region, returns which learning modules are most relevant there and why, with local institutional context.",
+      "parameters": {
+        "location": { "type": "string", "description": "City, neighborhood, or region (e.g. 'Zurich', 'London Mayfair', 'Singapore', 'Greenwich CT')" }
+      }
+    },
+    {
+      "name": "geo.hnw_submarkets",
+      "description": "Returns neighborhood-level HNW intelligence for a city — postcodes, family offices, private banks, women's networks, art market anchors. Covers 30+ markets across US, UK, EU, Asia/Middle East.",
+      "parameters": {
+        "location": { "type": "string", "description": "City, neighborhood, or region" },
+        "focus": { "type": "string", "description": "Optional focus area (e.g. 'art', 'ESG', 'family office', 'women')" }
+      }
+    },
+    {
+      "name": "audience.profile",
+      "description": "Returns the full discovery profile for a specific investor audience — who they are, what they search for, recommended modules, toolkit priorities, and the relevant llms.txt discovery file URL.",
+      "parameters": {
+        "audience_type": { "type": "string", "description": "Audience type: hnw-women, art, behavioral, defi, esg, etf, advisor-client, advisor-b2b" }
+      }
+    },
+    {
+      "name": "audience.match",
+      "description": "Given a free-text description of an investor, identifies the best-matching audience profile and returns their complete discovery data including recommended modules and toolkit priorities.",
+      "parameters": {
+        "description": { "type": "string", "description": "Free-text description of the investor — background, goals, wealth level, interests" }
+      }
+    },
+    {
+      "name": "advisor.gift_bundle",
+      "description": "For financial advisors: given a client description, returns a curated education bundle — a 3-module learning path with rationale, 3 key terms the client should know, toolkit highlights, and a copy-paste suggested message the advisor can send to the client.",
+      "parameters": {
+        "client_description": { "type": "string", "description": "Description of the client — background, meeting context, knowledge gaps" },
+        "topic": { "type": "string", "description": "Optional topic focus override (e.g. 'DeFi', 'ESG', 'art investing', 'alternative assets')" }
+      }
+    }
+  ]
+}
