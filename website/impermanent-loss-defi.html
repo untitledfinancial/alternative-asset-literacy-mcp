@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Is Impermanent Loss in DeFi? — Alternative Asset Literacy</title>
+    <meta name="description" content="Impermanent loss is one of the most misunderstood risks in DeFi. Learn how AMM liquidity pools work, how to calculate your exposure, and what to ask before providing liquidity.">
+    <meta name="keywords" content="impermanent loss, DeFi, liquidity pool, AMM, Uniswap, automated market maker, yield farming, concentrated liquidity, DeFi risks">
+    <meta property="og:title" content="What Is Impermanent Loss in DeFi?">
+    <meta property="og:description" content="Impermanent loss is the difference between holding tokens and providing liquidity. Learn the math, the risks, and when it becomes permanent.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://alternativeassetliteracy.com/impermanent-loss-defi">
+    <meta property="og:image" content="https://alternativeassetliteracy.com/assets/images/hero-art-logo.webp">
+    <meta name="theme-color" content="#3D22D3">
+    <link rel="canonical" href="https://alternativeassetliteracy.com/impermanent-loss-defi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "What Is Impermanent Loss in DeFi? A Plain-Language Explanation",
+      "description": "Impermanent loss is the difference between the value of tokens held in a DeFi liquidity pool versus simply holding those tokens in a wallet. One of the most misunderstood risks in DeFi.",
+      "url": "https://alternativeassetliteracy.com/impermanent-loss-defi",
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "author": {"@type": "Person", "name": "Victoria Lee Case"},
+      "publisher": {
+        "@type": "Organization",
+        "name": "Untitled_ LuxPerpetua Technologies, Inc.",
+        "url": "https://alternativeassetliteracy.com"
+      }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-solid" id="navbar">
+        <a href="index.html" class="navbar-brand">Alternative Asset Literacy</a>
+        <ul class="navbar-links">
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#curriculum">Curriculum</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="policy-papers.html">Research</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="https://untitledfinancial.com" target="_blank" rel="noopener" class="nav-sister">Sister Site: Untitled_(sustainability) ↗</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#curriculum">Curriculum</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="policy-papers.html">Research</a>
+        <a href="index.html#about">About</a>
+        <a href="https://untitledfinancial.com" target="_blank" rel="noopener" class="nav-sister">Sister Site: Untitled_(sustainability) ↗</a>
+    </div>
+
+    <main>
+        <div class="article-page">
+            <div class="article-meta">
+                <span class="article-category">DeFi &amp; Crypto</span>
+                <span>7 min read</span>
+            </div>
+
+            <h1>What Is Impermanent Loss in DeFi? A Plain-Language Explanation</h1>
+
+            <p class="article-lead">Impermanent loss is the difference between the value of tokens held in a DeFi liquidity pool versus the value of simply holding those same tokens in a wallet. When the price of one token in a pair moves significantly, liquidity providers end up with less total value than if they had not participated in the pool — even if the pool has been profitable overall. It is one of the most misunderstood risks in DeFi.</p>
+
+            <hr>
+
+            <h2>The Short Answer</h2>
+
+            <p>Decentralized exchanges (like Uniswap) use liquidity pools instead of order books. You deposit two tokens (e.g., ETH and USDC) in equal value. When the price of ETH rises, the pool's algorithm automatically sells some of your ETH and buys USDC to maintain balance. You end up with less ETH and more USDC than you deposited — and less total value than if you had simply held the original tokens.</p>
+
+            <hr>
+
+            <h2>How It Works: The Math</h2>
+
+            <p>The most common AMM formula: <strong>x × y = k</strong> (constant product)</p>
+
+            <p>As one token appreciates, the pool rebalances — effectively selling the winner and buying the loser. This automatic rebalancing is what creates impermanent loss.</p>
+
+            <p><strong>Example:</strong></p>
+            <ul>
+                <li>You deposit 1 ETH ($2,000) + 2,000 USDC = $4,000 total</li>
+                <li>ETH price doubles to $4,000</li>
+                <li>Pool rebalances: you now hold 0.707 ETH + 2,828 USDC = $5,656</li>
+                <li>If you had held: 1 ETH + 2,000 USDC = $6,000</li>
+                <li><strong>Impermanent loss: $344 (5.7%)</strong></li>
+            </ul>
+
+            <div class="article-table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Price change (one asset)</th><th>Impermanent loss</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>25% increase</td><td>0.6%</td></tr>
+                        <tr><td>50% increase</td><td>2.0%</td></tr>
+                        <tr><td>2× increase</td><td>5.7%</td></tr>
+                        <tr><td>4× increase</td><td>20.0%</td></tr>
+                        <tr><td>10× increase</td><td>50.0%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+
+            <h2>Why "Impermanent"?</h2>
+
+            <p>The loss only becomes permanent when you withdraw. If prices return to exactly their original ratio, the loss disappears. In practice, prices rarely return to the precise entry ratio, so impermanent loss usually becomes a realized loss upon withdrawal.</p>
+
+            <hr>
+
+            <h2>How Liquidity Providers Are Compensated</h2>
+
+            <p>Providing liquidity earns trading fees (typically 0.05–0.3% per swap) and often additional token rewards from the protocol. Whether these earnings offset impermanent loss depends on:</p>
+
+            <ul>
+                <li><strong>Trading volume</strong> — higher volume generates more fee income</li>
+                <li><strong>Price volatility</strong> — higher volatility between the paired tokens creates more impermanent loss</li>
+                <li><strong>Time in pool</strong> — fees accumulate over time; impermanent loss is a snapshot</li>
+            </ul>
+
+            <p>Stablecoin pairs (USDC/USDT) have near-zero impermanent loss because prices don't diverge. Volatile pairs (ETH/small-cap token) carry the highest risk.</p>
+
+            <hr>
+
+            <h2>Concentrated Liquidity (Uniswap v3 and Later)</h2>
+
+            <p>Uniswap v3 allows liquidity providers to concentrate liquidity within a specific price range to earn higher fees when price trades within that range. The tradeoff: if price exits the range, the position earns zero fees and suffers maximum impermanent loss for that range.</p>
+
+            <hr>
+
+            <h2>Questions to Ask Before Providing Liquidity</h2>
+
+            <ul>
+                <li>What is the historical price correlation between these two assets?</li>
+                <li>What are the annualized trading fees for this specific pool?</li>
+                <li>Does the protocol offer additional token incentives, and what is the dilution rate of those tokens?</li>
+                <li>What is the smart contract audit history for this protocol?</li>
+                <li>What happens to my position if one asset drops 80%?</li>
+            </ul>
+
+            <hr>
+
+            <h2>Sources</h2>
+            <ul class="article-sources">
+                <li>Financial Stability Board — <a href="https://www.fsb.org/2023/02/decentralised-finance-dfi-risks-regulation-and-the-road-ahead/" target="_blank" rel="noopener">Decentralised Finance: Risks, Regulation, and the Road Ahead</a></li>
+                <li>Bank for International Settlements — <a href="https://www.bis.org/publ/work905.htm" target="_blank" rel="noopener">Stablecoins: Risks, Potential and Regulation</a></li>
+                <li>IMF — <a href="https://www.imf.org/en/Publications/fintech-notes/Issues/2019/07/12/The-Rise-of-Digital-Money-47097" target="_blank" rel="noopener">The Rise of Digital Money</a></li>
+                <li>Uniswap Foundation — <a href="https://uniswap.org/whitepaper-v3.pdf" target="_blank" rel="noopener">Uniswap v3 Core Whitepaper</a></li>
+                <li>Alternative Asset Literacy Bibliography — <a href="https://www.ncbi.nlm.nih.gov/myncbi/1Ferik7yRl8Y6d/bibliography/public/" target="_blank" rel="noopener">186-source research library</a></li>
+            </ul>
+
+            <div class="article-cta">
+                <h2>Learn More with Alternative Asset Literacy</h2>
+                <p><strong>Alternative Asset Literacy</strong> is an iOS app covering impermanent loss, AMM mechanics, liquidity provision, yield farming, staking, and DeFi investing from first principles. The <strong>Investing Primer is free</strong> — no account required.</p>
+                <a href="https://apps.apple.com/app/id6762205964" class="cta-button" target="_blank" rel="noopener">Download Free on the App Store</a>
+                <p class="cta-sub">Or visit <a href="https://alternativeassetliteracy.com">alternativeassetliteracy.com</a></p>
+            </div>
+
+            <p class="article-disclaimer"><em>Educational content only. Not financial advice. For personalized guidance, consult a qualified fiduciary financial advisor. &copy; 2026 Untitled_ LuxPerpetua Technologies, Inc.</em></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
