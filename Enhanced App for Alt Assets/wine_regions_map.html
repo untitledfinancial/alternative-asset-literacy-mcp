@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Wine Regions — Investor Reference</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Georgia', serif;
+    background: #0d1117;
+    color: #e8dcc8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  header {
+    background: #0d1117;
+    border-bottom: 1px solid #2a3040;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-shrink: 0;
+  }
+
+  header h1 {
+    font-size: 1.15rem;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    color: #c9a84c;
+    text-transform: uppercase;
+  }
+
+  header p {
+    font-size: 0.72rem;
+    color: #6b7280;
+    letter-spacing: 0.04em;
+    margin-top: 2px;
+  }
+
+  .header-right {
+    font-size: 0.68rem;
+    color: #4b5563;
+    text-align: right;
+    letter-spacing: 0.03em;
+  }
+
+  .main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 300px;
+    min-width: 300px;
+    background: #111620;
+    border-right: 1px solid #1e2535;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 500;
+  }
+
+  .sidebar-section {
+    padding: 16px 18px;
+    border-bottom: 1px solid #1e2535;
+  }
+
+  .sidebar-section h3 {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c9a84c;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+
+  .filter-group {
+    margin-bottom: 12px;
+  }
+
+  .filter-group label {
+    display: block;
+    font-size: 0.7rem;
+    color: #9ca3af;
+    margin-bottom: 6px;
+    letter-spacing: 0.04em;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .filter-btn {
+    padding: 4px 10px;
+    border: 1px solid #2a3040;
+    background: transparent;
+    color: #9ca3af;
+    font-size: 0.68rem;
+    cursor: pointer;
+    border-radius: 2px;
+    letter-spacing: 0.03em;
+    transition: all 0.15s;
+    font-family: 'Georgia', serif;
+  }
+
+  .filter-btn:hover {
+    border-color: #c9a84c;
+    color: #c9a84c;
+  }
+
+  .filter-btn.active {
+    background: #c9a84c;
+    border-color: #c9a84c;
+    color: #0d1117;
+    font-weight: bold;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 7px;
+    font-size: 0.7rem;
+    color: #9ca3af;
+  }
+
+  .legend-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid rgba(255,255,255,0.2);
+  }
+
+  .region-count {
+    font-size: 0.6rem;
+    color: #4b5563;
+    margin-left: auto;
+  }
+
+  .sidebar-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 14px 18px;
+  }
+
+  .sidebar-scroll::-webkit-scrollbar { width: 4px; }
+  .sidebar-scroll::-webkit-scrollbar-track { background: #0d1117; }
+  .sidebar-scroll::-webkit-scrollbar-thumb { background: #2a3040; border-radius: 2px; }
+
+  .region-list-item {
+    padding: 8px 10px;
+    border-left: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s;
+    margin-bottom: 2px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .region-list-item:hover {
+    background: #1e2535;
+    border-left-color: #c9a84c;
+  }
+
+  .region-list-item .rname {
+    font-size: 0.75rem;
+    color: #e8dcc8;
+    display: block;
+  }
+
+  .region-list-item .rcountry {
+    font-size: 0.63rem;
+    color: #6b7280;
+    margin-top: 1px;
+    display: block;
+  }
+
+  /* Map */
+  #map {
+    flex: 1;
+    z-index: 1;
+  }
+
+  /* Popup styles */
+  .leaflet-popup-content-wrapper {
+    background: #111620 !important;
+    border: 1px solid #2a3040 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.7) !important;
+    max-width: 340px;
+  }
+
+  .leaflet-popup-tip {
+    background: #111620 !important;
+  }
+
+  .leaflet-popup-content {
+    margin: 0 !important;
+    width: 320px !important;
+  }
+
+  .popup-inner {
+    padding: 16px 18px;
+  }
+
+  .popup-header {
+    border-bottom: 1px solid #1e2535;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+
+  .popup-region {
+    font-size: 1rem;
+    color: #c9a84c;
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+  }
+
+  .popup-country {
+    font-size: 0.7rem;
+    color: #6b7280;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .popup-cluster-badge {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 2px;
+    font-size: 0.6rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  .popup-section {
+    margin-bottom: 10px;
+  }
+
+  .popup-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #4b5563;
+    margin-bottom: 4px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .popup-value {
+    font-size: 0.73rem;
+    color: #d1c5b0;
+    line-height: 1.5;
+  }
+
+  .grape-pill {
+    display: inline-block;
+    background: #1e2535;
+    border: 1px solid #2a3040;
+    padding: 2px 7px;
+    border-radius: 2px;
+    font-size: 0.62rem;
+    color: #a89880;
+    margin: 2px 2px 2px 0;
+  }
+
+  .organic-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+  }
+
+  .organic-high { background: #1a3a20; color: #6fcf97; border: 1px solid #2d6a3f; }
+  .organic-medium { background: #2a3020; color: #a8c070; border: 1px solid #4a6020; }
+  .organic-low { background: #2a2020; color: #c09060; border: 1px solid #6a4020; }
+  .organic-emerging { background: #1a2535; color: #7090c0; border: 1px solid #2a4060; }
+
+  .popup-invest {
+    background: #0d1117;
+    border: 1px solid #2a3040;
+    border-left: 3px solid #c9a84c;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-size: 0.68rem;
+    color: #a89880;
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  .popup-producers {
+    font-size: 0.7rem;
+    color: #d1c5b0;
+  }
+
+  .popup-styles {
+    font-size: 0.7rem;
+    color: #d1c5b0;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    background: #0d1117;
+    border-top: 1px solid #1e2535;
+    padding: 8px 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 0.65rem;
+    color: #4b5563;
+    letter-spacing: 0.04em;
+  }
+
+  .stats-bar span { color: #c9a84c; }
+
+  /* Leaflet overrides */
+  .leaflet-control-attribution { display: none !important; }
+  .leaflet-control-zoom a {
+    background: #111620 !important;
+    color: #9ca3af !important;
+    border-color: #2a3040 !important;
+  }
+  .leaflet-control-zoom a:hover {
+    background: #1e2535 !important;
+    color: #c9a84c !important;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar { display: none; }
+    .leaflet-popup-content { width: 280px !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Global Wine Regions — Interactive Reference</h1>
+    <p>Alternative Assets Literacy · Investor Research Tool</p>
+  </div>
+  <div class="header-right">
+    alternativeassetsliteracy.com<br>
+    © 2026 Untitled_ LuxPerpetua Technologies, Inc.
+  </div>
+</header>
+
+<div class="main">
+  <div class="sidebar">
+
+    <div class="sidebar-section">
+      <h3>Filter by Cluster</h3>
+      <div class="btn-group">
+        <button class="filter-btn active" data-filter="cluster" data-value="all" onclick="filterRegions('cluster','all')">All</button>
+        <button class="filter-btn" data-filter="cluster" data-value="Europe" onclick="filterRegions('cluster','Europe')">Europe</button>
+        <button class="filter-btn" data-filter="cluster" data-value="Americas" onclick="filterRegions('cluster','Americas')">Americas</button>
+        <button class="filter-btn" data-filter="cluster" data-value="Southern Hemisphere" onclick="filterRegions('cluster','Southern Hemisphere')">S. Hemisphere</button>
+        <button class="filter-btn" data-filter="cluster" data-value="Other" onclick="filterRegions('cluster','Other')">Other</button>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Filter by Organic Presence</h3>
+      <div class="btn-group">
+        <button class="filter-btn active" data-filter="organic" data-value="all" onclick="filterRegions('organic','all')">All</button>
+        <button class="filter-btn" data-filter="organic" data-value="High" onclick="filterRegions('organic','High')">High</button>
+        <button class="filter-btn" data-filter="organic" data-value="Medium" onclick="filterRegions('organic','Medium')">Medium</button>
+        <button class="filter-btn" data-filter="organic" data-value="Low" onclick="filterRegions('organic','Low')">Low</button>
+        <button class="filter-btn" data-filter="organic" data-value="Emerging" onclick="filterRegions('organic','Emerging')">Emerging</button>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Filter by Wine Style</h3>
+      <div class="btn-group">
+        <button class="filter-btn active" data-filter="style" data-value="all" onclick="filterRegions('style','all')">All</button>
+        <button class="filter-btn" data-filter="style" data-value="Red" onclick="filterRegions('style','Red')">Red</button>
+        <button class="filter-btn" data-filter="style" data-value="White" onclick="filterRegions('style','White')">White</button>
+        <button class="filter-btn" data-filter="style" data-value="Sparkling" onclick="filterRegions('style','Sparkling')">Sparkling</button>
+        <button class="filter-btn" data-filter="style" data-value="Fortified" onclick="filterRegions('style','Fortified')">Fortified</button>
+        <button class="filter-btn" data-filter="style" data-value="Rosé" onclick="filterRegions('style','Rosé')">Rosé</button>
+        <button class="filter-btn" data-filter="style" data-value="Orange" onclick="filterRegions('style','Orange')">Orange</button>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Legend</h3>
+      <div class="legend-item"><div class="legend-dot" style="background:#6b8fcf"></div> Europe <span class="region-count" id="count-Europe"></span></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#c9a84c"></div> Americas <span class="region-count" id="count-Americas"></span></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#8fcf8f"></div> Southern Hemisphere <span class="region-count" id="count-Southern Hemisphere"></span></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#cf8f6b"></div> Other <span class="region-count" id="count-Other"></span></div>
+    </div>
+
+    <div class="sidebar-scroll" id="region-list"></div>
+  </div>
+
+  <div id="map"></div>
+</div>
+
+<div class="stats-bar">
+  <div>Showing <span id="visible-count">—</span> regions</div>
+  <div>Click any marker to view full profile</div>
+  <div>Cluster filter: <span id="current-filter">All</span></div>
+</div>
+
+<script>
+const CLUSTER_COLORS = {
+  'Europe': '#6b8fcf',
+  'Americas': '#c9a84c',
+  'Southern Hemisphere': '#8fcf8f',
+  'Other': '#cf8f6b'
+};
+
+const wineRegions = [
+  // ── FRANCE ──
+  {
+    name: "Bordeaux", country: "France", cluster: "Europe",
+    lat: 44.84, lng: -0.58,
+    grapes: { red: ["Cabernet Sauvignon","Merlot","Cabernet Franc","Petit Verdot","Malbec"], white: ["Sauvignon Blanc","Sémillon","Muscadelle"] },
+    styles: ["Red Blends","Dry White","Sauternes (Sweet)","Dry Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Château Pétrus","Château Margaux","Château Pichon Baron"],
+    invest: "En primeur futures market worth ~€300M annually. Classified growths have delivered 10–12% annualized returns over 20 years per Liv-ex. The 1855 Classification remains the world's most influential wine ranking system."
+  },
+  {
+    name: "Burgundy", country: "France", cluster: "Europe",
+    lat: 47.05, lng: 4.85,
+    grapes: { red: ["Pinot Noir","Gamay"], white: ["Chardonnay","Aligoté"] },
+    styles: ["Red","White","Sparkling (Crémant)"],
+    primaryStyles: ["Red","White","Sparkling"],
+    organic: "High",
+    producers: ["Domaine de la Romanée-Conti","Leroy","Armand Rousseau"],
+    invest: "DRC Grand Cru bottles routinely sell for $5,000–$50,000 at auction. Burgundy is the most traded fine wine region on Liv-ex, representing 35%+ of trade value. Supply constraints (tiny plots) ensure structural scarcity."
+  },
+  {
+    name: "Champagne", country: "France", cluster: "Europe",
+    lat: 49.05, lng: 4.03,
+    grapes: { red: ["Pinot Noir","Pinot Meunier"], white: ["Chardonnay"] },
+    styles: ["Sparkling (NV & Vintage)","Blanc de Blancs","Blanc de Noirs","Rosé Champagne"],
+    primaryStyles: ["Sparkling"],
+    organic: "Emerging",
+    producers: ["Krug","Jacques Selosse","Bollinger"],
+    invest: "Global Champagne revenue exceeded €6.4B in 2022. Prestige cuvées (Cristal, Dom Pérignon P2) appreciate 8–15% per annum. Natural & grower Champagne market is growing 20%+ YoY."
+  },
+  {
+    name: "Alsace", country: "France", cluster: "Europe",
+    lat: 48.32, lng: 7.44,
+    grapes: { red: ["Pinot Noir"], white: ["Riesling","Gewurztraminer","Pinot Gris","Pinot Blanc","Muscat"] },
+    styles: ["Dry White","Late Harvest (Vendange Tardive)","Sweet (SGN)","Sparkling (Crémant)"],
+    primaryStyles: ["White"],
+    organic: "High",
+    producers: ["Zind-Humbrecht","Marcel Deiss","Trimbach"],
+    invest: "Alsace Grand Cru Riesling commands significant premiums. Region leads France in organic certification rates (~15% certified). Gewurztraminer and Pinot Gris showing strong DTC growth."
+  },
+  {
+    name: "Loire Valley", country: "France", cluster: "Europe",
+    lat: 47.40, lng: 0.68,
+    grapes: { red: ["Cabernet Franc","Pinot Noir","Gamay"], white: ["Muscadet","Sauvignon Blanc","Chenin Blanc"] },
+    styles: ["Red","White","Sparkling (Saumur)","Rosé (Anjou)","Sweet (Vouvray)"],
+    primaryStyles: ["White","Red","Sparkling"],
+    organic: "High",
+    producers: ["Nicolas Joly","Domaine Huet","Henri Bourgeois"],
+    invest: "Loire is epicenter of France's natural wine movement. Chenin Blanc from Savennières and Vouvray among most ageworthy whites globally. Rising collector interest in old-vintage Vouvray."
+  },
+  {
+    name: "Rhône Valley", country: "France", cluster: "Europe",
+    lat: 44.57, lng: 4.83,
+    grapes: { red: ["Syrah","Grenache","Mourvèdre","Cinsault"], white: ["Viognier","Marsanne","Roussanne","Grenache Blanc"] },
+    styles: ["Red","White","Rosé","Fortified (Muscat de Beaumes-de-Venise)"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["E. Guigal","Jean-Louis Chave","M. Chapoutier"],
+    invest: "La Mouline, La Landonne, La Turque 'La La' wines by Guigal sell for $300–$800 per bottle. Northern Rhône Syrah is among the world's most investment-grade red varieties. Hermitage prices doubled 2010–2023."
+  },
+  {
+    name: "Languedoc-Roussillon", country: "France", cluster: "Europe",
+    lat: 43.60, lng: 3.90,
+    grapes: { red: ["Grenache","Syrah","Mourvèdre","Carignan","Cinsault"], white: ["Picpoul","Vermentino","Grenache Blanc","Clairette"] },
+    styles: ["Red","White","Rosé","Fortified (Banyuls)","Sparkling"],
+    primaryStyles: ["Red","White","Fortified"],
+    organic: "High",
+    producers: ["Mas de Daumas Gassac","Gérard Bertrand","Domaine Gauby"],
+    invest: "France's largest wine region by volume. Rapid quality improvement driving value investor interest. Organic conversion rate highest in France; over 20% of vineyards certified. Banyuls fortified wines are collector niche."
+  },
+  {
+    name: "Provence", country: "France", cluster: "Europe",
+    lat: 43.53, lng: 5.44,
+    grapes: { red: ["Grenache","Cinsault","Mourvèdre","Syrah"], white: ["Vermentino","Grenache Blanc","Ugni Blanc"] },
+    styles: ["Rosé","Red","White"],
+    primaryStyles: ["Rosé","Red","White"],
+    organic: "Medium",
+    producers: ["Château d'Esclans","Domaine Ott","Château Simone"],
+    invest: "Provence rosé commands global premium pricing; Whispering Angel retail price up 250% since 2012. Celebrity ownership (Brad Pitt's Miraval) has elevated category. Rosé wine global market grew at 7% CAGR 2015–2023."
+  },
+
+  // ── ITALY ──
+  {
+    name: "Tuscany", country: "Italy", cluster: "Europe",
+    lat: 43.42, lng: 11.04,
+    grapes: { red: ["Sangiovese","Cabernet Sauvignon","Merlot","Colorino"], white: ["Vernaccia","Trebbiano","Vermentino"] },
+    styles: ["Red (Chianti, Brunello)","White","Super Tuscans","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Sassicaia","Masseto","Biondi-Santi"],
+    invest: "Sassicaia was the world's first single-estate wine to receive its own DOC. Masseto Merlot rivals Pomerol top estates at auction. Brunello di Montalcino vintages 2010, 2015, 2019 rated exceptional. Secondary market 12%+ annual growth."
+  },
+  {
+    name: "Piedmont", country: "Italy", cluster: "Europe",
+    lat: 44.70, lng: 8.04,
+    grapes: { red: ["Nebbiolo","Barbera","Dolcetto","Freisa"], white: ["Moscato","Arneis","Cortese"] },
+    styles: ["Red (Barolo, Barbaresco)","Sweet Sparkling (Asti)","White","Rosé"],
+    primaryStyles: ["Red","White","Sparkling"],
+    organic: "Medium",
+    producers: ["Giacomo Conterno","Bruno Giacosa","Gaja"],
+    invest: "Barolo 'the King of Italian wines' — Gaja Sorì Tildìn fetches $300–$500/bottle. Italian fine wine index up 180% 2010–2023. Barolo's Brunate and Serralunga crus showing strongest price trajectory."
+  },
+  {
+    name: "Veneto", country: "Italy", cluster: "Europe",
+    lat: 45.44, lng: 11.54,
+    grapes: { red: ["Corvina","Corvinone","Rondinella","Molinara"], white: ["Garganega","Glera","Pinot Grigio","Trebbiano"] },
+    styles: ["Red (Amarone, Valpolicella)","White (Soave)","Sparkling (Prosecco)","Sweet (Recioto)"],
+    primaryStyles: ["Red","White","Sparkling"],
+    organic: "Low",
+    producers: ["Dal Forno Romano","Masi","Allegrini"],
+    invest: "Prosecco DOC is Italy's top export wine by volume — 600M+ bottles annually. Amarone della Valpolicella commands $80–$300/bottle. Dal Forno Romano Amarone is cult-status collectible ($400–$800/bottle)."
+  },
+  {
+    name: "Sicily", country: "Italy", cluster: "Europe",
+    lat: 37.60, lng: 14.02,
+    grapes: { red: ["Nero d'Avola","Nerello Mascalese","Nerello Cappuccio","Frappato"], white: ["Carricante","Catarratto","Grillo","Zibibbo"] },
+    styles: ["Red","White","Rosé","Fortified (Marsala)","Sweet (Passito)"],
+    primaryStyles: ["Red","White","Fortified"],
+    organic: "High",
+    producers: ["Cos","Benanti","Planeta"],
+    invest: "Etna DOC (volcanic wines) is among Europe's fastest-growing fine wine appellations. Etna Rosso from Nerello Mascalese compared to fine Burgundy. Land values on Etna's north slope increased 300% since 2010."
+  },
+  {
+    name: "Puglia", country: "Italy", cluster: "Europe",
+    lat: 40.79, lng: 17.10,
+    grapes: { red: ["Primitivo","Negroamaro","Uva di Troia","Malvasia Nera"], white: ["Verdeca","Fiano","Bianco d'Alessano"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Emerging",
+    producers: ["Gianfranco Fino","Leone de Castris","Tormaresca"],
+    invest: "Primitivo di Manduria and Salice Salentino gaining export momentum. Puglia supplies ~15% of Italian wine by volume. Gianfranco Fino's 'Es' Primitivo is the region's highest-rated and fastest-appreciating bottle."
+  },
+
+  // ── SPAIN ──
+  {
+    name: "Rioja", country: "Spain", cluster: "Europe",
+    lat: 42.47, lng: -2.44,
+    grapes: { red: ["Tempranillo","Garnacha","Mazuelo","Graciano"], white: ["Viura","Malvasía","Garnacha Blanca"] },
+    styles: ["Red (Crianza/Reserva/Gran Reserva)","White","Rosado","Sparkling"],
+    primaryStyles: ["Red","White"],
+    organic: "Emerging",
+    producers: ["Vega Sicilia","La Rioja Alta","López de Heredia"],
+    invest: "Rioja is Spain's most recognized export wine. Vega Sicilia Único commands €500–€1,000/bottle at auction. López de Heredia Viña Tondonia cult white among world's most sought-after wines. New 'single-vineyard' Rioja classification driving price premiums."
+  },
+  {
+    name: "Ribera del Duero", country: "Spain", cluster: "Europe",
+    lat: 41.62, lng: -3.69,
+    grapes: { red: ["Tempranillo (Tinto Fino)","Cabernet Sauvignon","Merlot","Malbec"], white: ["Albillo Mayor"] },
+    styles: ["Red","White (limited)"],
+    primaryStyles: ["Red"],
+    organic: "Low",
+    producers: ["Vega Sicilia","Pingus","Dominio de Pingus"],
+    invest: "Pingus is Spain's most sought-after wine — bottles sell $400–$1,200. Flor de Pingus shows strong DTC appreciation. Ribera's altitude (850–1,000m) produces wines with exceptional aging potential."
+  },
+  {
+    name: "Priorat", country: "Spain", cluster: "Europe",
+    lat: 41.18, lng: 0.79,
+    grapes: { red: ["Garnacha","Cariñena (Carignan)","Cabernet Sauvignon","Syrah"], white: ["Garnacha Blanca","Pedro Ximénez","Macabeo"] },
+    styles: ["Red","White"],
+    primaryStyles: ["Red"],
+    organic: "Medium",
+    producers: ["Álvaro Palacios","Clos Mogador","Clos de l'Obac"],
+    invest: "Álvaro Palacios' L'Ermita sells for €500–€1,800/bottle. Priorat's llicorella (slate) soils produce intensely mineral wines. One of only two Spanish regions with DOCa status. International recognition driving land price increases."
+  },
+  {
+    name: "Galicia / Rías Baixas", country: "Spain", cluster: "Europe",
+    lat: 42.40, lng: -8.70,
+    grapes: { red: ["Mencía","Brancellao","Caiño Tinto"], white: ["Albariño","Treixadura","Godello","Loureira"] },
+    styles: ["White (Albariño)","Red","Sparkling"],
+    primaryStyles: ["White","Red"],
+    organic: "Emerging",
+    producers: ["Do Ferreiro","Zárate","Raúl Pérez"],
+    invest: "Albariño is the world's fastest-growing premium white variety by export volume. Rías Baixas white wine exports up 40% since 2015. Raúl Pérez cult wines appreciating rapidly in secondary market."
+  },
+
+  // ── GERMANY ──
+  {
+    name: "Mosel", country: "Germany", cluster: "Europe",
+    lat: 49.95, lng: 7.14,
+    grapes: { red: ["Spätburgunder (Pinot Noir)"], white: ["Riesling","Müller-Thurgau","Elbling"] },
+    styles: ["White (Riesling, dry to sweet)","Sparkling (Sekt)","Red"],
+    primaryStyles: ["White"],
+    organic: "Emerging",
+    producers: ["Egon Müller","J.J. Prüm","Clemens Busch"],
+    invest: "Egon Müller Scharzhofberger Trockenbeerenauslese holds the world record for highest-priced white wine at auction (~€10,000/half-bottle). German Riesling TBA/BA wines are among the most age-worthy whites globally."
+  },
+  {
+    name: "Rheingau", country: "Germany", cluster: "Europe",
+    lat: 49.98, lng: 7.96,
+    grapes: { red: ["Spätburgunder"], white: ["Riesling","Pinot Blanc"] },
+    styles: ["White","Red","Sparkling"],
+    primaryStyles: ["White","Red"],
+    organic: "Medium",
+    producers: ["Schloss Johannisberg","Weingut Robert Weil","Georg Breuer"],
+    invest: "Schloss Johannisberg is one of the world's oldest continuously operating wine estates (since 817 AD). Rheingau Riesling Spätlese and Auslese in exceptional vintages (2015, 2017, 2021) showing strong appreciation."
+  },
+  {
+    name: "Baden", country: "Germany", cluster: "Europe",
+    lat: 48.00, lng: 7.90,
+    grapes: { red: ["Spätburgunder","Lemberger"], white: ["Riesling","Grauburgunder","Weissburgunder","Müller-Thurgau"] },
+    styles: ["Red","White","Rosé (Weissherbst)"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Dr. Heger","Huber","Ziereisen"],
+    invest: "Baden produces Germany's most acclaimed Pinot Noir (Spätburgunder). Kaiserstuhl volcanic soils yield Burgundy-comparable reds. German red wine exports growing steadily as climate warms northern regions."
+  },
+  {
+    name: "Pfalz", country: "Germany", cluster: "Europe",
+    lat: 49.32, lng: 8.16,
+    grapes: { red: ["Dornfelder","Spätburgunder","Portugieser"], white: ["Riesling","Gewurztraminer","Pinot Gris","Silvaner"] },
+    styles: ["White","Red","Rosé"],
+    primaryStyles: ["White","Red"],
+    organic: "Medium",
+    producers: ["Müller-Catoir","Bassermann-Jordan","A. Christmann"],
+    invest: "Germany's second-largest wine region. Pfalz Riesling offers exceptional QPR (quality-price ratio) for investors. A. Christmann and Rebholz leading organic movement."
+  },
+
+  // ── AUSTRIA ──
+  {
+    name: "Wachau", country: "Austria", cluster: "Europe",
+    lat: 48.36, lng: 15.42,
+    grapes: { red: ["Blaufränkisch","Blauburgunder"], white: ["Grüner Veltliner","Riesling"] },
+    styles: ["White (Smaragd, Federspiel)","Red"],
+    primaryStyles: ["White"],
+    organic: "Medium",
+    producers: ["F.X. Pichler","Rudi Pichler","Domäne Wachau"],
+    invest: "F.X. Pichler Smaragd M. Unendlich is Austria's most collectable white wine ($150–$400/bottle). UNESCO World Heritage Site. Wachau's Riesling and Grüner Veltliner Smaragd tier are benchmarks for Austrian fine wine."
+  },
+  {
+    name: "Burgenland", country: "Austria", cluster: "Europe",
+    lat: 47.80, lng: 16.60,
+    grapes: { red: ["Blaufränkisch","Zweigelt","Sankt Laurent"], white: ["Welschriesling","Chardonnay","Pinot Blanc"] },
+    styles: ["Red","White","Sweet (Trockenbeerenauslese)","Botrytis"],
+    primaryStyles: ["Red","White"],
+    organic: "High",
+    producers: ["Velich","Kracher","Ernst Triebaumer"],
+    invest: "Kracher TBA wines set world auction records for Austrian whites. Neusiedlersee botrytis wines among world's finest dessert wines. Blaufränkisch from Leithaberg gaining significant critical acclaim and price appreciation."
+  },
+  {
+    name: "Kamptal / Wagram", country: "Austria", cluster: "Europe",
+    lat: 48.47, lng: 15.67,
+    grapes: { red: ["Zweigelt","Blauburgunder"], white: ["Grüner Veltliner","Riesling","Gelber Muskateller"] },
+    styles: ["White","Red"],
+    primaryStyles: ["White"],
+    organic: "High",
+    producers: ["Bründlmayer","Hirsch","Jurtschitsch"],
+    invest: "Kamptal Erste Lage (First Growth) classification created in 2002 provides quality-tier framework for investors. Bründlmayer Lamm Riesling is collector-grade. Region leads Austria in biodynamic adoption."
+  },
+
+  // ── PORTUGAL ──
+  {
+    name: "Douro", country: "Portugal", cluster: "Europe",
+    lat: 41.15, lng: -7.50,
+    grapes: { red: ["Touriga Nacional","Touriga Franca","Tinta Roriz","Tinta Barroca"], white: ["Viosinho","Rabigato","Gouveio","Malvasia Fina"] },
+    styles: ["Red","White","Port (Fortified)","Rosé"],
+    primaryStyles: ["Red","White","Fortified"],
+    organic: "Emerging",
+    producers: ["Quinta do Crasto","Niepoort","Quinta do Vale Meão"],
+    invest: "Vintage Port (declared years: 2017, 2016, 2011, 2007) is a classic investment-grade collectible. Christie's and Sotheby's Port sales consistent. Douro dry red wines gaining rapid critical recognition as investment-grade."
+  },
+  {
+    name: "Alentejo", country: "Portugal", cluster: "Europe",
+    lat: 38.57, lng: -7.91,
+    grapes: { red: ["Aragonez (Tempranillo)","Trincadeira","Alicante Bouschet","Touriga Nacional"], white: ["Antão Vaz","Roupeiro","Arinto"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Herdade do Esporão","Pêra-Manca","Quinta do Crasto"],
+    invest: "Pêra-Manca red is Portugal's most coveted dry red wine. Alentejo growing DTC and export market at 15%+ CAGR. Large estates (herdades) attracting international investment capital."
+  },
+  {
+    name: "Vinho Verde", country: "Portugal", cluster: "Europe",
+    lat: 41.73, lng: -8.30,
+    grapes: { red: ["Vinhão","Espadeiro","Rabo de Anho"], white: ["Alvarinho","Loureiro","Arinto","Trajadura","Azal"] },
+    styles: ["White (light, low alcohol)","Red","Sparkling"],
+    primaryStyles: ["White","Sparkling"],
+    organic: "Low",
+    producers: ["Quinta da Aveleda","Quinta de Soalheiro","Anselmo Mendes"],
+    invest: "Vinho Verde is Portugal's largest DOC by volume. Alvarinho sub-region commanding premium prices internationally. Fastest-growing light white wine category in US market."
+  },
+
+  // ── HUNGARY ──
+  {
+    name: "Tokaj", country: "Hungary", cluster: "Europe",
+    lat: 48.12, lng: 21.40,
+    grapes: { red: ["Kékfrankos"], white: ["Furmint","Hárslevelű","Sárga Muskotály"] },
+    styles: ["Sweet (Aszú)","Dry White","Sparkling"],
+    primaryStyles: ["White"],
+    organic: "Medium",
+    producers: ["Royal Tokaji","Oremus","Disznókő"],
+    invest: "Tokaji Aszú 6 Puttonyos was called 'the wine of kings and king of wines' by Louis XIV. UNESCO World Heritage. Classified as First Growth Aszú vineyards (Grand Premier Crus) since 1700 — predating Bordeaux 1855 classification. Foreign investment significant (AXA Millésimes owns Disznókő)."
+  },
+
+  // ── SLOVENIA ──
+  {
+    name: "Vipava Valley", country: "Slovenia", cluster: "Europe",
+    lat: 45.85, lng: 13.96,
+    grapes: { red: ["Pinot Noir","Merlot","Cabernet Sauvignon","Barbera"], white: ["Zelen","Pinela","Malvazija","Rebula"] },
+    styles: ["Red","White","Orange (skin-contact)"],
+    primaryStyles: ["White","Orange","Red"],
+    organic: "High",
+    producers: ["Movia","Burja","Guerila"],
+    invest: "Slovenia is the birthplace of the modern natural wine movement — Aleš Kristančič of Movia pioneered zero-sulfur winemaking. Rebula and Zelen are rare indigenous varieties commanding collector premiums. Growing wine tourism infrastructure."
+  },
+
+  // ── GEORGIA ──
+  {
+    name: "Kakheti", country: "Georgia", cluster: "Europe",
+    lat: 41.75, lng: 45.60,
+    grapes: { red: ["Saperavi","Shavkapito","Tavkveri"], white: ["Rkatsiteli","Mtsvane","Kisi","Chinuri"] },
+    styles: ["Red","Orange (Amber/Qvevri)","White","Sparkling"],
+    primaryStyles: ["Red","Orange","White"],
+    organic: "High",
+    producers: ["Pheasant's Tears","Iago's Wine","Chateau Mukhrani"],
+    invest: "Georgia has 8,000 years of winemaking history — world's oldest wine culture. Qvevri (clay amphora) wines are UNESCO Intangible Cultural Heritage. Georgian wine exports grew 30%+ annually 2018–2023. Saperavi is only black-flesh grape among major international varieties."
+  },
+
+  // ── GREECE ──
+  {
+    name: "Santorini", country: "Greece", cluster: "Europe",
+    lat: 36.41, lng: 25.43,
+    grapes: { red: ["Mavrotragano","Mandilaria"], white: ["Assyrtiko","Athiri","Aidani"] },
+    styles: ["White (dry, high-acid)","Sweet (Vinsanto)","Red"],
+    primaryStyles: ["White","Fortified"],
+    organic: "Medium",
+    producers: ["Domaine Sigalas","Hatzidakis","Gaia Wines"],
+    invest: "Assyrtiko from ancient basket-trained vines (some 200+ years old) — phylloxera never reached Santorini. Vinsanto is among the world's rarest and most distinctive sweet wines. Vineyard land prices increasing rapidly with tourism demand."
+  },
+  {
+    name: "Nemea", country: "Greece", cluster: "Europe",
+    lat: 37.81, lng: 22.66,
+    grapes: { red: ["Agiorgitiko","Mavrodaphne"], white: ["Moschofilero","Roditis"] },
+    styles: ["Red","Rosé","White","Fortified (Mavrodaphne of Patras)"],
+    primaryStyles: ["Red","White"],
+    organic: "Emerging",
+    producers: ["Gaia Wines","Skouras","Papantonis"],
+    invest: "Agiorgitiko ('St. George') is Greece's most planted red variety. Nemea's clay-limestone soils produce structured, age-worthy reds. Greek fine wine category growing at 18% CAGR in export markets."
+  },
+  {
+    name: "Crete", country: "Greece", cluster: "Europe",
+    lat: 35.24, lng: 24.81,
+    grapes: { red: ["Kotsifali","Mandilaria","Liatiko"], white: ["Vidiano","Thrapsathiri","Vilana","Dafni"] },
+    styles: ["Red","White","Rosé","Sweet (Liatiko)"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Lyrarakis","Douloufakis","Stilianou"],
+    invest: "Crete is Greece's largest wine producing island. Indigenous varieties Vidiano and Dafni gaining significant international attention. Lyrarakis pioneering quality revolution. Wine tourism growing rapidly."
+  },
+
+  // ── CROATIA ──
+  {
+    name: "Istria", country: "Croatia", cluster: "Europe",
+    lat: 45.22, lng: 13.86,
+    grapes: { red: ["Teran","Refošk","Cabernet Sauvignon"], white: ["Malvazija Istarska","Pinot Grigio","Chardonnay"] },
+    styles: ["White","Red","Orange","Rosé"],
+    primaryStyles: ["White","Red","Orange"],
+    organic: "High",
+    producers: ["Meneghetti","Clai","Coronica"],
+    invest: "Malvazija Istarska (distinct from other Malvasia clones) producing internationally acclaimed skin-contact whites. Istria is Croatia's leading fine wine region. Wine tourism infrastructure comparable to Tuscany. EU accession opened export markets."
+  },
+
+  // ── SWITZERLAND ──
+  {
+    name: "Valais", country: "Switzerland", cluster: "Europe",
+    lat: 46.23, lng: 7.36,
+    grapes: { red: ["Pinot Noir","Gamay","Cornalin","Humagne Rouge"], white: ["Chasselas (Fendant)","Arvine (Petite Arvine)","Amigne","Heida"] },
+    styles: ["White","Red","Sweet (Flétri)"],
+    primaryStyles: ["White","Red"],
+    organic: "Medium",
+    producers: ["Marie-Thérèse Chappaz","Jean-René Germanier","Cave Taillefer"],
+    invest: "Switzerland consumes ~99% of its wine domestically — among world's most expensive wines by local market pricing. Petite Arvine and Cornalin are rare indigenous varieties. Scarcity of exported bottles creates collector interest."
+  },
+
+  // ── ENGLAND ──
+  {
+    name: "Sussex / Kent", country: "England", cluster: "Europe",
+    lat: 51.05, lng: 0.10,
+    grapes: { red: ["Pinot Noir","Pinot Meunier","Rondo"], white: ["Chardonnay","Bacchus","Seyval Blanc","Pinot Blanc"] },
+    styles: ["Sparkling (Traditional Method)","White","Red (limited)"],
+    primaryStyles: ["Sparkling","White"],
+    organic: "Emerging",
+    producers: ["Nyetimber","Ridgeview","Gusbourne"],
+    invest: "English sparkling wine blind-tasted against Champagne in multiple competitions. Nyetimber sold for £40–£80/bottle retail. UK vineyard area more than doubled 2015–2023. Climate change projections suggest continued quality improvement. Significant institutional investment entering sector."
+  },
+
+  // ── AMERICAS ──
+  {
+    name: "Napa Valley", country: "USA", cluster: "Americas",
+    lat: 38.50, lng: -122.27,
+    grapes: { red: ["Cabernet Sauvignon","Merlot","Cabernet Franc","Petite Sirah","Zinfandel"], white: ["Chardonnay","Sauvignon Blanc","Viognier"] },
+    styles: ["Red","White","Rosé","Late Harvest"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Screaming Eagle","Harlan Estate","Opus One"],
+    invest: "Screaming Eagle 6-liter fetched $500,000 at charity auction. Napa Cab Collector's Index up 200% since 2000. Cult wines (Screaming Eagle, Harlan, Scarecrow) routinely 3–5x oversubscribed on mailing lists. Average Napa vineyard land value $300,000–$500,000/acre."
+  },
+  {
+    name: "Sonoma", country: "USA", cluster: "Americas",
+    lat: 38.29, lng: -122.46,
+    grapes: { red: ["Pinot Noir","Zinfandel","Cabernet Sauvignon","Merlot"], white: ["Chardonnay","Sauvignon Blanc","Pinot Gris"] },
+    styles: ["Red","White","Sparkling","Rosé"],
+    primaryStyles: ["Red","White","Sparkling"],
+    organic: "High",
+    producers: ["Williams Selyem","Kistler","Ridge Vineyards"],
+    invest: "Sonoma coast Pinot Noir (Williams Selyem, Littorai) rivaling Burgundy in collector markets. Ridge Monte Bello one of US's most age-worthy reds. Sonoma DTC sales exceed $1.5B annually."
+  },
+  {
+    name: "Willamette Valley", country: "USA", cluster: "Americas",
+    lat: 45.22, lng: -123.11,
+    grapes: { red: ["Pinot Noir","Pinot Meunier"], white: ["Pinot Gris","Chardonnay","Riesling"] },
+    styles: ["Red","White","Sparkling (limited)"],
+    primaryStyles: ["Red","White"],
+    organic: "High",
+    producers: ["Beaux Frères","Eyrie Vineyards","Cristom"],
+    invest: "Oregon Pinot Noir benchmark for New World Burgundy comparisons. Robert Parker's Beaux Frères connected Willamette to global fine wine market. Vineyard land $20,000–$100,000/acre vs Burgundy Grand Cru ($5M+/acre) — investment upside narrative strong."
+  },
+  {
+    name: "Finger Lakes", country: "USA", cluster: "Americas",
+    lat: 42.67, lng: -76.96,
+    grapes: { red: ["Pinot Noir","Cabernet Franc","Lemberger"], white: ["Riesling","Chardonnay","Gewurztraminer","Grüner Veltliner"] },
+    styles: ["White","Red","Sparkling","Ice Wine"],
+    primaryStyles: ["White","Red"],
+    organic: "Emerging",
+    producers: ["Hermann J. Wiemer","Red Newt Cellars","Ravines Wine Cellars"],
+    invest: "Finger Lakes Riesling gaining international recognition as world-class cool-climate expression. Growing natural wine scene. Region's thermal-lake effect creates viable wine production conditions at 42°N latitude."
+  },
+  {
+    name: "Santa Barbara", country: "USA", cluster: "Americas",
+    lat: 34.73, lng: -119.80,
+    grapes: { red: ["Pinot Noir","Syrah","Grenache","Cabernet Sauvignon"], white: ["Chardonnay","Sauvignon Blanc","Viognier"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Brewer-Clifton","Sine Qua Non","Sandhi"],
+    invest: "Sine Qua Non cult Syrah and Grenache sell for $200–$600/bottle. Santa Barbara's transverse mountain ranges create unique east-west cool air corridor. Sta. Rita Hills sub-AVA Pinot Noir rivaling Willamette for collector attention."
+  },
+  {
+    name: "Mendoza", country: "Argentina", cluster: "Americas",
+    lat: -33.00, lng: -68.83,
+    grapes: { red: ["Malbec","Cabernet Sauvignon","Bonarda","Syrah"], white: ["Torrontés","Chardonnay","Sauvignon Blanc","Viognier"] },
+    styles: ["Red","White","Rosé","Sparkling"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Achaval Ferrer","Catena Zapata","Zuccardi Valle de Uco"],
+    invest: "Zuccardi Concreto rated #1 wine in the world by Wine Spectator 2019. Argentine Malbec export market worth $600M+ annually. Luján de Cuyo and Uco Valley single-vineyard Malbecs commanding $100–$300/bottle premium tier. Altitude winemaking (1,000–1,500m) is signature selling point."
+  },
+  {
+    name: "Salta / Cafayate", country: "Argentina", cluster: "Americas",
+    lat: -26.07, lng: -65.97,
+    grapes: { red: ["Malbec","Tannat","Cabernet Sauvignon"], white: ["Torrontés","Chardonnay"] },
+    styles: ["Red","White (aromatic)"],
+    primaryStyles: ["White","Red"],
+    organic: "Emerging",
+    producers: ["Clos de los Siete","El Esteco","Finca Las Nubes"],
+    invest: "Cafayate produces wine at up to 3,111m — world's highest commercial vineyards. Torrontés (aromatic white unique to Argentina) is category-creating variety for export. Growing interest from European luxury buyers."
+  },
+  {
+    name: "Maipo Valley", country: "Chile", cluster: "Americas",
+    lat: -33.72, lng: -70.65,
+    grapes: { red: ["Cabernet Sauvignon","Carménère","Merlot","Syrah"], white: ["Chardonnay","Sauvignon Blanc"] },
+    styles: ["Red","White"],
+    primaryStyles: ["Red"],
+    organic: "Low",
+    producers: ["Almaviva","Concha y Toro (Don Melchor)","Viñedo Chadwick"],
+    invest: "Almaviva (Rothschild-Concha y Toro JV) sells for $80–$200/bottle. Viñedo Chadwick rated above Petrus and Haut-Brion in Berlin Tasting 2004. Chile's proximity to Andes and Pacific creates natural pest barriers — low pesticide use."
+  },
+  {
+    name: "Colchagua Valley", country: "Chile", cluster: "Americas",
+    lat: -34.55, lng: -71.25,
+    grapes: { red: ["Carménère","Cabernet Sauvignon","Malbec","Syrah"], white: ["Chardonnay","Sauvignon Blanc"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red"],
+    organic: "Low",
+    producers: ["Montes Alpha","Casa Lapostolle","Clos Apalta"],
+    invest: "Clos Apalta (Lapostolle) named Wine of the Year by Wine Spectator. Carménère is Chile's signature grape — the 'lost grape of Bordeaux' rediscovered in 1994. Growing recognition driving 15–20% annual appreciation in top labels."
+  },
+  {
+    name: "Casablanca Valley", country: "Chile", cluster: "Americas",
+    lat: -33.30, lng: -71.40,
+    grapes: { red: ["Pinot Noir","Syrah"], white: ["Chardonnay","Sauvignon Blanc","Gewurztraminer"] },
+    styles: ["White","Red","Sparkling"],
+    primaryStyles: ["White","Red"],
+    organic: "Emerging",
+    producers: ["Viña Casas del Bosque","William Fèvre Chile","Santa Rita"],
+    invest: "Chile's premier cool-climate region. Pacific fog influence enables white wine quality comparable to coastal California. Fastest-growing Chilean export region 2015–2023."
+  },
+  {
+    name: "Aconcagua", country: "Chile", cluster: "Americas",
+    lat: -32.85, lng: -70.58,
+    grapes: { red: ["Cabernet Sauvignon","Carménère","Syrah","Pinot Noir"], white: ["Chardonnay","Sauvignon Blanc"] },
+    styles: ["Red","White"],
+    primaryStyles: ["Red","White"],
+    organic: "Low",
+    producers: ["Errázuriz","Seña","Viñedo Chadwick"],
+    invest: "Seña (Mondavi-Errázuriz joint venture) is Chile's benchmark icon wine at $150–$250/bottle. Aconcagua Costa sub-zone in Pacific-influenced coast gaining rapid acclaim. Max Errázuriz pioneered modern Chilean fine wine."
+  },
+  {
+    name: "Serra Gaúcha", country: "Brazil", cluster: "Americas",
+    lat: -29.17, lng: -51.53,
+    grapes: { red: ["Merlot","Cabernet Sauvignon","Tannat","Isabel"], white: ["Chardonnay","Riesling Itálico","Moscato"] },
+    styles: ["Red","White","Sparkling (Espumante)","Rosé"],
+    primaryStyles: ["Sparkling","Red","White"],
+    organic: "Emerging",
+    producers: ["Miolo","Casa Valduga","Pizzato"],
+    invest: "Brazil is South America's 3rd largest wine producer. Serra Gaúcha produces 90% of Brazilian wine. Espumante (Brazilian sparkling) market growing 25% annually. Vale dos Vinhedos was Brazil's first DOC. Domestic market of 215M consumers represents significant upside."
+  },
+  {
+    name: "Canelones", country: "Uruguay", cluster: "Americas",
+    lat: -34.52, lng: -56.28,
+    grapes: { red: ["Tannat","Merlot","Cabernet Sauvignon","Marselan"], white: ["Albariño","Chardonnay","Viognier","Sauvignon Blanc"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Emerging",
+    producers: ["Bodega Garzón","Familia Deicas","Pisano"],
+    invest: "Uruguay's Tannat (adopted from Madiran, France) has become the country's signature variety. Bodega Garzón is Uruguay's first winery to receive 4-star rating from Robert Parker. Growing recognition as South American alternative to Argentina premium positioning."
+  },
+
+  // ── SOUTHERN HEMISPHERE ──
+  {
+    name: "Barossa Valley", country: "Australia", cluster: "Southern Hemisphere",
+    lat: -34.53, lng: 138.95,
+    grapes: { red: ["Shiraz","Grenache","Mourvèdre","Cabernet Sauvignon"], white: ["Riesling","Chardonnay","Semillon","Viognier"] },
+    styles: ["Red","White","Fortified"],
+    primaryStyles: ["Red","White"],
+    organic: "Low",
+    producers: ["Penfolds","Henschke","Torbreck"],
+    invest: "Penfolds Grange is Australia's most investment-grade wine — Grange 1971 sold for AUD$100,000 at auction. Old-vine Shiraz (some vines 150+ years old) — highest density of pre-phylloxera vines in world. Penfolds annual Grange release 6,000 cases globally."
+  },
+  {
+    name: "McLaren Vale", country: "Australia", cluster: "Southern Hemisphere",
+    lat: -35.22, lng: 138.55,
+    grapes: { red: ["Shiraz","Grenache","Cabernet Sauvignon","Merlot"], white: ["Chardonnay","Viognier","Fiano","Vermentino"] },
+    styles: ["Red","White","Rosé","Fortified"],
+    primaryStyles: ["Red","White"],
+    organic: "High",
+    producers: ["d'Arenberg","Clarendon Hills","Yangarra Estate"],
+    invest: "Clarendon Hills Astralis Shiraz ($150–$250/bottle) is one of Australia's most collectable wines. McLaren Vale leads Australia in organic adoption (25%+ certified). 'd'Arenberg Cube' winery architecture a wine tourism landmark."
+  },
+  {
+    name: "Margaret River", country: "Australia", cluster: "Southern Hemisphere",
+    lat: -33.95, lng: 115.07,
+    grapes: { red: ["Cabernet Sauvignon","Merlot","Shiraz","Cabernet Franc"], white: ["Chardonnay","Semillon","Sauvignon Blanc"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Vasse Felix","Leeuwin Estate","Cullen"],
+    invest: "Cullen Wines is Australia's first carbon-neutral winery. Leeuwin Estate Art Series Chardonnay one of Australia's most collectable whites. Margaret River produces 3% of Australia's wine but 20% of its premium wine. Bordeaux-comparable climate."
+  },
+  {
+    name: "Yarra Valley", country: "Australia", cluster: "Southern Hemisphere",
+    lat: -37.76, lng: 145.55,
+    grapes: { red: ["Pinot Noir","Cabernet Sauvignon","Shiraz","Merlot"], white: ["Chardonnay","Pinot Gris","Riesling"] },
+    styles: ["Red","White","Sparkling"],
+    primaryStyles: ["Red","White","Sparkling"],
+    organic: "Medium",
+    producers: ["Yering Station","Mount Mary","Coldstream Hills"],
+    invest: "Mount Mary Quintet is Victoria's most sought-after Bordeaux blend. Yarra Valley sparkling (Chandon Australia) demonstrates trans-hemisphere sparkling quality. Cool climate reputation growing strongly with MW/sommelier endorsements."
+  },
+  {
+    name: "Hunter Valley", country: "Australia", cluster: "Southern Hemisphere",
+    lat: -32.82, lng: 151.28,
+    grapes: { red: ["Shiraz","Cabernet Sauvignon","Pinot Noir"], white: ["Semillon","Chardonnay","Verdelho"] },
+    styles: ["White (Semillon)","Red","Fortified"],
+    primaryStyles: ["White","Red"],
+    organic: "Low",
+    producers: ["Tyrrell's","Brokenwood","McWilliam's"],
+    invest: "Hunter Valley Semillon is one of world's most distinctive whites — low alcohol (10–11%), ages 20+ years. Tyrrell's Vat 1 Hunter Semillon vintage 1976 sold for AUD $15,000 at auction. Australia's oldest wine region (est. 1820s)."
+  },
+  {
+    name: "Marlborough", country: "New Zealand", cluster: "Southern Hemisphere",
+    lat: -41.51, lng: 173.96,
+    grapes: { red: ["Pinot Noir","Merlot"], white: ["Sauvignon Blanc","Pinot Gris","Chardonnay","Riesling"] },
+    styles: ["White","Red","Sparkling"],
+    primaryStyles: ["White","Red"],
+    organic: "Medium",
+    producers: ["Cloudy Bay","Clos Henri","Dog Point"],
+    invest: "Cloudy Bay's 1985 Sauvignon Blanc single-handedly defined the regional and varietal category globally. New Zealand SB accounts for 80%+ of NZ wine exports. Brand recognition and price premiums ($25–$50/bottle) are strongest in NZ portfolio."
+  },
+  {
+    name: "Central Otago", country: "New Zealand", cluster: "Southern Hemisphere",
+    lat: -45.03, lng: 169.15,
+    grapes: { red: ["Pinot Noir","Pinot Gris"], white: ["Pinot Gris","Riesling","Chardonnay","Gewurztraminer"] },
+    styles: ["Red","White"],
+    primaryStyles: ["Red","White"],
+    organic: "High",
+    producers: ["Felton Road","Peregrine","Two Paddocks"],
+    invest: "World's southernmost wine region and world's only inland/continental climate wine region in Southern Hemisphere. Felton Road Block 3 Pinot Noir commands $100–$200/bottle. International critical acclaim growing rapidly. Low production volumes ensure scarcity premium."
+  },
+  {
+    name: "Hawke's Bay", country: "New Zealand", cluster: "Southern Hemisphere",
+    lat: -39.49, lng: 176.84,
+    grapes: { red: ["Merlot","Cabernet Sauvignon","Syrah","Cabernet Franc"], white: ["Chardonnay","Sauvignon Blanc","Viognier"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Craggy Range","Te Mata","Sileni"],
+    invest: "Te Mata Coleraine is NZ's most cellarworthy red. Hawke's Bay Gimblett Gravels sub-region (gravel soils) producing Bordeaux-style reds challenging Australian benchmarks. Syrah from this region winning international blind tastings."
+  },
+  {
+    name: "Stellenbosch", country: "South Africa", cluster: "Southern Hemisphere",
+    lat: -33.93, lng: 18.86,
+    grapes: { red: ["Cabernet Sauvignon","Merlot","Pinotage","Syrah","Chenin Blanc"], white: ["Chardonnay","Sauvignon Blanc","Viognier"] },
+    styles: ["Red","White","Rosé","Fortified"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Kanonkop","Meerlust","Tokara"],
+    invest: "Kanonkop Paul Sauer is South Africa's most awarded Bordeaux blend. Eben Sadie's 'Columella' commands international collector status ($80–$150/bottle). South African fine wine exports growing 20%+ CAGR post-2016."
+  },
+  {
+    name: "Swartland", country: "South Africa", cluster: "Southern Hemisphere",
+    lat: -33.46, lng: 18.74,
+    grapes: { red: ["Syrah","Grenache","Cinsault","Mourvèdre","Carignan"], white: ["Chenin Blanc","Viognier","Clairette","Palomino"] },
+    styles: ["Red","White","Orange","Rosé"],
+    primaryStyles: ["Red","White","Orange"],
+    organic: "High",
+    producers: ["Sadie Family Wines","Mullineux","AA Badenhorst"],
+    invest: "Epicenter of South Africa's natural wine revolution. Sadie Family 'Columella' ($80+) and Mullineux 'Leeu Passant' driving international collector interest. Swartland Revolution changed how SA wine is perceived globally. Old-vine Chenin Blanc 50–100+ years — significant scarcity value."
+  },
+  {
+    name: "Walker Bay", country: "South Africa", cluster: "Southern Hemisphere",
+    lat: -34.41, lng: 19.23,
+    grapes: { red: ["Pinot Noir","Shiraz"], white: ["Chardonnay","Sauvignon Blanc","Semillon"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Medium",
+    producers: ["Hamilton Russell","Bouchard Finlayson","Storm Wines"],
+    invest: "Hamilton Russell Pinot Noir — Africa's most critically acclaimed Pinot Noir; compared to Burgundy Village level. Cool whale-coast climate. Growing recognition driving significant export price increases."
+  },
+  {
+    name: "Franschhoek", country: "South Africa", cluster: "Southern Hemisphere",
+    lat: -33.91, lng: 19.12,
+    grapes: { red: ["Cabernet Sauvignon","Shiraz","Merlot","Pinot Noir"], white: ["Chardonnay","Semillon","Chenin Blanc"] },
+    styles: ["Red","White","Sparkling (Cap Classique)"],
+    primaryStyles: ["Red","White","Sparkling"],
+    organic: "Medium",
+    producers: ["Graham Beck","Boekenhoutskloof","La Motte"],
+    invest: "Graham Beck Brut NV served at both Obama inauguration dinners — iconic PR. Boekenhoutskloof 'The Chocolate Block' ($25–$35) achieves massive global volume at accessible price point. Franschhoek wine route is SA's top wine tourism destination."
+  },
+
+  // ── OTHER REGIONS ──
+  {
+    name: "Bekaa Valley", country: "Lebanon", cluster: "Other",
+    lat: 33.85, lng: 35.90,
+    grapes: { red: ["Cabernet Sauvignon","Cinsault","Syrah","Grenache","Carignan"], white: ["Chardonnay","Sauvignon Blanc","Muscat"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Emerging",
+    producers: ["Château Musar","Château Ksara","Domaine des Tourelles"],
+    invest: "Château Musar is Lebanon's most iconic wine — produced even during Lebanese Civil War (1975–1990). Musar 1972 fetches $500+ at auction. Lebanon is Middle East's most established wine producer. Altitude 1,000m+ provides natural cooling despite latitude."
+  },
+  {
+    name: "Galilee", country: "Israel", cluster: "Other",
+    lat: 32.93, lng: 35.50,
+    grapes: { red: ["Cabernet Sauvignon","Syrah","Merlot","Sangiovese"], white: ["Chardonnay","Sauvignon Blanc","Muscat"] },
+    styles: ["Red","White","Rosé","Sparkling"],
+    primaryStyles: ["Red","White"],
+    organic: "Emerging",
+    producers: ["Domaine du Castel","Yatir Winery","Dalton"],
+    invest: "Israeli fine wine has achieved international critical recognition since 2000s. Domaine du Castel Grand Vin ($50–$80) rated by Wine Spectator 90+ consistently. Galilee's elevation (400–900m) enables quality production. Kosher premium wine segment growing globally."
+  },
+  {
+    name: "Golan Heights", country: "Israel", cluster: "Other",
+    lat: 33.10, lng: 35.75,
+    grapes: { red: ["Cabernet Sauvignon","Merlot","Syrah","Pinot Noir"], white: ["Chardonnay","Sauvignon Blanc","Riesling","Gewurztraminer"] },
+    styles: ["Red","White","Rosé","Sparkling"],
+    primaryStyles: ["Red","White"],
+    organic: "Low",
+    producers: ["Golan Heights Winery (Yarden)","Pelter","Bazelet HaGolan"],
+    invest: "Yarden is Israel's most exported wine brand. Altitude 400–1,200m on volcanic basalt soils — exceptional terroir. Golan Heights wines pioneered Israel's modern fine wine era. Complex geopolitical status adds scarcity/uniqueness narrative."
+  },
+  {
+    name: "Nashik", country: "India", cluster: "Other",
+    lat: 20.00, lng: 73.79,
+    grapes: { red: ["Cabernet Sauvignon","Shiraz","Sangiovese","Zinfandel"], white: ["Chenin Blanc","Sauvignon Blanc","Chardonnay"] },
+    styles: ["Red","White","Sparkling","Rosé"],
+    primaryStyles: ["Red","White","Sparkling"],
+    organic: "Emerging",
+    producers: ["Sula Vineyards","Grover Zampa","York Winery"],
+    invest: "India's wine consumption growing 20%+ annually from a low base. Sula Vineyards (NSE listed) is India's largest wine company by market share (60%+). 1.4B population with rising middle class represents enormous potential market. Nashik produces 90% of India's wine."
+  },
+  {
+    name: "Shandong / Ningxia", country: "China", cluster: "Other",
+    lat: 38.47, lng: 106.27,
+    grapes: { red: ["Cabernet Sauvignon","Merlot","Cabernet Franc","Marselan"], white: ["Chardonnay","Riesling","Muscat"] },
+    styles: ["Red","White","Rosé","Sparkling"],
+    primaryStyles: ["Red","White"],
+    organic: "Emerging",
+    producers: ["Changyu","COFCO (Great Wall)","Silver Heights (Ningxia)"],
+    invest: "China is now the world's 5th largest wine producer. Ningxia (Helan Mountain East) has produced wines that won at Decanter World Wine Awards. Chinese fine wine market historically driven by Bordeaux imports (~$1.3B in 2019). Domestic production quality investment is Beijing priority."
+  },
+  {
+    name: "Hokkaido / Yamanashi", country: "Japan", cluster: "Other",
+    lat: 35.65, lng: 138.57,
+    grapes: { red: ["Muscat Bailey A","Merlot","Cabernet Sauvignon"], white: ["Koshu","Delaware","Chardonnay"] },
+    styles: ["White (Koshu)","Red","Sparkling","Sweet"],
+    primaryStyles: ["White","Red"],
+    organic: "Emerging",
+    producers: ["Chateau Mercian","Grace Winery","Domaine Osawa"],
+    invest: "Koshu is Japan's signature indigenous white grape — delicate, umami-inflected style perfectly suited to Japanese cuisine. Japan wine market growing; Grace Winery Koshu wines listed at Michelin 3-star restaurants globally. Domestic pride driving significant quality investment."
+  },
+  {
+    name: "Anatolia", country: "Turkey", cluster: "Other",
+    lat: 38.95, lng: 35.21,
+    grapes: { red: ["Öküzgözü","Boğazkere","Kalecik Karası","Papazkarası"], white: ["Emir","Narince","Misket"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","White"],
+    organic: "Emerging",
+    producers: ["Kavaklidere","Doluca","Kayra"],
+    invest: "Turkey has 8,000+ years of viticulture history — one of the world's original wine cultures. Indigenous varieties Öküzgözü and Boğazkere gaining international attention. Turkish wine exports growing from a small base. 10,000+ hectares under vine."
+  },
+  {
+    name: "Crimea / Odessa", country: "Ukraine (historical)", cluster: "Other",
+    lat: 46.50, lng: 30.73,
+    grapes: { red: ["Cabernet Sauvignon","Merlot","Malbec","Saperavi"], white: ["Chardonnay","Riesling","Aligoté","Muscat"] },
+    styles: ["Red","White","Sparkling","Fortified","Sweet"],
+    primaryStyles: ["Red","White","Sparkling"],
+    organic: "Low",
+    producers: ["Shabo","Massandra (historical)","Ukrainian wine co-ops"],
+    invest: "Massandra (Crimea) cellars house one of the world's largest collections of antique wines — 1M+ bottles, some from 1775. Ukraine's wine industry severely disrupted post-2014 and 2022. Historical significance to Black Sea wine trade dating to ancient Greece. Post-conflict reconstruction presents speculative long-term opportunity."
+  },
+  {
+    name: "Casablanca / Meknès", country: "Morocco", cluster: "Other",
+    lat: 33.89, lng: -5.55,
+    grapes: { red: ["Cabernet Sauvignon","Syrah","Grenache","Cinsault"], white: ["Chardonnay","Muscat","Clairette"] },
+    styles: ["Red","White","Rosé"],
+    primaryStyles: ["Red","Rosé"],
+    organic: "Emerging",
+    producers: ["Château Roslane","Volubilia","Les Celliers de Meknès"],
+    invest: "Morocco is Africa's largest wine exporter (by volume). French colonial winemaking legacy. Meknès altitude (550m) moderates climate. Growing export markets in Europe (Moroccan diaspora). Tourism industry driving quality improvement."
+  }
+];
+
+// ──────────────────────────────────────────────
+// State
+// ──────────────────────────────────────────────
+let activeFilters = { cluster: 'all', organic: 'all', style: 'all' };
+let markers = [];
+let map;
+
+// ──────────────────────────────────────────────
+// Map init
+// ──────────────────────────────────────────────
+function initMap() {
+  map = L.map('map', {
+    center: [25, 10],
+    zoom: 3,
+    minZoom: 2,
+    maxZoom: 10,
+    zoomControl: true,
+  });
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    subdomains: 'abcd',
+    maxZoom: 19
+  }).addTo(map);
+
+  wineRegions.forEach((region, idx) => {
+    const marker = createMarker(region);
+    markers.push({ marker, region, visible: true });
+  });
+
+  updateCounts();
+  buildSidebar();
+  updateStatsBar();
+}
+
+function createMarker(region) {
+  const color = CLUSTER_COLORS[region.cluster] || '#aaa';
+
+  const icon = L.divIcon({
+    className: '',
+    html: `<div style="
+      width:12px;height:12px;
+      background:${color};
+      border:2px solid rgba(255,255,255,0.3);
+      border-radius:50%;
+      box-shadow:0 0 8px ${color}88;
+      cursor:pointer;
+      transition:all 0.15s;
+    " onmouseover="this.style.transform='scale(1.6)'" onmouseout="this.style.transform='scale(1)'"></div>`,
+    iconSize: [12, 12],
+    iconAnchor: [6, 6],
+  });
+
+  const marker = L.marker([region.lat, region.lng], { icon })
+    .addTo(map)
+    .bindPopup(buildPopup(region), {
+      maxWidth: 340,
+      className: 'wine-popup'
+    });
+
+  return marker;
+}
+
+function buildPopup(r) {
+  const color = CLUSTER_COLORS[r.cluster] || '#aaa';
+  const organicClass = 'organic-' + r.organic.toLowerCase();
+
+  const redGrapes = r.grapes.red.map(g => `<span class="grape-pill">${g}</span>`).join('');
+  const whiteGrapes = r.grapes.white.map(g => `<span class="grape-pill">${g}</span>`).join('');
+  const styles = r.styles.join(' · ');
+  const producers = r.producers.join(', ');
+
+  return `<div class="popup-inner">
+    <div class="popup-header">
+      <div class="popup-region">${r.name}</div>
+      <div class="popup-country">${r.country}</div>
+      <div class="popup-cluster-badge" style="background:${color}22;color:${color};border:1px solid ${color}44;">${r.cluster}</div>
+    </div>
+
+    <div class="popup-section">
+      <div class="popup-label">Red Grapes</div>
+      <div>${redGrapes}</div>
+    </div>
+
+    <div class="popup-section">
+      <div class="popup-label">White Grapes</div>
+      <div>${whiteGrapes}</div>
+    </div>
+
+    <div class="popup-section">
+      <div class="popup-label">Wine Styles</div>
+      <div class="popup-styles">${styles}</div>
+    </div>
+
+    <div class="popup-section" style="display:flex;gap:16px;align-items:center;">
+      <div>
+        <div class="popup-label">Organic Presence</div>
+        <span class="organic-badge ${organicClass}">${r.organic}</span>
+      </div>
+    </div>
+
+    <div class="popup-section">
+      <div class="popup-label">Notable Producers</div>
+      <div class="popup-producers">${producers}</div>
+    </div>
+
+    <div class="popup-invest">
+      ${r.invest}
+    </div>
+  </div>`;
+}
+
+// ──────────────────────────────────────────────
+// Filtering
+// ──────────────────────────────────────────────
+function filterRegions(filterType, value) {
+  activeFilters[filterType] = value;
+
+  // Update button states
+  document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.value === value);
+  });
+
+  applyFilters();
+}
+
+function regionMatchesFilters(region) {
+  if (activeFilters.cluster !== 'all' && region.cluster !== activeFilters.cluster) return false;
+  if (activeFilters.organic !== 'all' && region.organic !== activeFilters.organic) return false;
+  if (activeFilters.style !== 'all' && !region.primaryStyles.includes(activeFilters.style)) return false;
+  return true;
+}
+
+function applyFilters() {
+  markers.forEach(({ marker, region }) => {
+    const show = regionMatchesFilters(region);
+    if (show) {
+      if (!map.hasLayer(marker)) marker.addTo(map);
+    } else {
+      if (map.hasLayer(marker)) map.removeLayer(marker);
+    }
+  });
+
+  updateCounts();
+  buildSidebar();
+  updateStatsBar();
+}
+
+function updateCounts() {
+  const clusters = ['Europe', 'Americas', 'Southern Hemisphere', 'Other'];
+  clusters.forEach(c => {
+    const el = document.getElementById('count-' + c);
+    if (el) {
+      const total = wineRegions.filter(r => r.cluster === c).length;
+      const visible = markers.filter(({ region }) => region.cluster === c && regionMatchesFilters(region)).length;
+      el.textContent = visible === total ? `${total}` : `${visible}/${total}`;
+    }
+  });
+}
+
+function updateStatsBar() {
+  const visible = markers.filter(({ region }) => regionMatchesFilters(region)).length;
+  document.getElementById('visible-count').textContent = visible;
+  const filterLabel = activeFilters.cluster === 'all' ? 'All' : activeFilters.cluster;
+  document.getElementById('current-filter').textContent = filterLabel;
+}
+
+function buildSidebar() {
+  const list = document.getElementById('region-list');
+  const visible = wineRegions.filter(regionMatchesFilters);
+  const color = CLUSTER_COLORS;
+
+  list.innerHTML = visible.map(r => `
+    <div class="region-list-item" onclick="flyTo(${r.lat}, ${r.lng}, '${r.name.replace(/'/g,"\\'")}')">
+      <span class="rname" style="border-left:none">${r.name}</span>
+      <span class="rcountry">${r.country} · ${r.cluster}</span>
+    </div>
+  `).join('');
+}
+
+function flyTo(lat, lng, name) {
+  map.flyTo([lat, lng], 8, { duration: 1.2 });
+  const match = markers.find(({ region }) => region.lat === lat && region.lng === lng);
+  if (match) {
+    setTimeout(() => match.marker.openPopup(), 1400);
+  }
+}
+
+// ──────────────────────────────────────────────
+// Boot
+// ──────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', initMap);
+</script>
+</body>
+</html>

@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1D423E322FCB364400A4CE05 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D423E312FCB364300A4CE05 /* StoreKit.framework */; };
+		1D423E352FCDF2B800A4CE05 /* Subscriptions.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 1D423E342FCDF2B700A4CE05 /* Subscriptions.storekit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1D646E3D2F2FFDD300445B63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,14 +29,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D423E312FCB364300A4CE05 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1D423E342FCDF2B700A4CE05 /* Subscriptions.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subscriptions.storekit; sourceTree = "<group>"; };
 		1D646E2F2F2FFDD100445B63 /* Enhanced App for Alt Assets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enhanced App for Alt Assets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D646E3C2F2FFDD300445B63 /* Enhanced App for Alt AssetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Enhanced App for Alt AssetsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D646E462F2FFDD300445B63 /* Enhanced App for Alt AssetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Enhanced App for Alt AssetsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD6F9762F33C4C2000B712D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1DD6F9772F33C4C2000B712D /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		1DD6F9782F33C4C2000B712D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1DD6F9792F33C4C2000B712D /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		1DD6F97B2F33C4C2000B712D /* AltAssetAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltAssetAppApp.swift; sourceTree = "<group>"; };
+		1DD6F97C2F33C4C2000B712D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DD6F97D2F33C4C2000B712D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1DD6F97F2F33C4C2000B712D /* GlossaryAndResearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryAndResearch.swift; sourceTree = "<group>"; };
+		1DD6F9802F33C4C2000B712D /* GlossaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryView.swift; sourceTree = "<group>"; };
+		1DD6F9812F33C4C2000B712D /* LearningPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPathView.swift; sourceTree = "<group>"; };
+		1DD6F9822F33C4C2000B712D /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		1DD6F9832F33C4C2000B712D /* ModuleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetailView.swift; sourceTree = "<group>"; };
+		1DD6F9842F33C4C2000B712D /* NotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotionService.swift; sourceTree = "<group>"; };
+		1DD6F9852F33C4C2000B712D /* ProgressDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDashboardView.swift; sourceTree = "<group>"; };
+		1DD6F9862F33C4C2000B712D /* ProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressManager.swift; sourceTree = "<group>"; };
+		1DD6F9872F33C4C2000B712D /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		1DD6F9882F33C4C2000B712D /* ReflectionJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionJournalView.swift; sourceTree = "<group>"; };
+		1DD6F9892F33C4C2000B712D /* ReflectionPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionPromptView.swift; sourceTree = "<group>"; };
+		1DD6F98A2F33C4C2000B712D /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
+		1DD6F98B2F33C4C2000B712D /* ReviewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSessionView.swift; sourceTree = "<group>"; };
+		1DD6F98C2F33C4C2000B712D /* SampleDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataLoader.swift; sourceTree = "<group>"; };
+		1DD6F98D2F33C4C2000B712D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1DD6F98E2F33C4C2000B712D /* SpacedRepetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacedRepetition.swift; sourceTree = "<group>"; };
+		1DD6F98F2F33C4C2000B712D /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1D72ACF82FAD183B00CDBF87 /* Exceptions for "Enhanced App for Alt Assets" folder in "Enhanced App for Alt Assets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BiodynamicModuleData.swift,
+				"Enhanced-App-for-Alt-Assets-Info.plist",
+				VentureCapitalModule.swift,
+				WhiskyModuleData.swift,
+				wine_regions_map.html,
+				WineModuleData.swift,
+				WineNextStepsView.swift,
+			);
+			target = 1D646E2E2F2FFDD100445B63 /* Enhanced App for Alt Assets */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1D646E312F2FFDD100445B63 /* Enhanced App for Alt Assets */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1D72ACF82FAD183B00CDBF87 /* Exceptions for "Enhanced App for Alt Assets" folder in "Enhanced App for Alt Assets" target */,
+			);
 			path = "Enhanced App for Alt Assets";
 			sourceTree = "<group>";
 		};
@@ -52,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D423E322FCB364400A4CE05 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +123,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D423E302FCB364300A4CE05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D423E312FCB364300A4CE05 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1D646E262F2FFDD100445B63 = {
 			isa = PBXGroup;
 			children = (
+				1D423E342FCDF2B700A4CE05 /* Subscriptions.storekit */,
 				1D646E312F2FFDD100445B63 /* Enhanced App for Alt Assets */,
 				1D646E3F2F2FFDD300445B63 /* Enhanced App for Alt AssetsTests */,
 				1D646E492F2FFDD300445B63 /* Enhanced App for Alt AssetsUITests */,
 				1D646E302F2FFDD100445B63 /* Products */,
+				1DD6F9902F33C4C2000B712D /* Enhanced App for Alt Assets */,
+				1D423E302FCB364300A4CE05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +152,77 @@
 				1D646E462F2FFDD300445B63 /* Enhanced App for Alt AssetsUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1DD6F9722F33C4C2000B712D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		1DD6F9732F33C4C2000B712D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		1DD6F9742F33C4C2000B712D /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		1DD6F9752F33C4C2000B712D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1DD6F9722F33C4C2000B712D /* Buttons */,
+				1DD6F9732F33C4C2000B712D /* Cards */,
+				1DD6F9742F33C4C2000B712D /* Media */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1DD6F97A2F33C4C2000B712D /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				1DD6F9752F33C4C2000B712D /* Components */,
+				1DD6F9762F33C4C2000B712D /* Colors.swift */,
+				1DD6F9772F33C4C2000B712D /* Spacing.swift */,
+				1DD6F9782F33C4C2000B712D /* Theme.swift */,
+				1DD6F9792F33C4C2000B712D /* Typography.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		1DD6F9902F33C4C2000B712D /* Enhanced App for Alt Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1DD6F97A2F33C4C2000B712D /* DesignSystem */,
+				1DD6F97B2F33C4C2000B712D /* AltAssetAppApp.swift */,
+				1DD6F97C2F33C4C2000B712D /* Assets.xcassets */,
+				1DD6F97D2F33C4C2000B712D /* ContentView.swift */,
+				1DD6F97F2F33C4C2000B712D /* GlossaryAndResearch.swift */,
+				1DD6F9802F33C4C2000B712D /* GlossaryView.swift */,
+				1DD6F9812F33C4C2000B712D /* LearningPathView.swift */,
+				1DD6F9822F33C4C2000B712D /* Module.swift */,
+				1DD6F9832F33C4C2000B712D /* ModuleDetailView.swift */,
+				1DD6F9842F33C4C2000B712D /* NotionService.swift */,
+				1DD6F9852F33C4C2000B712D /* ProgressDashboardView.swift */,
+				1DD6F9862F33C4C2000B712D /* ProgressManager.swift */,
+				1DD6F9872F33C4C2000B712D /* QuizView.swift */,
+				1DD6F9882F33C4C2000B712D /* ReflectionJournalView.swift */,
+				1DD6F9892F33C4C2000B712D /* ReflectionPromptView.swift */,
+				1DD6F98A2F33C4C2000B712D /* ReviewManager.swift */,
+				1DD6F98B2F33C4C2000B712D /* ReviewSessionView.swift */,
+				1DD6F98C2F33C4C2000B712D /* SampleDataLoader.swift */,
+				1DD6F98D2F33C4C2000B712D /* SettingsView.swift */,
+				1DD6F98E2F33C4C2000B712D /* SpacedRepetition.swift */,
+				1DD6F98F2F33C4C2000B712D /* UserProgress.swift */,
+			);
+			path = "Enhanced App for Alt Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +304,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					1D646E2E2F2FFDD100445B63 = {
 						CreatedOnToolsVersion = 26.2;
@@ -212,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D423E352FCDF2B800A4CE05 /* Subscriptions.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +437,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -325,6 +460,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -364,6 +500,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -379,6 +516,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -388,12 +526,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Enhanced App for Alt Assets/Enhanced App for Alt Assets.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = VQ4MS7WKP6;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Enhanced-App-for-Alt-Assets-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Alts Lit";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -408,13 +553,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VLC.Enhanced-App-for-Alt-Assets";
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alternativeassetliteracy.altsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -430,12 +576,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Enhanced App for Alt Assets/Enhanced App for Alt Assets.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = VQ4MS7WKP6;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Enhanced-App-for-Alt-Assets-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Alts Lit";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -450,13 +604,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VLC.Enhanced-App-for-Alt-Assets";
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alternativeassetliteracy.altsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -473,11 +628,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = HNU2WYHNCU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VLC.Enhanced-App-for-Alt-AssetsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alternativeassetliteracy.appTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -498,11 +655,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = HNU2WYHNCU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VLC.Enhanced-App-for-Alt-AssetsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alternativeassetliteracy.appTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -522,11 +681,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = HNU2WYHNCU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VLC.Enhanced-App-for-Alt-AssetsUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alternativeassetliteracy.appUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -546,11 +707,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = HNU2WYHNCU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VLC.Enhanced-App-for-Alt-AssetsUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alternativeassetliteracy.appUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
