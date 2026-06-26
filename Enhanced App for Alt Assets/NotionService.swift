@@ -224,14 +224,15 @@ class NotionService: ObservableObject {
         self._apiKey = AppConfiguration.notionAPIKey
         self.databaseId = AppConfiguration.notionDatabaseID
 
-        // Load from local cache first (instant, works offline)
-        if let cached = ModuleCache.load(), !cached.isEmpty {
+        // Load from local cache first (instant, works offline).
+        // Reject cache if it has fewer modules than static data — indicates a partial/corrupted save.
+        let staticModules = SampleDataLoader.loadSampleModules()
+        if let cached = ModuleCache.load(), cached.count >= staticModules.count {
             self.modules = cached
             debugLog("✅ [Cache] Loaded \(cached.count) modules from local cache")
-        } else if AppConfiguration.useSampleDataFallback {
-            // Fall back to sample data if no cache exists yet
-            self.modules = SampleDataLoader.loadSampleModules()
-            debugLog("Loaded \(self.modules.count) sample modules")
+        } else {
+            self.modules = staticModules
+            debugLog("Loaded \(staticModules.count) modules from static data")
         }
     }
 
@@ -405,7 +406,9 @@ class NotionService: ObservableObject {
 
             } catch {
                 failedCount += 1
-                debugLog("❌ [NotionService] FAILED: \(config.title) (\(config.moduleId)): \(error.localizedDescription) | Page ID: \(config.notionPageId)")
+                let msg = "❌ \(config.moduleId): \(error.localizedDescription)"
+                debugLog(msg)
+                await MainActor.run { self.error = msg }
             }
         }
 
@@ -486,7 +489,9 @@ class NotionService: ObservableObject {
                 debugLog("✅ [NotionService] Sync complete — \(loadedModules.count) modules (\(localModules.count) local, \(failedCount) Notion failures)")
                 debugLog("Loaded \(loadedModules.count) modules from Notion (\(failedCount) failed)")
                 // Persist to local cache so next launch is instant even if Notion is unreachable
-                ModuleCache.save(loadedModules)
+                // Only cache when all Notion modules succeeded — partial sets corrupt the cache
+                // and cause previously-working modules to vanish on the next cold launch.
+                if failedCount == 0 { ModuleCache.save(loadedModules) }
             }
             self.isLoading = false
             self.error = failedCount > 0 ? "\(failedCount) module(s) failed to sync" : nil
@@ -1884,12 +1889,15 @@ class NotionService: ObservableObject {
             cursor = response.hasMore ? response.nextCursor : nil
         } while cursor != nil
 
-        // Fetch children for blocks that have them (toggles, columns, tables, etc.)
+        // Fetch children only for block types that parseSections actually reads.
+        // Paragraph/heading/bullet children are indented sub-content we don't render —
+        // fetching them causes hundreds of unnecessary API calls on large pages.
+        let childFetchTypes: Set<String> = ["column_list", "callout", "toggle", "synced_block", "table"]
         // Note: child_database blocks are handled by prefetchChildDatabases() via the
         // database query API — do NOT call /blocks/{id}/children on them, it will fail.
         var enrichedBlocks: [NotionBlock] = []
         for var block in allBlocks {
-            if block.hasChildren == true && block.type != "child_database" {
+            if block.hasChildren == true && childFetchTypes.contains(block.type) {
                 do {
                     let children = try await fetchPageBlocks(pageId: block.id)
                     block.children = children

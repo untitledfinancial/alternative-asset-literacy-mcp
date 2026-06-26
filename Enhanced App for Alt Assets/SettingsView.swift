@@ -2,11 +2,7 @@
 //  SettingsView.swift
 //  Enhanced App for Alt Assets
 //
-//  Created by Victoria Case on 2/1/26.
 //  Copyright © 2026 Untitled_ LuxPerpetua Technologies, Inc. All rights reserved.
-//
-//  Description: App settings interface for managing user preferences,
-//  viewing app information, and resetting progress data.
 //
 
 import SwiftUI
@@ -15,261 +11,238 @@ struct SettingsView: View {
     @EnvironmentObject var progressManager: ProgressManager
     @EnvironmentObject var userSettings: UserSettings
     @EnvironmentObject var subscriptionManager: SubscriptionManager
-    @Environment(\.dismiss) private var dismiss
-
     @EnvironmentObject var notionService: NotionService
+    @Environment(\.dismiss) private var dismiss
 
     @State private var showingResetConfirmation = false
     @State private var showPaywall = false
     @State private var isSyncing = false
     @State private var syncMessage: String? = nil
+    @State private var versionTapCount = 0
 
     var body: some View {
         NavigationStack {
             Form {
-                // Typography Section (like Notion)
-                SwiftUI.Section {
-                    // Font Style Picker
-                    VStack(alignment: .leading, spacing: Spacing.sm) {
-                        Text("Style")
-                            .font(Typography.caption)
-                            .foregroundColor(.textSecondary)
-
-                        HStack(spacing: Spacing.sm) {
-                            ForEach(FontStyle.allCases) { style in
-                                FontStyleButton(
-                                    style: style,
-                                    isSelected: userSettings.fontStyle == style
-                                ) {
-                                    withAnimation(.smoothSpring) {
-                                        userSettings.fontStyle = style
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    // Text Size
-                    VStack(alignment: .leading, spacing: Spacing.sm) {
-                        HStack {
-                            Text("Text size")
-                                .font(Typography.caption)
-                                .foregroundColor(.textSecondary)
-
-                            Spacer()
-
-                            Text(userSettings.textSize.displayName)
-                                .font(Typography.caption)
-                                .foregroundColor(.textTertiary)
-                        }
-
-                        Picker("Text Size", selection: $userSettings.textSize) {
-                            ForEach(TextSize.allCases) { size in
-                                Text(size.displayName).tag(size)
-                            }
-                        }
-                        .pickerStyle(.segmented)
-                    }
-
-                    // Additional options
-                    Toggle(isOn: $userSettings.useSerifForBody) {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Serif body text")
-                                .font(Typography.body)
-                            Text("Use elegant serif font for reading")
-                                .font(Typography.caption)
-                                .foregroundColor(.textTertiary)
-                        }
-                    }
-                    .tint(.brandPrimary)
-
-                } header: {
-                    Label("Typography", systemImage: "textformat")
+                readingSection
+                personalizationSection
+                accessSection
+                contentSection
+                if !subscriptionManager.isSubscribed || versionTapCount >= 5 {
+                    developerSection
                 }
-
-                // Personalization Section
-                SwiftUI.Section {
-                    VStack(alignment: .leading, spacing: Spacing.xs) {
-                        Text("Good evening,")
-                            .font(Typography.caption)
-                            .foregroundColor(.brandPrimary.opacity(0.7))
-                            .italic()
-                        Text(userSettings.userName.isEmpty ? "Your Name" : userSettings.userName)
-                            .font(.system(size: 28, weight: .light, design: .serif))
-                            .foregroundColor(userSettings.userName.isEmpty ? .textTertiary : .brandPrimary)
-                    }
-                    .padding(.vertical, Spacing.sm)
-                    .padding(.horizontal, Spacing.sm)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .background(Color.brandPrimary.opacity(0.07))
-                    .clipShape(RoundedRectangle(cornerRadius: CornerRadius.sm))
-                    .listRowInsets(EdgeInsets(top: Spacing.sm, leading: Spacing.md, bottom: 0, trailing: Spacing.md))
-
-                    TextField("Your Name", text: $userSettings.userName)
-                        .textFieldStyle(.roundedBorder)
-
-                    TextField("Course Name", text: $userSettings.courseName)
-                        .textFieldStyle(.roundedBorder)
-
-                    Text("Your name appears on the Learn screen greeting.")
-                        .font(Typography.caption)
-                        .foregroundColor(.textTertiary)
-                } header: {
-                    Label("Personalization", systemImage: "person.fill")
-                }
-                .tint(.brandPrimary)
-
-                // Subscription
-                SwiftUI.Section {
-                    if subscriptionManager.isSubscribed {
-                        HStack {
-                            Label("Premium", systemImage: "checkmark.seal.fill")
-                                .font(Typography.body)
-                                .foregroundColor(.success)
-                            Spacer()
-                            if let expiry = subscriptionManager.expirationDate {
-                                Text("Renews \(expiry, style: .date)")
-                                    .font(Typography.caption)
-                                    .foregroundColor(.textTertiary)
-                            }
-                        }
-                    } else {
-                        Button {
-                            showPaywall = true
-                        } label: {
-                            HStack {
-                                Label("Upgrade to Premium", systemImage: "crown")
-                                    .font(Typography.body)
-                                    .foregroundColor(.brandPrimary)
-                                Spacer()
-                                Image(systemName: "chevron.right")
-                                    .font(.caption)
-                                    .foregroundColor(.textTertiary)
-                            }
-                        }
-                        .buttonStyle(.plain)
-
-                        Button {
-                            Task { await subscriptionManager.restorePurchases() }
-                        } label: {
-                            Label("Restore Purchases", systemImage: "arrow.clockwise")
-                                .font(Typography.body)
-                                .foregroundColor(.textSecondary)
-                        }
-                    }
-                } header: {
-                    Label("Subscription", systemImage: "crown")
-                }
-
-                // Data Management
-                SwiftUI.Section {
-                    Button {
-                        isSyncing = true
-                        syncMessage = nil
-                        Task {
-                            await notionService.fetchModules()
-                            await notionService.enrichModulesWithDatabases()
-                            isSyncing = false
-                            syncMessage = notionService.error == nil ? "Content refreshed" : "Sync failed — using cached data"
-                        }
-                    } label: {
-                        HStack {
-                            Label("Refresh Content", systemImage: "arrow.clockwise")
-                            Spacer()
-                            if isSyncing {
-                                ProgressView()
-                                    .scaleEffect(0.8)
-                            } else if let msg = syncMessage {
-                                Text(msg)
-                                    .font(Typography.caption)
-                                    .foregroundColor(msg.contains("failed") ? .brandHighlight : .textSecondary)
-                            } else if let date = notionService.lastSyncDate {
-                                Text(date.formatted(.relative(presentation: .named)))
-                                    .font(Typography.caption)
-                                    .foregroundColor(.textTertiary)
-                            }
-                        }
-                    }
-                    .disabled(isSyncing)
-
-                    Button(role: .destructive) {
-                        showingResetConfirmation = true
-                    } label: {
-                        Label("Reset All Progress", systemImage: "trash")
-                    }
-                } header: {
-                    Label("Data", systemImage: "externaldrive")
-                } footer: {
-                    Text("This will delete all your progress, reflections, and quiz scores.")
-                        .font(Typography.caption)
-                }
-
-                // Legal & About
-                SwiftUI.Section {
-                    FAQLinkView()
-                    TermsOfUseLinkView()
-                    PrivacyPolicyLinkView()
-                    ImageCreditsLinkView()
-
-                    LabeledContent("Version", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0")
-                    LabeledContent("Build", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "1")
-
-                } header: {
-                    Label("About", systemImage: "info.circle")
-                } footer: {
-                    VStack(spacing: 4) {
-                        Text("Founded & built by Victoria Lee Case")
-                            .font(Typography.caption2)
-                        Text("\u{00A9} 2026 Untitled_ LuxPerpetua Technologies, Inc.")
-                            .font(Typography.caption2)
-                        Text("All rights reserved.")
-                            .font(Typography.caption2)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .multilineTextAlignment(.center)
-                }
+                aboutSection
             }
-            .formStyle(.grouped)
-            .scrollContentBackground(.hidden)
-            .background(Color.surfacePrimary)
             .navigationTitle("Settings")
-            #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
-            #endif
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Done") {
-                        dismiss()
-                    }
-                    .fontWeight(.semibold)
+                    Button("Done") { dismiss() }
+                        .fontWeight(.semibold)
                 }
             }
-            .sheet(isPresented: $showPaywall) {
-                PaywallView()
-            }
+            .sheet(isPresented: $showPaywall) { PaywallView() }
             .alert("Reset All Progress?", isPresented: $showingResetConfirmation) {
                 Button("Cancel", role: .cancel) { }
-                Button("Reset", role: .destructive) {
-                    resetProgress()
-                }
+                Button("Reset", role: .destructive) { resetProgress() }
             } message: {
                 Text("This will permanently delete all your learning progress, reflections, and quiz scores.")
             }
         }
-        #if os(macOS)
-        .frame(minWidth: 500, minHeight: 600)
-        #endif
+    }
+
+    // MARK: - Sections
+
+    private var readingSection: some View {
+        Section("Reading") {
+            VStack(alignment: .leading, spacing: Spacing.sm) {
+                Text("Style")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                HStack(spacing: Spacing.sm) {
+                    ForEach(FontStyle.allCases) { style in
+                        FontStyleButton(style: style, isSelected: userSettings.fontStyle == style) {
+                            withAnimation(.smoothSpring) { userSettings.fontStyle = style }
+                        }
+                    }
+                }
+            }
+
+            VStack(alignment: .leading, spacing: Spacing.sm) {
+                HStack {
+                    Text("Text Size")
+                    Spacer()
+                    Text(userSettings.textSize.displayName)
+                        .foregroundColor(.secondary)
+                }
+                Picker("Text Size", selection: $userSettings.textSize) {
+                    ForEach(TextSize.allCases) { size in
+                        Text(size.displayName).tag(size)
+                    }
+                }
+                .pickerStyle(.segmented)
+            }
+
+            Toggle(isOn: $userSettings.useSerifForBody) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Serif Body Text")
+                    Text("Elegant serif font for reading")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+            }
+            .tint(.brandPrimary)
+        }
+    }
+
+    private var personalizationSection: some View {
+        Section {
+            VStack(alignment: .leading, spacing: Spacing.xs) {
+                Text("Good evening,")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .italic()
+                Text(userSettings.userName.isEmpty ? "Your Name" : userSettings.userName)
+                    .font(.system(size: 26, weight: .light, design: .serif))
+                    .foregroundColor(userSettings.userName.isEmpty ? .secondary : .brandPrimary)
+            }
+            .padding(.vertical, Spacing.xs)
+            TextField("Your Name", text: $userSettings.userName)
+            TextField("Course Name", text: $userSettings.courseName)
+        } header: {
+            Text("Personalization")
+        } footer: {
+            Text("Your name appears on the Learn screen greeting.")
+        }
+    }
+
+    private var accessSection: some View {
+        Section("Access") {
+            if subscriptionManager.isSubscribed {
+                Label("Premium Active", systemImage: "checkmark.seal.fill")
+                    .foregroundColor(.success)
+                if let expiry = subscriptionManager.expirationDate {
+                    LabeledContent("Renews", value: expiry.formatted(date: .abbreviated, time: .omitted))
+                }
+            } else {
+                Button { showPaywall = true } label: {
+                    Label("Upgrade to Premium", systemImage: "crown")
+                }
+                Button {
+                    Task { await subscriptionManager.restorePurchases() }
+                } label: {
+                    Label("Restore Purchases", systemImage: "arrow.clockwise")
+                        .foregroundColor(.secondary)
+                }
+            }
+        }
+    }
+
+    private var contentSection: some View {
+        Section {
+            Button {
+                isSyncing = true
+                syncMessage = nil
+                Task {
+                    await notionService.fetchModules()
+                    await notionService.enrichModulesWithDatabases()
+                    isSyncing = false
+                    if let err = notionService.error {
+                        syncMessage = err
+                    } else {
+                        let total = notionService.modules.map { $0.sections.count }.reduce(0, +)
+                        syncMessage = "Refreshed — \(notionService.modules.count) modules, \(total) sections"
+                    }
+                }
+            } label: {
+                HStack {
+                    Label("Refresh Content", systemImage: "arrow.clockwise")
+                        .foregroundColor(isSyncing ? .secondary : .primary)
+                    Spacer()
+                    if isSyncing {
+                        ProgressView().scaleEffect(0.8)
+                    } else if let msg = syncMessage {
+                        Text(msg)
+                            .font(.caption)
+                            .foregroundColor(msg.contains("❌") ? .red : .secondary)
+                            .multilineTextAlignment(.trailing)
+                    } else if let date = notionService.lastSyncDate {
+                        Text(date.formatted(.relative(presentation: .named)))
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
+            .disabled(isSyncing)
+
+            Button(role: .destructive) {
+                showingResetConfirmation = true
+            } label: {
+                Label("Reset All Progress", systemImage: "trash")
+            }
+        } header: {
+            Text("Content")
+        } footer: {
+            Text("Resets all progress, reflections, and quiz scores.")
+        }
+    }
+
+    private var developerSection: some View {
+        Section("Developer") {
+            Toggle(isOn: Binding(
+                get: { subscriptionManager.screenshotModeEnabled },
+                set: { subscriptionManager.screenshotModeEnabled = $0 }
+            )) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Full Content Access")
+                    Text("Bypass subscription gate for testing")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+            }
+            .tint(.brandPrimary)
+
+            ForEach(notionService.modules, id: \.id) { mod in
+                LabeledContent(mod.id, value: "\(mod.sections.count) sections")
+            }
+        }
+    }
+
+    private var aboutSection: some View {
+        Section {
+            FAQLinkView()
+            TermsOfUseLinkView()
+            PrivacyPolicyLinkView()
+            ImageCreditsLinkView()
+            LabeledContent("Version", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0")
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    versionTapCount += 1
+                    if versionTapCount == 5 {
+                        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                    }
+                }
+            LabeledContent("Build", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "1")
+        } header: {
+            Text("About")
+        } footer: {
+            VStack(spacing: 4) {
+                Text("Founded & built by Victoria Lee Case")
+                Text("© 2026 Untitled_ LuxPerpetua Technologies, Inc.")
+                Text("All rights reserved.")
+            }
+            .frame(maxWidth: .infinity)
+            .multilineTextAlignment(.center)
+        }
     }
 
     private func resetProgress() {
         progressManager.resetProgress()
-        // Also clear sensitive data from Keychain (reflection entries, advisor notes)
         KeychainHelper.deleteAll()
         dismiss()
     }
 }
 
-// MARK: - Font Style Button (like Notion)
+// MARK: - Font Style Button
 struct FontStyleButton: View {
     let style: FontStyle
     let isSelected: Bool
@@ -280,11 +253,10 @@ struct FontStyleButton: View {
             VStack(spacing: Spacing.xs) {
                 Text("Ag")
                     .font(style.headingFont(size: 24, weight: .medium))
-                    .foregroundColor(isSelected ? .brandPrimary : .textSecondary)
-
+                    .foregroundColor(isSelected ? .brandPrimary : .secondary)
                 Text(style.displayName)
-                    .font(Typography.caption2)
-                    .foregroundColor(isSelected ? .brandPrimary : .textTertiary)
+                    .font(.caption2)
+                    .foregroundColor(isSelected ? .brandPrimary : .secondary)
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, Spacing.sm)
@@ -294,7 +266,7 @@ struct FontStyleButton: View {
             )
             .overlay(
                 RoundedRectangle(cornerRadius: CornerRadius.sm)
-                    .stroke(isSelected ? Color.brandPrimary : Color.divider, lineWidth: isSelected ? 2 : 1)
+                    .stroke(isSelected ? Color.brandPrimary : Color(.separator), lineWidth: isSelected ? 2 : 1)
             )
         }
         .buttonStyle(.plain)

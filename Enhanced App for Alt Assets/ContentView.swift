@@ -77,15 +77,10 @@ struct ContentView: View {
             }
         }
         .task {
-            // Fetch live Notion data once on launch. Sample data is shown immediately;
-            // Notion data replaces it while preserving heroImageName and enriched content.
-            if AppConfiguration.preferLiveData && notionService.lastSyncDate == nil {
-                await notionService.fetchModules()
-            } else if notionService.modules.isEmpty {
-                await notionService.fetchModules()
-            }
-
-            // Enrich modules with targeted database fetches (runs on both local and Notion data)
+            // Always fetch live Notion data on launch when configured. Static content
+            // is already loaded in NotionService.init() so the user sees something
+            // immediately; Notion content replaces it as fetches complete.
+            await notionService.fetchModules()
             await notionService.enrichModulesWithDatabases()
         }
     }
