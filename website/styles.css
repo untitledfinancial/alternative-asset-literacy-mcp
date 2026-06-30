@@ -478,31 +478,26 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .features-list-col {
     display: flex;
     flex-direction: column;
+    gap: var(--space-lg);
 }
 
 .feature-row {
     display: flex;
     flex-direction: column;
-    padding: var(--space-md) 0;
-    border-bottom: 1px solid var(--divider);
-}
-
-.feature-row:first-child {
-    border-top: 1px solid var(--divider);
 }
 
 .feature-row-title {
     font-family: var(--font-serif);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 600;
     color: var(--app-primary);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
 }
 
 .feature-row-desc {
     font-family: var(--font-serif);
-    font-size: 0.8125rem;
-    line-height: 1.6;
+    font-size: 0.875rem;
+    line-height: 1.65;
     color: var(--text-secondary);
 }
 
