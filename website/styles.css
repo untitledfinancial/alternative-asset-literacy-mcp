@@ -685,7 +685,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 .module-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
 }
 
@@ -705,11 +705,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .module-thumb {
-    width: 72px;
-    min-height: 72px;
+    width: 100px;
+    min-height: 100%;
     flex-shrink: 0;
     overflow: hidden;
     background: var(--app-accent);
+    align-self: stretch;
 }
 
 .module-thumb img {
@@ -723,7 +724,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
     padding: var(--space-sm) var(--space-md);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .module-card-body h3 {
@@ -850,6 +851,80 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
     max-width: 600px;
     padding-top: var(--space-lg);
     border-top: 1px solid var(--divider);
+}
+
+/* ============================================
+   ARTWORK CREDITS (About section)
+   ============================================ */
+.artwork-credits {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--divider);
+}
+
+.artwork-credit-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    max-width: 720px;
+}
+
+.artwork-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.artwork-item-header {
+    border-left: 2px solid var(--brand-highlight);
+    padding-left: 1rem;
+}
+
+.artwork-title {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin: 0 0 0.2rem;
+}
+
+.artwork-meta {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
+.artwork-credits-compact {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+.artwork-credits-compact p {
+    font-size: 0.78rem;
+    color: var(--text-tertiary);
+    letter-spacing: 0.03em;
+    margin: 0 0 0.35rem;
+    line-height: 1.5;
+}
+
+.artwork-credits-compact p:last-child {
+    margin-bottom: 0;
+}
+
+.artwork-note {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .artwork-credit-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 /* ============================================
